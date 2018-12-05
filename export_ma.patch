@@ -1,0 +1,64 @@
+Index: lib/export/export_studipdata_func.inc.php
+===================================================================
+--- lib/export/export_studipdata_func.inc.php	(revision 48989)
++++ lib/export/export_studipdata_func.inc.php	(working copy)
+@@ -740,22 +740,35 @@
+     $group_tab_zelle = 'name';
+     $do_group        = true;
+ 
++    // require all necessary statusgroups and restore their hierarchical order
++    $status_gruppen = GetAllStatusgruppen($inst_id);
++    $status_ids = GetRoleNames($status_gruppen, 0, "", true);
++
++    // traverse and join statusgroups with memberdates
++    $all_rows = [];
++    foreach (array_keys($status_ids) as $target_key) 
++    {
++        $query = "SELECT statusgruppen.name, statusgruppen.statusgruppe_id, aum.user_id,
++        aum.Nachname, aum.Vorname, ui.inst_perms, ui.raum,
++        ui.sprechzeiten, ui.Telefon, ui.Fax, aum.Email,
++        aum.username, info.Home, info.geschlecht, info.title_front, info.title_rear
++        FROM statusgruppen
++        LEFT JOIN statusgruppe_user sgu USING(statusgruppe_id)
++        LEFT JOIN user_inst ui ON (ui.user_id = sgu.user_id AND ui.Institut_id = ? AND ui.inst_perms!='user')
++        LEFT JOIN auth_user_md5 aum ON (ui.user_id = aum.user_id)
++        LEFT JOIN user_info info ON (ui.user_id = info.user_id)
++        WHERE statusgruppe_id = ?
++        ORDER BY statusgruppen.position, sgu.position";
++        $statement = DBManager::get()->prepare($query);
++        $statement->execute(array($inst_id, $target_key));
++        $row = $statement->fetchAll();
++        foreach($row as $s_row){
++            $all_rows[] = $s_row;
++        }
++    }
++    // create xml-output
+     $data_object = xml_open_tag($xml_groupnames_person['group']);
+-
+-    $query = "SELECT statusgruppen.name,aum.user_id,
+-                     aum.Nachname, aum.Vorname, ui.inst_perms, ui.raum,
+-                     ui.sprechzeiten, ui.Telefon, ui.Fax, aum.Email,
+-                     aum.username, info.Home, info.geschlecht, info.title_front, info.title_rear
+-              FROM statusgruppen
+-              LEFT JOIN statusgruppe_user sgu USING(statusgruppe_id)
+-              LEFT JOIN user_inst ui ON (ui.user_id = sgu.user_id AND ui.Institut_id = range_id AND ui.inst_perms!='user')
+-              LEFT JOIN auth_user_md5 aum ON (ui.user_id = aum.user_id)
+-              LEFT JOIN user_info info ON (ui.user_id = info.user_id)
+-              WHERE range_id = ?
+-              ORDER BY statusgruppen.position, sgu.position";
+-    $statement = DBManager::get()->prepare($query);
+-    $statement->execute(array($inst_id));
+-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
++    foreach ($all_rows as $row) { 
+         $data_found = true;
+         $group_string = '';
+         if ($do_group && $group != $row[$group_tab_zelle]) {
+@@ -762,7 +775,7 @@
+             if ($group != 'FIRSTGROUP') {
+                 $group_string .= xml_close_tag($xml_groupnames_person['subgroup1']);
+             }
+-            $group_string .= xml_open_tag($xml_groupnames_person['subgroup1'], $row[$group_tab_zelle]);
++            $group_string .= xml_open_tag($xml_groupnames_person['subgroup1'], $status_ids[$row['statusgruppe_id']]);
+             $group = $row[$group_tab_zelle];
+         }
+         $data_object .= $group_string;

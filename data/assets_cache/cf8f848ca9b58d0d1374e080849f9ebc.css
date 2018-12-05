@@ -1,0 +1,494 @@
+#blubber_threads,
+#blubber_threads > li > ul {
+  list-style-type: none;
+}
+#blubber_threads {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+}
+#blubber_threads .posting {
+  border: 1px solid #e2e3e5;
+}
+#blubber_threads .posting > .avatar {
+  vertical-align: top;
+  width: 50px + 2px;
+  max-width: 50px + 2px;
+  min-width: 50px + 2px;
+  overflow: hidden;
+  text-align: center;
+}
+#blubber_threads .posting > .avatar .avatar_image {
+  border: 1px solid #b8c3d6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+}
+#blubber_threads .posting > .writer {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-box-flex;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  -moz-box-align: flex-end;
+  align-items: flex-end;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 75px;
+  border-top: 1px solid #e2e3e5;
+}
+#blubber_threads .posting > .writer > textarea {
+  display: block;
+  width: calc(100% - 20px);
+  height: 20px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+#blubber_threads .posting > .writer .uploader {
+  cursor: pointer;
+  opacity: 0.5;
+}
+#blubber_threads .posting > .writer .uploader > .uploading {
+  display: none;
+}
+#blubber_threads .posting > .writer .uploader.uploading > .upload {
+  display: none;
+}
+#blubber_threads .posting > .writer .uploader.uploading > .uploading {
+  display: inline-block;
+}
+#blubber_threads .posting > .writer:hover .uploader {
+  opacity: 1;
+}
+#blubber_threads .posting .content_column img {
+  max-width: 100%;
+  max-height: 80vh;
+}
+#blubber_threads .posting .link-extern {
+  text-overflow: ellipsis;
+}
+#blubber_threads > .thread {
+  margin-bottom: 40px;
+  border-color: #7e92b0;
+}
+#blubber_threads > .thread > .avatar {
+  margin-top: -29px;
+  margin-left: 11px;
+  position: absolute;
+  border-top: none;
+  border-left: none;
+}
+#blubber_threads > .thread > .reshares {
+  display: none;
+}
+#blubber_threads > .thread > .contextinfo {
+  display: block;
+  height: 30px;
+  padding-left: 75px;
+  line-height: 30px;
+  background-repeat: repeat;
+  background-size: auto auto;
+  background-color: #e7ebf1;
+  font-size: 1.0em;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #888888;
+  margin-bottom: 7px;
+}
+#blubber_threads > .thread > .content_column {
+  padding-left: 75px;
+}
+#blubber_threads > .thread > .content_column > .timer {
+  margin-right: 15px;
+}
+#blubber_threads .comments {
+  background-color: #e2e3e5;
+  border-top: 1px solid #e2e3e5;
+  background-color: #e7ebf1;
+  padding-left: 0;
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 0px;
+}
+#blubber_threads .comments:empty {
+  display: none;
+}
+#blubber_threads .comments .posting {
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: none;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-box-flex;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  background-color: white;
+}
+#blubber_threads .comments .posting:last-child {
+  border-bottom: none;
+}
+#blubber_threads .comments .posting > .avatar {
+  width: 50px + 1px;
+  max-width: 50px + 1px;
+  min-width: 50px + 1px;
+}
+#blubber_threads .comments .posting > .avatar .avatar_image {
+  border-top: none;
+  border-left: none;
+}
+#blubber_threads .comments .posting > .content_column {
+  padding: 10px;
+  font-size: 0.9em;
+}
+#blubber_threads > li.thread .hiddeninfo {
+  display: none;
+}
+#blubber_threads > li.thread .contextinfo > .name {
+  font-size: 0.8em;
+  display: block;
+  white-space: normal;
+}
+#blubber_threads > li.thread.public .contextinfo > .name,
+#blubber_threads > li.thread.private .contextinfo > .name {
+  font-size: 0.9em;
+}
+#blubber_threads > li.thread.private .contextinfo {
+  background-color: #b8c3d6;
+  color: #646a72;
+}
+#blubber_threads > li.thread.private .comments {
+  background-color: #b8c3d6;
+}
+#blubber_threads > li.thread.course .contextinfo {
+  background-color: #899bba;
+  color: white;
+}
+#blubber_threads > li.thread.course .comments {
+  background-color: #899bba;
+}
+#blubber_threads > li.thread.public .contextinfo:hover,
+#blubber_threads > li.thread.private .contextinfo:hover {
+  cursor: pointer;
+}
+#blubber_threads > li.thread.course .contextinfo > .name {
+  height: 20px;
+}
+#blubber_threads.coursestream > li.thread,
+#blubber_threads.profilestream > li.thread {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+#blubber_threads.coursestream > li.thread .contextinfo,
+#blubber_threads.profilestream > li.thread .contextinfo {
+  display: none;
+}
+#blubber_threads.coursestream > .thread > .avatar,
+#blubber_threads.profilestream > .thread > .avatar {
+  margin-top: 7px;
+}
+#threadwriter.coursestream .writer textarea,
+#threadwriter.profilestream .writer textarea {
+  margin-left: 4px;
+  width: calc(100% - 24px);
+}
+#threadwriter .writer.uploading,
+#blubber_threads .writer.uploading {
+  background-image: url("http://localhost/studip/plugins_packages/core/Blubber/assets/images/dot_lightblue.png");
+  background-position: left bottom;
+  background-size: 1px 5px;
+  background-repeat: no-repeat;
+}
+#blubber_threads li.thread .reshares {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+#blubber_threads li.thread:hover .reshares,
+html.touch #blubber_threads li.thread .reshares,
+#blubber_threads li.thread .reshares.reshared {
+  visibility: visible;
+}
+#blubber_threads .reshare_blubber {
+  cursor: pointer;
+}
+#blubber_threads > li.thread .additional_tags {
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+#blubber_threads > li.thread .additional_tags a {
+  color: #888888;
+}
+#blubber_threads > li.thread .additional_tags a:hover {
+  color: #d60000;
+}
+#blubber_threads .loading {
+  text-align: center;
+}
+#blubber_threads > li,
+#blubber_threads > li > ul > li {
+  margin: 0px;
+}
+#blubber_threads .content {
+  margin-bottom: 5px;
+}
+#blubber_threads .timer {
+  float: right;
+  color: #bbbbbb;
+  font-size: 0.8em;
+}
+#blubber_threads .content_column:hover > .timer,
+html.touch #blubber_threads .content_column:hover > .timer {
+  visibility: visible;
+}
+#blubber_threads .content_column .timer a,
+#blubber_threads .content_column .timer a:hover {
+  color: #606060;
+}
+#blubber_threads .content_column > .timer .icon {
+  vertical-align: middle;
+  opacity: 0.6;
+}
+#blubber_threads .content_column .permalink {
+  opacity: 0.6;
+}
+#blubber_threads .content_column .permalink:hover::before {
+  background-repeat: no-repeat;
+  content: ' ';
+  display: inline-block;
+  height: 14px;
+  margin-right: 0;
+  background-image: url("http://localhost/studip/assets/images/icons/grey/group.svg");
+  background-size: 14px;
+  vertical-align: text-top;
+  width: 14px;
+}
+#blubber_threads .writer textarea.hovered,
+#new_posting.hovered,
+#blubber_threads textarea.corrector {
+  background-color: #ffe5ad;
+  opacity: 1.0;
+}
+#blubber_threads .writer textarea.ui-state-highlight,
+#new_posting.ui-state-highlight {
+  background-color: #fff2d6;
+}
+#blubber_threads .writer textarea {
+  opacity: 0.5;
+}
+#blubber_threads .writer textarea:hover {
+  opacity: 1;
+}
+#blubber_threads .avatar,
+#blubber_threads .content {
+  vertical-align: middle;
+  display: inline-block;
+}
+#blubber_threads .content h1,
+#blubber_threads .content h2,
+#blubber_threads .content h3,
+#blubber_threads .content h4,
+#blubber_threads .content h5,
+#blubber_threads .content h6 {
+  display: block;
+  margin-top: 4px;
+}
+#blubber_threads .content_column {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+}
+#blubber_threads .content_column > .name {
+  color: #888888;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+#blubber_threads .content_column > .name a {
+  color: #888888;
+}
+#blubber_threads .content_column > .content {
+  margin-top: 7px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+#blubber_threads .content_column > .content a {
+  word-break: break-all;
+}
+#blubber_threads .comments .content_column {
+  width: calc(100% - 51px );
+}
+/* Constraints for images and videos */
+#blubber_threads .posting > .content_column img,
+#blubber_threads .posting > .content_column video {
+  max-width: calc(100vw - 427px);
+}
+@media screen and (max-width: 768px) {
+  #blubber_threads .posting > .content_column img,
+  #blubber_threads .posting > .content_column video {
+    max-width: calc(100vw - 127px);
+  }
+}
+#blubber_threads li.more {
+  background-color: white;
+  cursor: pointer;
+  color: #28497c;
+  padding-left: 70px;
+  border-bottom: 1px solid #e2e3e5;
+  line-height: 30px;
+}
+#blubber_threads li.more::before {
+  background-repeat: no-repeat;
+  content: ' ';
+  display: inline-block;
+  height: 16px;
+  margin-right: 0;
+  background-image: url("http://localhost/studip/assets/images/icons/blue/arr_1right.svg");
+  background-size: 16px;
+  vertical-align: text-top;
+  width: 16px;
+}
+#blubber_threads li.more.ajax::before {
+  background-image: url("http://localhost/studip/assets/images/ajax-indicator-black.svg");
+}
+#blubber_threads li.more:hover {
+  background-color: #d0d7e3;
+}
+#blubber_threads textarea.corrector {
+  width: 100%;
+  height: 20px;
+  background-color: white;
+}
+#blubber_threads .related_users {
+  display: none;
+}
+#threadwriter {
+  margin-bottom: 15px;
+}
+#threadwriter > .row {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-box-flex;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  -moz-box-align: flex-start;
+  align-items: flex-start;
+  border: 1px solid #7e92b0;
+  padding-top: 4px;
+}
+#threadwriter > .row > textarea {
+  width: calc(100% - 90px);
+  min-height: 50px;
+  border: none;
+}
+#threadwriter > .row > .context_selector {
+  padding: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#threadwriter > .row > .context_selector .click {
+  cursor: pointer;
+  display: none;
+}
+#threadwriter > .row > .context_selector.select .select,
+#threadwriter > .row > .context_selector.public .public,
+#threadwriter > .row > .context_selector.private .private,
+#threadwriter > .row > .context_selector.seminar .seminar {
+  display: inline;
+}
+#threadwriter > .row .uploader {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-align-self: flex-end;
+  -ms-align-self: flex-end;
+  align-self: flex-end;
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+#threadwriter > .row .uploader > .uploading {
+  display: none;
+}
+#threadwriter > .row .uploader.uploading > .upload {
+  display: none;
+}
+#threadwriter > .row .uploader.uploading > .uploading {
+  display: inline-block;
+}
+#threadwriter > .row:hover .uploader {
+  opacity: 1;
+}
+#context_selector table > tbody > tr {
+  opacity: 0.5;
+}
+#context_selector table > tbody > tr img.check {
+  display: none;
+}
+#context_selector table > tbody > tr.selected {
+  opacity: 1;
+}
+#context_selector table > tbody > tr.selected img.check {
+  display: block;
+}
+#context_selector table > tbody > tr.selected img.uncheck {
+  display: none;
+}
+/* editing custom streams */
+table.select td {
+  border: thin solid #aaaaaa;
+  text-align: center;
+}
+table.select td img.check,
+table.select td input[type=checkbox] {
+  display: none;
+}
+table.select td.selected {
+  background-color: #eeeeee;
+}
+table.select td.selected img.check {
+  display: inline;
+}
+table.select td.selected img.uncheck {
+  display: none;
+}
+table.select th {
+  border-left: 1px solid #e2e3e5;
+  border-right: 1px solid #e2e3e5;
+}
+#additional_settings table,
+#additional_settings input[type=text],
+#additional_settings select {
+  width: 100%;
+}
+.blubber_contacts {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+.blubber_contacts > li {
+  display: inline-block;
+}
+.blubber_contacts .want_to_share {
+  cursor: pointer;
+}

@@ -1,0 +1,268 @@
+.material_overview {
+  list-style-type: none;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-box-flex;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  -moz-box-align: stretch;
+  align-items: stretch;
+}
+.material_overview > article {
+  display: inline-block;
+  margin: 7px;
+  width: 250px;
+  max-width: 250px;
+  overflow: hidden;
+}
+.material_overview > article .image {
+  display: block;
+  margin: 4px;
+  height: 140px;
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.material_overview > article .shortdescription {
+  font-size: 0.9em;
+  height: 40px;
+  max-height: 40px;
+  overflow: hidden;
+  margin-bottom: 0px;
+  padding: 0 5px;
+  text-align: justify;
+  position: relative;
+  color: #000;
+}
+article.contentbox {
+  border: solid 1px #7e92b0;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+  position: relative;
+}
+article.contentbox header {
+  width: 100%;
+  background-color: #e7ebf1;
+  color: #28497c;
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2em;
+}
+article.contentbox h1 {
+  padding: 5px;
+  margin: 0px;
+  color: #28497c;
+  border-bottom: medium none;
+  font-size: medium;
+}
+article.contentbox footer {
+  background-color: white;
+  border-top: 1px solid #d0d7e3;
+}
+article.contentbox footer.tags a {
+  white-space: nowrap;
+}
+article.contentbox footer.tags a::before {
+  background-repeat: no-repeat;
+  content: ' ';
+  display: inline-block;
+  height: 16px;
+  margin-right: 2px;
+  background-image: url("http://localhost/studip/assets/images/icons/blue/tag.svg");
+  background-size: 16px;
+  vertical-align: text-top;
+  width: 16px;
+}
+.lernmarktplatz.structure {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-right: 5px;
+  max-height: 300px;
+  overflow: auto;
+}
+.lernmarktplatz.structure li {
+  padding: 5px;
+  border-top: thin solid #e2e3e5;
+  padding-right: 0px;
+}
+.lernmarktplatz.structure li.folder {
+  padding-bottom: 0px;
+}
+.lernmarktplatz.structure ol {
+  margin-top: 6px;
+  padding-left: 40px;
+  list-style-type: none;
+}
+.lernmarktplatz.structure > li:last-child {
+  border-bottom: thin solid #e2e3e5;
+}
+.breadcrumb {
+  display: flex;
+  list-style-type: none;
+}
+.breadcrumb > li {
+  margin-right: 10px;
+}
+.breadcrumb > li:not(:first-child)::before {
+  background-repeat: no-repeat;
+  content: ' ';
+  display: inline-block;
+  height: 16px;
+  margin-right: 2px;
+  background-image: url("http://localhost/studip/assets/images/icons/grey/arr_2right.svg");
+  background-size: 16px;
+  vertical-align: text-top;
+  width: 16px;
+}
+.matrix {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+}
+.matrix > * {
+  display: block;
+  min-width: 250px;
+  max-width: 250px;
+  font-size: 1.2em;
+  padding: 5px;
+  min-height: 2.5em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.author_information {
+  display: flex;
+}
+.author_information > .avatar {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.author_information .author_name {
+  font-weight: bold;
+  display: inline;
+}
+.author_information .author_host {
+  font-size: 0.8em;
+  display: inline;
+  color: #646a72;
+}
+.author_information .description {
+  margin-top: 5px;
+}
+a.button.download_link {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+a.button.download_link > .filename {
+  margin-left: 10px;
+}
+a.button.download_link > img.whitebutton {
+  display: none;
+}
+a.button.download_link:hover > img.whitebutton {
+  display: inline-block;
+}
+a.button.download_link:hover > img.blue {
+  display: none;
+}
+ul.reviews,
+ol.reviews,
+ol.comments,
+ul.comments {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+ul.reviews > li.review,
+ol.reviews > li.review,
+ol.comments > li.review,
+ul.comments > li.review {
+  margin-bottom: 10px;
+  border: thin solid #7e92b0;
+  padding: 10px;
+  display: flex;
+}
+ul.reviews > li.review > .avatar,
+ol.reviews > li.review > .avatar,
+ol.comments > li.review > .avatar,
+ul.comments > li.review > .avatar {
+  width: 50px;
+  height: 50px;
+}
+ul.reviews > li.review > .content,
+ol.reviews > li.review > .content,
+ol.comments > li.review > .content,
+ul.comments > li.review > .content {
+  margin-left: 10px;
+  width: 100%;
+}
+ul.reviews > li.review > .content .review_text,
+ol.reviews > li.review > .content .review_text,
+ol.comments > li.review > .content .review_text,
+ul.comments > li.review > .content .review_text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+ul.reviews > li.review > .content .origin,
+ol.reviews > li.review > .content .origin,
+ol.comments > li.review > .content .origin,
+ul.comments > li.review > .content .origin {
+  color: #646a72;
+  font-size: 0.8em;
+}
+ul.reviews > li.review > .content .timestamp,
+ol.reviews > li.review > .content .timestamp,
+ol.comments > li.review > .content .timestamp,
+ul.comments > li.review > .content .timestamp {
+  float: right;
+  color: #646a72;
+  font-size: 0.8em;
+}
+.mainreview {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: thin solid #7e92b0;
+  padding: 10px;
+}
+.maininfo {
+  border: thin solid #365a90;
+  padding: 10px;
+}

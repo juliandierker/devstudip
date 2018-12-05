@@ -1,0 +1,135 @@
+Index: app/controllers/admin/statusgroups.php
+===================================================================
+--- app/controllers/admin/statusgroups.php	(revision 48989)
++++ app/controllers/admin/statusgroups.php	(working copy)
+@@ -13,8 +13,6 @@
+  * @category    Stud.IP
+  */
+ 
+-require_once 'lib/statusgruppe.inc.php';
+-
+ class Admin_StatusgroupsController extends AuthenticatedController
+ {
+     /**
+@@ -260,7 +258,7 @@
+     }
+ 
+     /**
+-     * Delete a group
++     * Sort a group
+      */
+     public function sortAlphabetic_action($group_id)
+     {
+@@ -272,6 +270,19 @@
+             $this->redirect('admin/statusgroups/index#group-' . $group_id);
+         }
+     }
++    /**
++     * Sort a subgroup
++     */
++    public function sortGroupsAlphabetical_action($group_id)
++    {
++        $this->group = new Statusgruppen($group_id);
++        if (Request::submitted('confirm')) {
++            CSRFProtection::verifySecurityToken();
++            $this->group->sortSubGroupsAlphabetic();
++            $this->redirect('admin/statusgroups/index#group-' . $group_id);
++        }
++    }
++    
+ 
+     /**
+      * Action to select institute. This should be put somewhere else since we
+Index: app/views/admin/statusgroups/_group.php
+===================================================================
+--- app/views/admin/statusgroups/_group.php	(revision 48989)
++++ app/views/admin/statusgroups/_group.php	(working copy)
+@@ -1,3 +1,5 @@
++<!-- <? require_once 'lib/statusgruppe.inc.php'; ?> -->
++
+ <a name="group-<?= $group->id ?>"></a>
+ <table id="<?= $group->id ?>" class="default movable">
+     <colgroup>
+@@ -36,9 +38,15 @@
+             <a data-dialog="size=auto" title="<?= _('Gruppe löschen') ?>" href="<?= $controller->url_for("admin/statusgroups/deleteGroup/{$group->id}") ?>">
+                 <?= Icon::create('trash', 'clickable', ['title' => _('Gruppe löschen')])->asImg() ?>
+             </a>
++            <? ?> 
+             <a data-dialog="size=auto" title="<?= _('Gruppe alphabetisch sortieren') ?>" href="<?= $controller->url_for("admin/statusgroups/sortAlphabetic/{$group->id}") ?>">
+-                <?= Icon::create('arr_2down', 'clickable', ['title' => _('Gruppe alphabetisch sortieren')])->asImg() ?>
+-            </a>
++	            <?= Icon::create('arr_1down', 'clickable', ['title' => _('Mitarbeiter alphabetisch sortieren')])->asImg() ?>
++	        </a>
++            <? if ($group->children): ?>
++                <a data-dialog="size=auto" title="<?= _('Untergruppe alphabetisch sortieren') ?>" href="<?= $controller->url_for("admin/statusgroups/sortGroupsAlphabetical/{$group->id}") ?>">
++                    <?= Icon::create('arr_2down', 'clickable', ['title' => _('Untergruppen alphabetisch sortieren')])->asImg() ?>
++                </a>
++            <? endif; ?>
+         <? else: ?>
+             <? if ($type['needs_self_assign']): ?>
+                 <? if ($group->isMember() && $group->selfassign): ?>
+@@ -73,6 +81,7 @@
+ <ul class='tree-seperator'>
+     <li>
+     <? foreach ($group->children as $child): ?>
++
+         <?= $this->render_partial('admin/statusgroups/_group.php', array('group' => $child)) ?>
+     <? endforeach ?>
+     </li>
+Index: app/views/admin/statusgroups/sortGroupsAlphabetical.php
+===================================================================
+--- app/views/admin/statusgroups/sortGroupsAlphabetical.php	(nonexistent)
++++ app/views/admin/statusgroups/sortGroupsAlphabetical.php	(working copy)
+@@ -0,0 +1,17 @@
++<form method="post" action="<?= $controller->url_for("admin/statusgroups/sortGroupsAlphabetical/{$group->id}") ?>" class="default">
++    <?= CSRFProtection::tokenTag() ?>
++    <fieldset>
++        <legend>
++            <?= _('Unterruppe alphabetisch sortieren') ?>
++        </legend>
++
++        <section>
++            <?= sprintf(_('Untergruppen wirklich alphabetisch sortieren?'), htmlReady($group->name)) ?>
++        </section>
++    </fieldset>
++
++    <footer data-dialog-button>
++        <?= Studip\Button::createAccept(_('Sortieren'), 'confirm') ?>
++        <?= Studip\LinkButton::createCancel(_('Abbrechen'), $controller->url_for('admin/statusgroups')) ?>
++    </footer>
++</form>
+\ No newline at end of file
+Index: lib/models/Statusgruppen.php
+===================================================================
+--- lib/models/Statusgruppen.php	(revision 48989)
++++ lib/models/Statusgruppen.php	(working copy)
+@@ -83,7 +83,9 @@
+ 
+     public function getChildren()
+     {
++        
+         $result = Statusgruppen::findBySQL('range_id = ? ORDER BY position', array($this->id));
++        
+         return $result ?: array();
+     }
+ 
+@@ -448,6 +450,19 @@
+             $statusgruppenuser->store();
+         }
+     }
++    /**
++     * Sorts subgroups alphabetical
++     */
++    public function sortSubGroupsAlphabetic()
++    {
++        $old_order = $this->getChildren();
++        $result = Statusgruppen::findBySQL('range_id = ? ORDER BY name', array($this->id));
++        foreach($result as $key => $value ) {
++            $result[$key]->position = $key;
++            $result[$key]->store();
++        }
++        $this->getChildren();
++    }
+ 
+     /**
+      * Checks if there is free space in this group
