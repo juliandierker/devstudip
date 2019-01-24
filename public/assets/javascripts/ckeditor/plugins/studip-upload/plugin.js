@@ -42,7 +42,6 @@ CKEDITOR.plugins.add('studip-upload', {
                 }
             },
             converterDataURItoBlob = function(dataURI) {
-                console.log(dataURI);
                 let byteString;
                 let mimeString;
                 let ia;
@@ -54,7 +53,6 @@ CKEDITOR.plugins.add('studip-upload', {
                     byteString = encodeURI(dataURI.split(',')[1]);
                 }
                 // separate out the mime component
-                console.log(byteString);
                 mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
                 // write the bytes of the string to a typed array
                 ia = new Uint8Array(byteString.length);
@@ -80,7 +78,6 @@ CKEDITOR.plugins.add('studip-upload', {
                         console.error(err);
                     },
                     success:function(data){
-                        console.log("ajax" + replacerStr);
                         if (data.files.length > 0) {
                             tmp = "<img alt='" + data.files[0].name + "'" + "src='" + data.files[0].url +"'/>";
                             if (replacerStr) {
@@ -175,7 +172,7 @@ CKEDITOR.plugins.add('studip-upload', {
 
         // editor paste event - to handle copy paste files in wysywig
         editor.on( 'paste', function( event ) {
-            
+
             if ( event.data.dataValue ) {
                 str = event.data.dataValue;
                 re = /<img\s[^>]*?src\s*=\s*['\"]([^'\"]*?)['\"][^>]*?>/g;
@@ -195,7 +192,6 @@ CKEDITOR.plugins.add('studip-upload', {
             }
             else {
                 if (event.data.dataTransfer._.files.length > 0) {
-                    console.log("entered dataTrans");
                     for (i = 0; i < event.data.dataTransfer._.files.length; i++) {
                         reader = new FileReader();
                         reader.readAsDataURL(event.data.dataTransfer._.files[i]);

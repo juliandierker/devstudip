@@ -96,16 +96,19 @@ jQuery(function ($) {
         var options = textarea.attr('data-editor'),
             extraPlugins,
             removePlugins;
-
+        
         if (options) {
             options = STUDIP.parseOptions(options);
             extraPlugins = options.extraPlugins;
             removePlugins = options.removePlugins;
+            // hotFix for autogrow and Edge
+            if (CKEDITOR.env.edge) {
+                removePlugins? removePlugins+=',autogrow' : removePlugins ='autogrow';
+            }
         }
 
         // replace textarea with editor
         CKEDITOR.replace(textarea[0], {
-            test: console.log(this.CKEDITOR),
             allowedContent: {
                 // NOTE update the dev docs when changing ACF settings!!
                 // at http://docs.studip.de/develop/Entwickler/Wysiwyg
@@ -220,7 +223,7 @@ jQuery(function ($) {
             uploadUrl: STUDIP.URLHelper.getURL('dispatch.php/wysiwyg/upload'),
             filebrowserUploadUrl: STUDIP.URLHelper.getURL('dispatch.php/wysiwyg/upload'),
 
-            extraPlugins: 'codemirror,confighelper, magicline,studip-floatbar,studip-quote, studip-settings, studip-wiki, pastefromword, studip-upload,emojione'
+            extraPlugins: ' codemirror,confighelper, magicline,studip-floatbar,studip-quote, studip-settings, studip-wiki, pastefromword, studip-upload,emojione'
                 + (extraPlugins ? ',' + extraPlugins : ''),
             removePlugins: removePlugins ? removePlugins : '',
             enterMode: CKEDITOR.ENTER_BR,
@@ -236,8 +239,7 @@ jQuery(function ($) {
                 showAutoCompleteButton: false
             },
             //browserspecific?
-            autoGrow_onStartup: true,
-
+            autoGrow_onStartup: setAutogrow(this),
             // configure toolbar
             toolbarGroups: [
                 {name: 'basicstyles', groups: ['undo', 'basicstyles', 'cleanup']},
@@ -473,7 +475,14 @@ jQuery(function ($) {
             }
         });
     }
-
+    // Set autogrow browserspecific
+    function setAutogrow(editor) {
+        if (editor.CKEDITOR.env.edge) {
+            return false;
+        } else {
+            return true;
+        }
+    }
     // create an unused id
     function createNewId(prefix) {
         var i = 0;
