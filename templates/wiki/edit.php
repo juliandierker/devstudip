@@ -9,6 +9,7 @@
         <input type="hidden" name="cmd" value="show">
 
         <br>
+        <!-- removePlugins=studip-upload -->
         <textarea name="body" class="wiki-editor add_toolbar wysiwyg resizable size-l"
             data-editor="extraPlugins=studip-wiki"
         ><?= wysiwygReady($body) ?></textarea>

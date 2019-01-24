@@ -1,0 +1,536 @@
+Looking for git in: git
+Using git 2.7.4 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/juliandierker/stud-dev/trunk/trunk
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/JulianDierker/BookingPlugin.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/LernMarktplatz.class.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/luniki/ArgonautsPlugin/ArgonautsPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/luniki/ArgonautsPlugin/
+> git show :public/plugins_packages/JulianDierker/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/plugins_packages/luniki/ArgonautsPlugin/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/luniki/ArgonautsPlugin/
+> git show :public/plugins_packages/JulianDierker/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/plugins_packages/JulianDierker/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/LernMarktplatz.class.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/JulianDierker/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/LernMarktplatz.class.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/LernMarktplatz.class.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/JulianDierker/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/JulianDierker/BookingPlugin/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/BookingPlugin/
+> git show :public/plugins_packages/JulianDierker/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/plugins_packages/JulianDierker/BookingPlugin/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/BookingPlugin/
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/assets/cc-by-sa.svg
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/assets/
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/tmp_efd3a3882c0fae4b8b85e9ea0182d37c/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/tmp_efd3a3882c0fae4b8b85e9ea0182d37c/
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/LernMarktplatz.class.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/migrations/01_init_plugin.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/migrations/
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/controllers/oai.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/controllers/
+> git show :public/plugins_packages/tmp_48149a6a4de27f8917943c80fec58d35/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/tmp_48149a6a4de27f8917943c80fec58d35/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/LernMarktplatz.class.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/tmp_48149a6a4de27f8917943c80fec58d35/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/tmp_48149a6a4de27f8917943c80fec58d35/
+> git check-ignore -z --stdin
+> git show :public/plugins_packages/JulianDierker/BookingPlugin/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/BookingPlugin/
+> git show :public/plugins_packages/RasmusFuhse/LernMarktplatz/LernMarktplatz.class.php
+> git ls-files --stage -- public/plugins_packages/RasmusFuhse/LernMarktplatz/
+> git show :public/plugins_packages/JulianDierker/BookingPlugin/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/BookingPlugin/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/plugins_packages/JulianDierker/BookingPlugin/plugin.manifest
+> git ls-files --stage -- public/plugins_packages/JulianDierker/BookingPlugin/
+> git show :public/plugins_packages/JulianDierker/BookingPlugin/BookingPlugin.class.php
+> git ls-files --stage -- public/plugins_packages/JulianDierker/BookingPlugin/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :app/controllers/admin/user.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :app/views/admin/user/activities.php
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git show :app/views/admin/user/edit_institute.php
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git show :app/views/admin/user/edit.php
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git show :app/views/admin/user/edit.php
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :app/views/admin/user/activities.php
+> git show :app/controllers/admin/user.php
+> git check-ignore -z --stdin
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git status -z -u
+> git show :app/views/admin/user/activities.php
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :lib/bootstrap.php
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/
+> git show :lib/bootstrap.php
+> git show :app/views/admin/user/checkRights.php
+> git ls-files --stage -- app/views/admin/user/

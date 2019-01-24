@@ -105,6 +105,7 @@ jQuery(function ($) {
 
         // replace textarea with editor
         CKEDITOR.replace(textarea[0], {
+            test: console.log(this.CKEDITOR),
             allowedContent: {
                 // NOTE update the dev docs when changing ACF settings!!
                 // at http://docs.studip.de/develop/Entwickler/Wysiwyg
@@ -216,7 +217,10 @@ jQuery(function ($) {
             width: textareaWidth,
             skin: 'studip,' + STUDIP.ASSETS_URL + 'stylesheets/ckeditor-skin/',
             // NOTE codemirror crashes when not explicitely loaded in CKEditor 4.4.7
-            extraPlugins: 'codemirror,confighelper,magicline,studip-floatbar,studip-quote,studip-upload,studip-settings,emojione'
+            uploadUrl: STUDIP.URLHelper.getURL('dispatch.php/wysiwyg/upload'),
+            filebrowserUploadUrl: STUDIP.URLHelper.getURL('dispatch.php/wysiwyg/upload'),
+
+            extraPlugins: 'codemirror,confighelper, magicline,studip-floatbar,studip-quote, studip-settings, studip-wiki, pastefromword, studip-upload,emojione'
                 + (extraPlugins ? ',' + extraPlugins : ''),
             removePlugins: removePlugins ? removePlugins : '',
             enterMode: CKEDITOR.ENTER_BR,
@@ -231,20 +235,21 @@ jQuery(function ($) {
                 showUncommentButton: false,
                 showAutoCompleteButton: false
             },
+            //browserspecific?
             autoGrow_onStartup: true,
 
             // configure toolbar
             toolbarGroups: [
                 {name: 'basicstyles', groups: ['undo', 'basicstyles', 'cleanup']},
                 {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'quote']},
+                {name: 'clipboard', groups: ['PasteFromWord', '-', 'Undo', 'Redo']},
                 '/',
-                {name: 'styles', groups: ['styles', 'colors', 'tools', 'links', 'insert']},
+                {name: 'styles', groups: ['styles', 'colors', 'tools', 'links', 'insert', 'PasteFromWord', 'PasteFromExcel']},
                 {name: 'others', groups: ['mode', 'settings']}
             ],
             removeButtons: 'Font,FontSize',
             toolbarCanCollapse: true,
             toolbarStartupExpanded: textarea.width() > 420,
-
             // configure dialogs
             dialog_buttonsOrder: 'ltr',
             removeDialogTabs: 'image:Link;image:advanced;'
@@ -378,9 +383,9 @@ jQuery(function ($) {
         });
 
         CKEDITOR.on('instanceReady', function (event) {
+            
             var editor = event.editor,
-                $textarea = $(editor.element.$);
-
+                $textarea = $(editor.element.$); 
             // auto-resize editor area in source view mode, and keep focus!
             editor.on('mode', function (event) {
                 var editor = event.editor;

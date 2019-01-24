@@ -1,0 +1,140 @@
+Index: app/views/admin/user/checkResourceRights.php
+===================================================================
+--- app/views/admin/user/checkResourceRights.php	(nonexistent)
++++ app/views/admin/user/checkResourceRights.php	(working copy)
+@@ -0,0 +1,64 @@
++<? $resources = get_object_vars($userRooms) ?>
++<? if (sizeof($resources) > 0) : ?>
++    <table class="collapsable default">
++        <thead> 
++            <caption>
++            </caption>
++            <colgroup>
++                <col style="width: 70%">
++                <col style="width: 15%">
++                <col style="width: 15%">
++            </colgroup>
++        </thead> 
++        <tr>
++            <th><?= htmlReady("Resource") ?></th>
++            <th><?= htmlReady("Berechtigungsart") ?></th>
++            <th><?= htmlReady("Rechtezuweisung") ?></th> 
++        </tr> 
++        <tbody class = "collapsed"> 
++             
++            <? foreach ($resources as $key => $value): ?>
++                <tr class="table_header header-row">
++                    <th class="toggle-indicator">               
++                        <a class="toggler"><b><?= htmlReady($key) ?></b></a>
++                    </th>
++                    <th></th>
++                    <th></th>
++                </tr>       
++                <? foreach ($value as $targetRoom): ?>
++                    <tr> 
++                        <td ><?= ($targetRoom[3]) ?></td>
++                            <? if (!$targetRoom[1]) : ?>
++                                    <td><?= htmlReady("keine") ?> </td>
++                                <? else: ?>
++                                    <td><?= htmlReady($targetRoom[1]) ?> </td>
++                                <? endif ?>
++                            <? if ($targetRoom[1]) : ?>
++                                <td> <?= htmlReady("direkt") ?> </td>
++                            <? else: ?>
++                                <td><?= htmlReady("indirekt") ?> </td>
++                            <? endif ?>                          
++                    </tr>
++                <? endforeach ?>  
++        </tbody>
++            <?endforeach?>
++    </table>
++    <? else: ?>
++        <?=PageLayout::postMessage(MessageBox::info(_('Für diesen Nutzer wurden noch keine Resourcenrechte vergeben'))) ?>
++<? endif ?>
++
++<script> 
++    $('#rights_filter').ready(function($) {
++        $('#rights_filter').change(function() {
++            var direct = $('.direct');
++            var indirect = $('.indirect');
++            if ($('#rights_filter').prop('checked') == true) {
++                indirect.hide();
++                console.log("test");
++            }
++            else {
++                indirect.show();
++            }
++        });
++    });
++</script>
+\ No newline at end of file
+Index: app/controllers/admin/user.php
+===================================================================
+--- app/controllers/admin/user.php	(revision 48989)
++++ app/controllers/admin/user.php	(working copy)
+@@ -17,6 +17,7 @@
+  */
+ require_once 'vendor/email_message/blackhole_message.php';
+ require_once 'lib/statusgruppe.inc.php';
++require_once 'lib/resources/views/EditResourceData.class.php';
+ 
+ /**
+  *
+@@ -1269,6 +1270,46 @@
+             $this->sections['priorities'] = $priorities;
+         }
+     }
++    /**
++     * Checking all ressources a person has access to 
++     */
++    public function checkResourceRights_action($user_id = null)
++    {
++        if ($user_id) {
++            $userRooms = new stdClass();
++            $this->user  = User::find($user_id);
++            $resources = new ResourcesUserRoomsList($user_id, true, true, false);
++            $rooms = $resources->getRooms();
++            foreach ($rooms as $key => $value) {
++                $permsSelector = new EditResourceData($value->id);
++                $selectPerms = $permsSelector->selectPerms();
++                if (sizeof($selectPerms) > 0 ) {
++                    foreach ($selectPerms as $secKey => $target) {
++                        if ($secKey == $user_id) {
++                            $hasPerm = $target;
++                            break;
++                        } else {
++                            $hasPerm = false;
++                        }
++                    }
++                }
++                $link = $value->getFormattedLink(true, true, true, 'edit_object_perms', 'no_nav', false, false);
++                $ownerPerm = $value->getOwnerId() == $user_id;
++                $rights = $this->user->perms;
++                $parent = ResourceObject::Factory($rooms[$key]->getParentId());
++                if ($parent->id) {
++                    $tmp = [];
++                    $userRooms->{$parent->name}[] = [$rooms[$key]->name, $hasPerm, $rights, $link];
++                }
++            }
++            $this->userRooms = $userRooms;
++        } else {
++            PageLayout::postInfo(_('Sie haben niemanden ausgewählt!'));
++                //rerender list
++                $this->redirect('admin/user/');
++                return;
++        }
++    }
+ 
+     /**
+      * List files for course or institute
+@@ -1617,6 +1658,10 @@
+         $views->addLink(_('Person verwalten'),
+             $this->url_for('admin/user/edit/' . $this->user->user_id)
+         )->setActive($this->action == 'edit');
++        $views->addLink(
++            _('Resourcenrechte einsehen'),
++            $this->url_for('admin/user/checkResourceRights/' . $this->user->user_id)
++        )->setActive($this->action == 'checkResourceRights');
+         $views->addLink(_('Zum Profil'),
+             URLHelper::getLink('dispatch.php/profile?username=' . $this->user->username),
+             Icon::create('person')

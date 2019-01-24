@@ -1,0 +1,35 @@
+[Info  - 11:14:40 AM] Using tsserver from: /usr/share/code/resources/app/extensions/node_modules/typescript/lib
+[Info  - 11:14:40 AM] Forking TSServer
+[Info  - 11:14:40 AM] Started TSServer
+[Error  - 12:34:11 PM] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isLabeledStatement'.
+Error: Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isLabeledStatement'.
+    at Object.cast (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:1302:22)
+    at doChange (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:109368:39)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:109360:96
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:105390:17)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:109360:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:106348:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:499:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:106348:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115073:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:499:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:115071:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:122897:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:121753:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:123057:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:123048:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:123057:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:123077:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:124340:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)

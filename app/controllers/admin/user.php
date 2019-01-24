@@ -17,6 +17,7 @@
  */
 require_once 'vendor/email_message/blackhole_message.php';
 require_once 'lib/statusgruppe.inc.php';
+require_once 'lib/resources/views/EditResourceData.class.php';
 
 /**
  *
@@ -1269,6 +1270,46 @@ class Admin_UserController extends AuthenticatedController
             $this->sections['priorities'] = $priorities;
         }
     }
+    /**
+     * Checking all ressources a person has access to 
+     */
+    public function checkResourceRights_action($user_id = null)
+    {
+        if ($user_id) {
+            $userRooms = new stdClass();
+            $this->user  = User::find($user_id);
+            $resources = new ResourcesUserRoomsList($user_id, true, true, false);
+            $rooms = $resources->getRooms();
+            foreach ($rooms as $key => $value) {
+                $permsSelector = new EditResourceData($value->id);
+                $selectPerms = $permsSelector->selectPerms();
+                if (sizeof($selectPerms) > 0 ) {
+                    foreach ($selectPerms as $secKey => $target) {
+                        if ($secKey == $user_id) {
+                            $hasPerm = $target;
+                            break;
+                        } else {
+                            $hasPerm = false;
+                        }
+                    }
+                }
+                $link = $value->getFormattedLink(true, true, true, 'edit_object_perms', 'no_nav', false, false);
+                $ownerPerm = $value->getOwnerId() == $user_id;
+                $rights = $this->user->perms;
+                $parent = ResourceObject::Factory($rooms[$key]->getParentId());
+                if ($parent->id) {
+                    $tmp = [];
+                    $userRooms->{$parent->name}[] = [$rooms[$key]->name, $hasPerm, $rights, $link];
+                }
+            }
+            $this->userRooms = $userRooms;
+        } else {
+            PageLayout::postInfo(_('Sie haben niemanden ausgewählt!'));
+                //rerender list
+                $this->redirect('admin/user/');
+                return;
+        }
+    }
 
     /**
      * List files for course or institute
@@ -1617,6 +1658,10 @@ class Admin_UserController extends AuthenticatedController
         $views->addLink(_('Person verwalten'),
             $this->url_for('admin/user/edit/' . $this->user->user_id)
         )->setActive($this->action == 'edit');
+        $views->addLink(
+            _('Resourcenrechte einsehen'),
+            $this->url_for('admin/user/checkResourceRights/' . $this->user->user_id)
+        )->setActive($this->action == 'checkResourceRights');
         $views->addLink(_('Zum Profil'),
             URLHelper::getLink('dispatch.php/profile?username=' . $this->user->username),
             Icon::create('person')

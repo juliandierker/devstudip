@@ -1,0 +1,16 @@
+[2018-12-18 11:58:11.700] [exthost] [info] extension host started
+[2018-12-18 11:58:11.719] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:11.720] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2018-12-18 11:58:11.725] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:11.725] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2018-12-18 11:58:11.747] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:11.747] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2018-12-18 11:58:11.903] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:11.903] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2018-12-18 11:58:11.917] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:11.918] [exthost] [info] ExtensionService#loadCommonJSModule /home/juliandierker/.vscode/extensions/esbenp.prettier-vscode-1.7.2/out/src/extension
+[2018-12-18 11:58:12.172] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:12.172] [exthost] [info] ExtensionService#loadCommonJSModule /home/juliandierker/.vscode/extensions/hookyqr.beautify-1.4.7/extension
+[2018-12-18 11:58:12.258] [exthost] [info] eager extensions activated
+[2018-12-18 12:12:35.958] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-12-18 12:12:35.959] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/php-language-features/dist/phpMain

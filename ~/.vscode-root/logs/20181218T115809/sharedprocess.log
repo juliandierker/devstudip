@@ -1,0 +1,62 @@
+[2018-12-18 11:58:13.037] [sharedprocess] [info] main {"machineId":"58628321f52802b2e9ac63dc3013759fd0dd2b61222d2d830ef57cb6dd5f2766"}
+[2018-12-18 11:58:13.107] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 11:58:13.124] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 11:58:13.125] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 11:58:13.136] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 11:58:13.194] [sharedprocess] [info] Scanned system extensions: 71
+[2018-12-18 11:58:13.197] [sharedprocess] [info] Scanned system extensions: 71
+[2018-12-18 11:58:13.199] [sharedprocess] [info] Scanned system extensions: 71
+[2018-12-18 11:58:14.768] [sharedprocess] [info] Installing extension: prettier-vscode
+[2018-12-18 11:58:14.775] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 11:58:16.077] [sharedprocess] [info] Downloaded extension: prettier-vscode /tmp/aae3be36-cc68-49b3-b0e7-b53c5d5101fe
+[2018-12-18 11:58:22.705] [sharedprocess] [info] Extracted extension to /home/juliandierker/.vscode/extensions/.esbenp.prettier-vscode-1.7.3: esbenp.prettier-vscode-1.7.3
+[2018-12-18 11:58:22.706] [sharedprocess] [info] Renamed to /home/juliandierker/.vscode/extensions/esbenp.prettier-vscode-1.7.3
+[2018-12-18 11:58:22.706] [sharedprocess] [info] Installation completed. esbenp.prettier-vscode-1.7.3
+[2018-12-18 11:58:22.729] [sharedprocess] [info] Extensions installed successfully: esbenp.prettier-vscode
+[2018-12-18 11:58:53.042] [sharedprocess] [info] Starting to clean up unused language packs.
+[2018-12-18 12:03:13.163] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:08:13.181] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:13:13.193] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:18:13.203] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:23:13.216] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:28:13.228] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:33:13.243] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:38:13.257] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:43:13.266] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:48:13.276] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:53:13.288] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 12:58:13.374] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:03:13.384] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:08:13.399] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:13:13.414] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:18:13.426] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:23:13.439] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:28:13.460] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:33:13.474] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:38:13.483] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:43:13.496] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:48:13.513] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:53:13.529] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 13:58:13.601] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:03:13.613] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:08:13.623] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:13:13.635] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:18:13.647] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:23:13.659] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:28:13.672] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:33:13.686] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:38:13.700] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:43:13.712] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:48:13.725] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:53:13.738] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 14:58:13.809] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:03:13.820] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:08:13.832] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:13:13.844] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:18:13.852] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:23:13.859] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:28:13.871] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:33:13.886] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:38:13.896] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:43:13.909] [sharedprocess] [info] Scanned user extensions: 3
+[2018-12-18 15:48:13.920] [sharedprocess] [info] Scanned user extensions: 3

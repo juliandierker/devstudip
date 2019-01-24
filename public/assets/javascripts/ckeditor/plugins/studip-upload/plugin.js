@@ -54,12 +54,12 @@ CKEDITOR.plugins.add('studip-upload', {
                     byteString = encodeURI(dataURI.split(',')[1]);
                 }
                 // separate out the mime component
-                
+                console.log(byteString);
                 mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
                 // write the bytes of the string to a typed array
                 ia = new Uint8Array(byteString.length);
                 for (var i = 0; i < byteString.length; i++) {
-                ia[i] = byteString.charCodeAt(i);
+                    ia[i] = byteString.charCodeAt(i);
                 }
                 if (mimeString == "image/png" || mimeString == "image/jpeg") {
                     return new Blob([ia], {type:mimeString});
@@ -175,9 +175,27 @@ CKEDITOR.plugins.add('studip-upload', {
 
         // editor paste event - to handle copy paste files in wysywig
         editor.on( 'paste', function( event ) {
-            // Check for multiple uploads
-
+            
+            if ( event.data.dataValue ) {
+                str = event.data.dataValue;
+                re = /<img\s[^>]*?src\s*=\s*['\"]([^'\"]*?)['\"][^>]*?>/g;
+                img_filter = (str.match(re));
+                
+                if (img_filter) {
+                    for (i = 0; i < img_filter.length; i++) {
+                        replacerStr = img_filter[i];
+                        if (converterDataURItoBlob(img_filter[i])){
+                            blob = converterDataURItoBlob(img_filter[i]);
+                            formDataToUpload = new FormData();
+                            formDataToUpload.append("files[]", blob);
+                            uploadFromBase64(editor.config.studipUpload_url, formDataToUpload, event, replacerStr);
+                        }
+                    }
+                }  
+            }
+            else {
                 if (event.data.dataTransfer._.files.length > 0) {
+                    console.log("entered dataTrans");
                     for (i = 0; i < event.data.dataTransfer._.files.length; i++) {
                         reader = new FileReader();
                         reader.readAsDataURL(event.data.dataTransfer._.files[i]);
@@ -190,28 +208,9 @@ CKEDITOR.plugins.add('studip-upload', {
                             editor.insertHtml(event.data.dataValue);
                         }
                     }
-                    
-                }
-                else if ( event.data.dataValue ) {
-
-                    str = event.data.dataValue;
-                    re = /<img\s[^>]*?src\s*=\s*['\"]([^'\"]*?)['\"][^>]*?>/g;
-                    img_filter = (str.match(re));
-                    
-                    if (img_filter) {
-                        for (i = 0; i < img_filter.length; i++) {
-                            replacerStr = img_filter[i];
-                            console.log(replacerStr);
-                            if (converterDataURItoBlob(img_filter[i])){
-                                blob = converterDataURItoBlob(img_filter[i]);
-                                formDataToUpload = new FormData();
-                                formDataToUpload.append("files[]", blob);
-                                uploadFromBase64(editor.config.studipUpload_url, formDataToUpload, event, replacerStr);
-                            }
-                        }
-                    }  
                 } 
+            }
+ 
         }); 
-        
     }
 });

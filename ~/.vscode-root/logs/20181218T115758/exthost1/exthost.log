@@ -1,0 +1,14 @@
+[2018-12-18 11:58:00.556] [exthost] [info] extension host started
+[2018-12-18 11:58:00.573] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:00.573] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2018-12-18 11:58:00.577] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:00.577] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2018-12-18 11:58:00.593] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:00.593] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2018-12-18 11:58:00.717] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:00.717] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2018-12-18 11:58:00.722] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:00.722] [exthost] [info] ExtensionService#loadCommonJSModule /home/juliandierker/.vscode/extensions/esbenp.prettier-vscode-1.7.2/out/src/extension
+[2018-12-18 11:58:00.877] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2018-12-18 11:58:00.877] [exthost] [info] ExtensionService#loadCommonJSModule /home/juliandierker/.vscode/extensions/hookyqr.beautify-1.4.7/extension
+[2018-12-18 11:58:00.917] [exthost] [info] eager extensions activated

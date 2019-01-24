@@ -1,0 +1,39 @@
+Index: lib/resources/lib/ResourcesUserRoomsList.class.php
+===================================================================
+--- lib/resources/lib/ResourcesUserRoomsList.class.php	(revision 48989)
++++ lib/resources/lib/ResourcesUserRoomsList.class.php	(working copy)
+@@ -133,7 +133,7 @@
+         global $perm, $user;
+ 
+         //if perm is root or resources admin, load all rooms/objects
+-        if (($perm->have_perm ("root")) || ($this->global_perms == "admin")) { //hier muss auch admin rein!! {
++        if (($perm->have_perm ("root", $this->user_id)) || ($this->global_perms == "admin")) { //hier muss auch admin rein!! {
+             if ($this->only_rooms) {
+                 $query = "SELECT resource_id, resources_objects.name
+                           FROM resources_categories
+@@ -151,8 +151,8 @@
+                 $this->insertResource($row['resource_id'], $row['name']);
+             }
+         //if tutor, dozent or admin, load all the rooms of all his administrable objects
+-        } elseif  ($perm->have_perm ("tutor")) {
+-            $my_objects=search_administrable_objects();
++        } elseif  ($perm->have_perm ("tutor", $this->user_id)) {
++            $my_objects=search_administrable_objects('', $this->user_id);
+             $my_objects[$this->user_id]=TRUE;
+             $my_objects["all"]=TRUE;
+             if (is_array($my_objects) && count($my_objects)){
+Index: lib/resources/resourcesFunc.inc.php
+===================================================================
+--- lib/resources/resourcesFunc.inc.php	(revision 48989)
++++ lib/resources/resourcesFunc.inc.php	(working copy)
+@@ -218,8 +218,8 @@
+     if ($cache[$user_id]) {
+         return $cache[$user_id];
+     }
+-
+-    if ($perm->have_perm('root')) {
++    
++    if ($perm->have_perm('root', $user_id)) {
+         $res_perm = 'admin';
+     } else {
+         $query = "SELECT perms

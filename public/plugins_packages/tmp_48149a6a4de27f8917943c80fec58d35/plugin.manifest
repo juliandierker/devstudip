@@ -1,0 +1,6 @@
+pluginname=BookingPlugin
+pluginclassname=BookingPlugin
+version=0.1.0
+origin=JulianDierker
+studipMinVersion=4.0
+studipMaxVersion=4.2.99
