@@ -10,7 +10,7 @@
 
         <br>
         <!-- "extraPlugins=studip-wiki" -->
-        <textarea name="body" class="wiki-editor add_toolbar wysiwyg resizable size-l"
+        <textarea name="body" class="wiki-editor add_toolbar wysiwyg ssize-l"
             data-editor= "extraPlugins=studip-wiki"
         ><?= wysiwygReady($body) ?></textarea>
     </fieldset>

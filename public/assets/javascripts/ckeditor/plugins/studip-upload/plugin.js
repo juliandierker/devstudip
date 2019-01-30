@@ -64,6 +64,7 @@ CKEDITOR.plugins.add('studip-upload', {
 
                 }
             },
+            //Ajax-call for img-upload via copy paste
             uploadFromBase64 = function(studipUpload_url, formDataToUpload, event, replacerStr = null) {
                 $.ajax({
                     url: studipUpload_url,
@@ -150,7 +151,6 @@ CKEDITOR.plugins.add('studip-upload', {
 
         // avoid multiple uploads of the same file via drag and drop
         editor.on('beforeDestroy', function(event){
-           
             if ($.fn.fileupload) {
                 $('#' + inputId).fileupload('destroy');
             }
@@ -173,6 +173,7 @@ CKEDITOR.plugins.add('studip-upload', {
         // editor paste event - to handle copy paste files in wysywig
         editor.on( 'paste', function( event ) {
 
+        // notice: here are 2 cases because the different browsers have got different clipboard-copy behavior
             if ( event.data.dataValue ) {
                 str = event.data.dataValue;
                 re = /<img\s[^>]*?src\s*=\s*['\"]([^'\"]*?)['\"][^>]*?>/g;

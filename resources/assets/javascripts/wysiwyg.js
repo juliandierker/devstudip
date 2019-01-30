@@ -103,7 +103,7 @@ jQuery(function ($) {
             removePlugins = options.removePlugins;
             // hotFix for autogrow and Edge
             if (CKEDITOR.env.edge) {
-                removePlugins? removePlugins+=',autogrow' : removePlugins ='autogrow';
+                removePlugins? removePlugins+=',magicline' : removePlugins ='magicline';
             }
         }
 
@@ -223,7 +223,7 @@ jQuery(function ($) {
             uploadUrl: STUDIP.URLHelper.getURL('dispatch.php/wysiwyg/upload'),
             filebrowserUploadUrl: STUDIP.URLHelper.getURL('dispatch.php/wysiwyg/upload'),
 
-            extraPlugins: ' codemirror,confighelper, magicline,studip-floatbar,studip-quote, studip-settings, studip-wiki, pastefromword, studip-upload,emojione'
+            extraPlugins: ' codemirror,confighelper, magicline,studip-floatbar,studip-quote, studip-settings, studip-wiki, pastefromword, tableresize, studip-upload,emojione'
                 + (extraPlugins ? ',' + extraPlugins : ''),
             removePlugins: removePlugins ? removePlugins : '',
             enterMode: CKEDITOR.ENTER_BR,

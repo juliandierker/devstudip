@@ -1,0 +1,16 @@
+Index: templates/wiki/edit.php
+===================================================================
+--- templates/wiki/edit.php	(revision 48989)
++++ templates/wiki/edit.php	(working copy)
+@@ -9,8 +9,9 @@
+         <input type="hidden" name="cmd" value="show">
+ 
+         <br>
+-        <textarea name="body" class="wiki-editor add_toolbar wysiwyg resizable size-l"
+-            data-editor="extraPlugins=studip-wiki"
++        <!-- "extraPlugins=studip-wiki" -->
++        <textarea name="body" class="wiki-editor add_toolbar wysiwyg ssize-l"
++            data-editor= "extraPlugins=studip-wiki"
+         ><?= wysiwygReady($body) ?></textarea>
+     </fieldset>
+ 

@@ -165,3 +165,24 @@
     at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:3343:973
     at go$readdir$cb (/usr/share/code/resources/app/node_modules.asar/graceful-fs/graceful-fs.js:149:14)
     at FSReqWrap.oncomplete (original-fs.js:135:15)
+[2019-01-29 10:17:33.051] [renderer1] [info] no standard startup: not just one text editor
+[2019-01-29 14:39:01.065] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:207:248)
+    at e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:206:715)
+    at i.e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:942:187)
+    at i.e.isExpanded (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:942:250)
+    at t.revealMarkersForCurrentActiveEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4628:275)
+    at t.autoReveal (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4628:95)
+    at t.onActiveEditorChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4625:36)
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:183:486)
+    at t.doEmitActiveEditorChangeEvent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4638:433)
+    at t.handleActiveEditorChange (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4638:209)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4638:557
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:183:466)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5084:591
+    at n.Class.define.cancel.then (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:169:517)
+    at t.doShowEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5084:537)
+    at t.doOpenEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5084:409)
+    at t.openEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5083:976)
+    at r (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4563:199)
+    at HTMLDivElement.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4563:394)
