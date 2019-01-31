@@ -114,6 +114,7 @@ CKEDITOR.plugins.add('studip-upload', {
         // TODO integrate jQuery File Upload plugin into studip-upload
         var inputId = 'fileupload';
         editor.on('instanceReady', function(event){
+            console.log("instance rdy");
             var $container = $(event.editor.container.$);
             
             // install upload handler
@@ -170,9 +171,13 @@ CKEDITOR.plugins.add('studip-upload', {
             toolbar: 'insert,80'
         });
 
+        // $(document).ready(function() {
+        //     $(document).bind('copy paste', function(e) {
+        //         e.preventDefault();
+        //     });
+        // });
         // editor paste event - to handle copy paste files in wysywig
         editor.on( 'paste', function( event ) {
-
         // notice: here are 2 cases because the different browsers have got different clipboard-copy behavior
             if ( event.data.dataValue ) {
                 str = event.data.dataValue;
@@ -189,7 +194,7 @@ CKEDITOR.plugins.add('studip-upload', {
                             uploadFromBase64(editor.config.studipUpload_url, formDataToUpload, event, replacerStr);
                         }
                     }
-                }  
+                } 
             }
             else {
                 if (event.data.dataTransfer._.files.length > 0) {
@@ -202,7 +207,6 @@ CKEDITOR.plugins.add('studip-upload', {
                             formDataToUpload = new FormData();
                             formDataToUpload.append("files[]", blob);
                             uploadFromBase64(editor.config.studipUpload_url, formDataToUpload, event);
-                            editor.insertHtml(event.data.dataValue);
                         }
                     }
                 } 

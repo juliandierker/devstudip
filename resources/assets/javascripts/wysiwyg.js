@@ -18,6 +18,11 @@
  */
 
 jQuery(function ($) {
+    // $(document).ready(function() {
+    //     $(document).bind('copy paste', function(e) {
+    //         e.preventDefault();
+    //     });
+    // });
     STUDIP.wysiwyg = {
         disabled: !STUDIP.editor_enabled,
         // NOTE keep this function in sync with Markup class
@@ -71,7 +76,13 @@ jQuery(function ($) {
             }
         });
     }
-
+    function pasteHandle() {
+            $(document).ready(function() {
+                $(document).bind('copy paste', function(e) {
+                    e.preventDefault();
+                });
+            });   
+        }
     function replaceTextarea(textarea) {
         // TODO support jQuery object with multiple textareas
         if (! (textarea instanceof jQuery)) {
@@ -101,12 +112,8 @@ jQuery(function ($) {
             options = STUDIP.parseOptions(options);
             extraPlugins = options.extraPlugins;
             removePlugins = options.removePlugins;
-            // hotFix for autogrow and Edge
-            if (CKEDITOR.env.edge) {
-                removePlugins? removePlugins+=',magicline' : removePlugins ='magicline';
-            }
         }
-
+        
         // replace textarea with editor
         CKEDITOR.replace(textarea[0], {
             allowedContent: {
@@ -238,8 +245,9 @@ jQuery(function ($) {
                 showUncommentButton: false,
                 showAutoCompleteButton: false
             },
+            pasteHandle: pasteHandle(),
             //browserspecific?
-            autoGrow_onStartup: setAutogrow(this),
+            autoGrow_onStartup: true,
             // configure toolbar
             toolbarGroups: [
                 {name: 'basicstyles', groups: ['undo', 'basicstyles', 'cleanup']},
@@ -474,14 +482,6 @@ jQuery(function ($) {
                 }
             }
         });
-    }
-    // Set autogrow browserspecific
-    function setAutogrow(editor) {
-        if (editor.CKEDITOR.env.edge) {
-            return false;
-        } else {
-            return true;
-        }
     }
     // create an unused id
     function createNewId(prefix) {
