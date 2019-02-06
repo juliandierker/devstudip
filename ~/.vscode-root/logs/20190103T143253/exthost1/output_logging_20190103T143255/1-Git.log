@@ -9922,3 +9922,592 @@ Open repository: /home/juliandierker/stud-dev/trunk/trunk
 > git for-each-ref --format %(refname) %(objectname) --sort -committerdate
 > git remote --verbose
 > git show :resources/assets/javascripts/wysiwyg.js
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git show :resources/assets/javascripts/wysiwyg.js
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git show :resources/assets/javascripts/wysiwyg.js
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/assets/javascripts/wysiwyg.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :composer/codeception/codeception/src/Codeception/Lib/Connector/Laravel5.php
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :~/.vscode-root/User/settings.json
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git show :public/assets/javascripts/ckeditor/build-config.js
+> git show :public/assets/javascripts/ckeditor/config.js
+> git show :public/assets/javascripts/ckeditor/build-config.js
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-upload/plugin.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :templates/wiki/edit.php
+> git show :templates/wiki/edit.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse pasteTwice
+> git rev-parse --symbolic-full-name pasteTwice@{u}
+fatal: no upstream configured for branch 'pasteTwice'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git status -z -u
+> git show :resources/assets/javascripts/wysiwyg.js
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git check-ignore -z --stdin
+> git show :~/.vscode-root/User/settings.json
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git show :composer/codeception/codeception/src/Codeception/Lib/Connector/Laravel5.php
+> git check-ignore -z --stdin
+> git show :public/assets/javascripts/ckeditor/plugins/studip-floatbar/plugin.js
+> git check-ignore -z --stdin
+> git show :templates/wiki/edit.php
+> git show :public/assets/javascripts/ckeditor/build-config.js
+> git show :public/assets/javascripts/ckeditor/config.js
+> git show :public/assets/javascripts/ckeditor/build-config.js
+> git show :public/assets/javascripts/ckeditor/config.js

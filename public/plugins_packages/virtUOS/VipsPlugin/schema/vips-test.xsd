@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:vips:test:v1.0" xmlns:ns1="urn:vips:test:v1.0">
+  <xs:element name="test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:title"/>
+        <xs:element minOccurs="0" name="description" type="xs:string"/>
+        <xs:element minOccurs="0" ref="ns1:notes"/>
+        <xs:element ref="ns1:exercises"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+      <xs:attribute name="type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="practice"/>
+            <xs:enumeration value="selftest"/>
+            <xs:enumeration value="exam"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="start" type="xs:dateTime"/>
+      <xs:attribute name="end" type="xs:dateTime"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="notes" type="xs:string"/>
+  <xs:element name="exercises">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ns1:exercise"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="exercise">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ns1:title"/>
+        <xs:element minOccurs="0" name="description" type="xs:string"/>
+        <xs:element minOccurs="0" ref="ns1:hint"/>
+        <xs:element minOccurs="0" ref="ns1:notes"/>
+        <xs:element ref="ns1:items"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+      <xs:attribute name="lang" type="xs:language"/>
+      <xs:attribute name="feedback" type="xs:boolean"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hint" type="xs:string"/>
+  <xs:element name="items">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ns1:item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="description">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="ns1:text"/>
+              <xs:element ref="ns1:answers"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" ref="ns1:choices"/>
+        <xs:element minOccurs="0" ref="ns1:answers"/>
+        <xs:element minOccurs="0" ref="ns1:external-link"/>
+        <xs:element minOccurs="0" ref="ns1:evaluation-hints"/>
+        <xs:element minOccurs="0" ref="ns1:feedback"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text" type="xs:string"/>
+  <xs:element name="answers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ns1:answer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="answer">
+    <xs:complexType mixed="true">
+      <xs:attribute name="score" use="required" type="xs:decimal"/>
+      <xs:attribute name="default" type="xs:boolean"/>
+      <xs:attribute name="correct" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="choices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ns1:choice"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="choice">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="external-link">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ns1:param"/>
+      </xs:sequence>
+      <xs:attribute name="uri" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="param">
+    <xs:complexType mixed="true">
+      <xs:attribute name="name" use="required" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="evaluation-hints">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="ns1:similarity"/>
+        <xs:element minOccurs="0" ref="ns1:input-data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="similarity">
+    <xs:complexType>
+      <xs:attribute name="type" use="required" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="input-data">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:token"/>
+      <xs:attribute name="name" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="feedback" type="xs:string"/>
+</xs:schema>

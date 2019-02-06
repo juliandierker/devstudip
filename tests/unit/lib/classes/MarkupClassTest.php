@@ -87,24 +87,6 @@ class MarkupTest extends PHPUnit_Framework_TestCase
         }
     }
 
-    public function testFoo()
-    {
-        $img = '<img src="data:image/png;base64,
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP
-        C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
-        AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
-        REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-        ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
-        vr4MkhoXe0rZigAAAABJRU5ErkJggg==" alt="Roter Punkt" />';
-        $GLOBALS['ABSOLUTE_URI_STUDIP'] = "http://localhost/studip/";
-        $this->assertEquals(
-            "Julian",
-            \Studip\Markup::purifyHtml(
-                \Studip\Markup::HTML_MARKER.
-                $img)
-        );
-    }
-
     public function testGetMediaUrl()
     {
         # mock class Config

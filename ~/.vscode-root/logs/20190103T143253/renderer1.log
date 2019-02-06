@@ -186,3 +186,16 @@
     at t.openEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5083:976)
     at r (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4563:199)
     at HTMLDivElement.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4563:394)
+[2019-02-06 11:19:03.743] [renderer1] [error] Model is disposed!: Error: Model is disposed!
+    at o._assertNotDisposed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1180:69)
+    at o.getLineCount (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1187:136)
+    at t.writeResultGroups (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:3864:559)
+    at t.update (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:3864:125)
+    at t.updateResultGroup (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:3854:174)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4119:322
+    at Object.g [as _notify] (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:162:971)
+    at Object.enter (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:166:277)
+    at n.Class.derive._creator._run (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:168:100)
+    at n.Class.derive._creator._completed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:167:559)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)

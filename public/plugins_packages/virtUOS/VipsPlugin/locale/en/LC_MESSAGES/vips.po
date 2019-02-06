@@ -1,0 +1,4136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Tobias <tobias.thelen@uni-osnabrueck.de>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-03 14:04+0100\n"
+"PO-Revision-Date: 2011-12-07 13:49+0200\n"
+"Last-Translator: Tobias Thelen <tobias.thelen@uni-osnabrueck.de>\n"
+"Language-Team: Fraunhofer IAIS\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0\n"
+
+#: VipsPlugin.php:74 controllers/pool.php:47 views/pool/index.php:3
+#: views/sheets/list_assignments.php:33
+msgid "Meine Aufgaben"
+msgstr "My tasks"
+
+#: VipsPlugin.php:77 views/pool/list_exercises.php:10
+#: views/solutions/student_assignment_solutions.php:20
+#: views/sheets/list_assignments_stud.php:55
+#: views/sheets/edit_assignment.php:147
+msgid "Aufgaben"
+msgstr "Tasks"
+
+#: VipsPlugin.php:80 VipsPlugin.php:128 VipsPlugin.php:209
+#: views/pool/list_tests.php:10 views/solutions/assignments_list.php:6
+#: views/solutions/assignments_list_student.php:6
+#: views/solutions/statistics.php:10 views/sheets/list_assignments.php:2
+msgid "Aufgabenblätter"
+msgstr "Worksheets"
+
+#: VipsPlugin.php:120
+msgid "Veranstaltung"
+msgstr "Course"
+
+#: VipsPlugin.php:132
+msgid "Logout"
+msgstr "Logout"
+
+#: VipsPlugin.php:176
+#, php-format
+msgid "%d unkorrigierte Lösung"
+msgid_plural "%d unkorrigierte Lösungen"
+msgstr[0] "%d uncorrected solution"
+msgstr[1] "%d uncorrected solutions"
+
+#: VipsPlugin.php:178
+#, php-format
+msgid "%d neues Aufgabenblatt"
+msgid_plural "%d neue Aufgabenblätter"
+msgstr[0] "%d new worksheet"
+msgstr[1] "%d new worksheets"
+
+#: VipsPlugin.php:212 views/solutions/participants_overview.php:4
+#: views/solutions/participants_overview.php:226
+#: views/solutions/assignments.php:2 views/solutions/assignments.php:24
+#: views/solutions/statistics.php:98
+msgid "Ergebnisse"
+msgstr "Results"
+
+#: VipsPlugin.php:215 views/groups/index.php:2 views/groups/index.php:37
+msgid "Übungsgruppen"
+msgstr "Groups"
+
+#: VipsPlugin.php:219
+msgid "Einstellungen"
+msgstr "Settings"
+
+#: controllers/sheets.php:82
+msgid "Die Lösungen wurden gelöscht."
+msgstr "The solutions have been deleted."
+
+#: controllers/sheets.php:84
+#, php-format
+msgid ""
+"Wollen Sie die Lösungen des Übungsblatts \"[nop]%s[/nop]\" wirklich löschen?"
+msgstr "Do you really want do delete the solutions to test \"%s\"?"
+
+#: controllers/sheets.php:136
+msgid "Das Aufgabenblatt wurde noch nicht gestartet."
+msgstr "The worksheet has not been started yet."
+
+#: controllers/sheets.php:143
+msgid "Das Aufgabenblatt wurde bereits beendet."
+msgstr "This worksheet already ended."
+
+#: controllers/sheets.php:150
+msgid ""
+"Ihre Zeit ist leider abgelaufen! Ihre Lösung wurde gespeichert und mit dem "
+"Abgabezeitpunkt versehen."
+msgstr "Time has expired! Your current solution has been saved."
+
+#: controllers/sheets.php:167
+#, php-format
+msgid "Die Aufgabe &bdquo;%s&ldquo; wurde abgegeben."
+msgstr "Task &bdquo;%s&ldquo; was submitted."
+
+#: controllers/sheets.php:209
+msgid "Das Aufgabenblatt kann zur Zeit nicht bearbeitet werden."
+msgstr "The worksheet cannot be edited right now."
+
+#: controllers/sheets.php:215
+msgid "Das Aufgabenblatt wurde vom Dozenten unterbrochen!"
+msgstr "This worksheet is not accessible at the moment!"
+
+#: controllers/sheets.php:222
+msgid "Kein Zugriff möglich!"
+msgstr "Access denied!"
+
+#: controllers/sheets.php:228
+msgid "Die Zeit ist leider abgelaufen!"
+msgstr "Time has expired!"
+
+#: controllers/sheets.php:500
+#, php-format
+msgid "Das Aufgabenblatt &bdquo;%s&ldquo; wurde gelöscht."
+msgstr "This worksheet &bdquo;%s&ldquo; has been deleted."
+
+#: controllers/sheets.php:502
+#, php-format
+msgid "Wollen Sie wirklich das Aufgabenblatt \"[nop]%s[/nop]\" löschen?"
+msgstr "Do you really want to delete worksheet \"%s\"?"
+
+#: controllers/sheets.php:531
+#, php-format
+msgid "Die Aufgabe &bdquo;%s&ldquo; wurde gelöscht."
+msgstr "The task &bdquo;%s&ldquo; has been deleted."
+
+#: controllers/sheets.php:533
+#, php-format
+msgid "Wollen Sie wirklich die Aufgabe \"[nop]%s[/nop]\" löschen?"
+msgstr "Do you really want to delete task \"%s\"?"
+
+#: controllers/sheets.php:847 views/exercises/show_exercise_link.php:3
+#, php-format
+msgid "Aufgabe %d"
+msgstr "Task %d"
+
+#: controllers/sheets.php:886
+msgid "Die Aufgabe wurde eingetragen."
+msgstr "The Task has been saved."
+
+#: controllers/sheets.php:906
+msgid "Die Aufgabe wurde kopiert."
+msgid_plural "Die Aufgaben wurden kopiert."
+msgstr[0] "The task was copied."
+msgstr[1] "The tasks were copied."
+
+#: controllers/sheets.php:994 controllers/sheets.php:1539
+#: lib/VipsAssignment.php:74 views/pool/list_exercises.php:60
+#: views/exercises/show_exercise.php:146 views/sheets/pick_exercise.php:9
+msgid "Aufgabenblatt"
+msgstr "Worksheet"
+
+#: controllers/sheets.php:1004
+msgid "Ungültiger Startzeitpunkt, der Wert wurde nicht übernommen."
+msgstr "Invalid starting time, reset to current time."
+
+#: controllers/sheets.php:1014
+msgid "Ungültiger Endzeitpunkt, der Wert wurde nicht übernommen."
+msgstr "Invalid ending time, reset to current time."
+
+#: controllers/sheets.php:1019
+msgid "Bitte überprüfen Sie den Start- und den Endzeitpunkt!"
+msgstr "Please check the starting and ending points!"
+
+#: controllers/sheets.php:1133
+msgid "Das Aufgabenblatt wurde gespeichert."
+msgstr "The worksheet has been saved."
+
+#: controllers/sheets.php:1255
+msgid "Sie müssen ein Aufgabenblatt zum Kopieren auswählen."
+msgstr "You have to select a worksheet to copy."
+
+#: controllers/sheets.php:1276
+#, php-format
+msgid "Kopie von %s"
+msgstr "Copy of %s"
+
+#: controllers/sheets.php:1370
+msgid "Das Aufgabenblatt wurde kopiert."
+msgstr "The worksheet has been copied."
+
+#: controllers/sheets.php:1392
+msgid "Sie müssen eine Datei zum Importieren auswählen."
+msgstr "You have to select a file to import."
+
+#: controllers/sheets.php:1394
+msgid "Es trat ein Fehler beim Hochladen der Datei auf."
+msgstr "Upload error."
+
+#: controllers/sheets.php:1405 controllers/sheets.php:1506
+#, php-format
+msgid "Das Aufgabenblatt &bdquo;%s&ldquo; mit %d Aufgabe wurde hinzugefügt."
+msgid_plural ""
+"Das Aufgabenblatt &bdquo;%s&ldquo; mit %d Aufgaben wurde hinzugefügt."
+msgstr[0] "Worksheet %s was added with %d task."
+msgstr[1] "Worksheet %s was added with %d tasks."
+
+#: controllers/sheets.php:1618
+msgid "Noch nicht gestartete Aufgabenblätter"
+msgstr "Future worksheets"
+
+#: controllers/sheets.php:1625
+msgid "Laufende Aufgabenblätter"
+msgstr "Currently active worksheets"
+
+#: controllers/sheets.php:1632
+msgid "Beendete Aufgabenblätter"
+msgstr "Finished worksheets"
+
+#: controllers/groups.php:177
+msgid ""
+"Eine Gruppe dieses Namens gibt es schon. Bitte wählen Sie einen anderen "
+"Namen."
+msgstr "A group with this name already exists, choose a different name."
+
+#: controllers/groups.php:194
+msgid "Die Gruppe wurde angelegt."
+msgstr "The group was added."
+
+#: controllers/groups.php:228
+#, php-format
+msgid "Die Gruppe &bdquo;%s&ldquo; wurde gelöscht."
+msgstr "The group &bdquo;%s&ldquo; has been deleted."
+
+#: controllers/groups.php:231
+#, php-format
+msgid ""
+"Es befinden sich noch Teilnehmer in der Gruppe \"[nop]%s[/nop]\". Wollen Sie "
+"die Gruppe trotzdem löschen?"
+msgstr ""
+"There are still participants in the group \"%s\". Do you nevertheless want "
+"to delete the group?"
+
+#: controllers/groups.php:256
+msgid "Bitte wählen Sie einen oder mehrere Teilnehmer aus der Liste."
+msgstr "Please select one or more participants from the list."
+
+#: controllers/groups.php:290
+msgid "Sie befinden sich schon in dieser Gruppe."
+msgstr "You are already member of this group."
+
+#: controllers/groups.php:293
+msgid "Der Teilnehmer befindet sich schon in einer Gruppe."
+msgstr "Participant is already member of another group."
+
+#: controllers/groups.php:298
+msgid "Diese Gruppe ist bereits voll."
+msgstr "The group is already full."
+
+#: controllers/groups.php:309
+msgid "Der Teilnehmer wurde in die Gruppe eingetragen."
+msgstr "Participant has been added to the group."
+
+#: controllers/groups.php:332
+msgid "Bitte löschen Sie nur sich selbst aus einer Gruppe."
+msgstr "Please only remove yourself from the group."
+
+#: controllers/groups.php:338
+msgid "Der Teilnehmer wurde aus der Gruppe ausgetragen."
+msgstr "Participant has been removed from the group."
+
+#: controllers/exam_mode.php:22
+msgid "Klausurübersicht"
+msgstr "List of active exams"
+
+#: controllers/export.php:153
+msgid "Zugriff nur für Dozenten erlaubt."
+msgstr "Access for teachers only."
+
+#: controllers/export.php:225 controllers/export.php:229
+msgid "(keine Matrikelnummer)"
+msgstr "(no student registration number)"
+
+#: controllers/wiki.php:110 controllers/wiki.php:164
+msgid "Zugriff verweigert!"
+msgstr "Access denied!"
+
+#: controllers/wiki.php:122 controllers/wiki.php:176
+msgid "Keine Aufgabe gefunden!"
+msgstr "No tasks found!"
+
+#: controllers/solutions.php:345
+#, php-format
+msgid "Es wurde %d Lösung korrigiert."
+msgid_plural "Es wurden %d Lösungen korrigiert."
+msgstr[0] "%d solution was graded."
+msgstr[1] "%d solutions were graded."
+
+#: controllers/solutions.php:381
+msgid ""
+"Die Korrekturen dürfen erst nach Ablaufen des Aufgabenblatts betrachtet "
+"werden"
+msgstr "The grades cannot be viewed before the worksheet ends."
+
+#: controllers/solutions.php:424
+#, php-format
+msgid "Keine abgegebene Lösung für Aufgabe %d gefunden."
+msgstr "There is no solution for task %d."
+
+#: controllers/solutions.php:426
+#, php-format
+msgid "Für Aufgabe %d liegt noch keine Korrektur vor."
+msgstr "Task %d has not yet been graded."
+
+#: controllers/solutions.php:608
+msgid "Die kommentierte Lösung wurde gespeichert."
+msgstr "The commented solution has been saved."
+
+#: controllers/solutions.php:617
+msgid "Die kommentierte Lösung wurde gelöscht."
+msgstr "The commented solution has been deleted."
+
+#: controllers/solutions.php:674
+msgid "Ihre Korrektur wurde gespeichert."
+msgstr "Your grade was saved."
+
+#: controllers/solutions.php:677
+#, php-format
+msgid "Sie haben Bonuspunkte vergeben (%s von %s)."
+msgstr "You assigned %d bonus points."
+
+#: controllers/solutions.php:679
+#, php-format
+msgid "Sie haben eine negative Punktzahl eingegeben (%s von %s)."
+msgstr "You entered a negative amount of points (%s of %s)."
+
+#: controllers/solutions.php:714
+msgid "Die Korrekturen wurden noch nicht freigegeben."
+msgstr "No task was graded or the grades have not been published."
+
+#: controllers/solutions.php:949
+msgid "Statistik.csv"
+msgstr "statistics.csv"
+
+#: controllers/admin.php:78
+msgid ""
+"Die Gewichtungen müssen in der Summe 100 oder 0 (keine Gewichtung) ergeben. "
+"Die Daten wurden nicht übernommen!"
+msgstr ""
+
+#: controllers/admin.php:80
+msgid ""
+"Die Prozentwerte zum Bestehen müssen kleiner oder gleich 100 sein. Die Daten "
+"wurden nicht übernommen!"
+msgstr ""
+
+#: controllers/admin.php:153
+msgid "Die Notenwerte müssen zwischen 0 und 100 liegen!"
+msgstr ""
+
+#: controllers/admin.php:156
+#, php-format
+msgid "Die Notenwerte müssen monoton absteigen (%s > %s)!"
+msgstr ""
+
+#: controllers/admin.php:173
+msgid "Die Notenwerte wurden eingetragen."
+msgstr ""
+
+#: controllers/pool.php:76
+msgid "Titel der Aufgabe"
+msgstr "Search title"
+
+#: controllers/pool.php:100 views/pool/tests.php:3
+msgid "Meine Aufgabenblätter"
+msgstr "My worksheets"
+
+#: controllers/pool.php:128
+msgid "Titel des Aufgabenblatts"
+msgstr "Search title"
+
+#: controllers/pool.php:292
+# php-format
+msgid "Es wurden %s Aufgabenblätter gelöscht."
+msgstr "%s worksheets have been deleted."
+
+#: controllers/pool.php:316
+#, php-format
+msgid "Es wurden %s Aufgaben gelöscht."
+msgstr "%d tasks have been deleted."
+
+#: exercises/sc_exercise.php:14
+msgid "Single Choice"
+msgstr "Single Choice"
+
+#: exercises/tb_exercise.php:14
+msgid "Text Box"
+msgstr "Text Box"
+
+#: exercises/tb_exercise.php:132
+msgid "Fehler beim Hochladen der Datei."
+msgstr "Upload error."
+
+#: exercises/tb_exercise.php:134
+msgid "Die hochgeladene Datei ist leer."
+msgstr "The uploaded file is empty."
+
+#: exercises/tb_exercise.php:136
+msgid "Die hochgeladene Datei ist zu groß."
+msgstr "The uploaded file is too big."
+
+#: exercises/tb_exercise.php:216
+msgid "ZIP-Archiv konnte nicht erzeugt werden."
+msgstr "Cannot create ZIP archive."
+
+#: exercises/Exercise.php:507
+msgid "Unbekannter Aufgabentyp: "
+msgstr "Unknown task type: "
+
+#: exercises/rh_exercise.php:16
+msgid "Zuordnung"
+msgstr "Assignment"
+
+#: exercises/mc_exercise.php:14
+msgid "Multiple Choice"
+msgstr "Multiple Choice"
+
+#: exercises/me_exercise.php:16
+msgid "Mathematischer Ausdruck"
+msgstr "Algebra Question"
+
+#: exercises/me_exercise.php:285
+msgid "Die Musterlösung ist kein gültiger mathematischer Ausdruck."
+msgstr "The sample solution is not a valid algebra term."
+
+#: exercises/sco_exercise.php:14
+msgid "Single Choice mit Enthaltung"
+msgstr "Single Choice (optional answer)"
+
+#: exercises/mco_exercise.php:14
+msgid "Multiple Choice mit Enthaltung"
+msgstr "Multiple Choice (optional answer)"
+
+#: exercises/mco_exercise.php:33 exercises/yn_exercise.php:135
+msgid "Ja"
+msgstr "Yes"
+
+#: exercises/mco_exercise.php:34 exercises/yn_exercise.php:136
+msgid "Nein"
+msgstr "No"
+
+#: exercises/cloze_exercise.php:14 views/exercises/edit_cloze_exercise.php:2
+msgid "Lückentext"
+msgstr "Cloze Exercise"
+
+#: exercises/cloze_exercise.php:194
+#, php-format
+msgid ""
+"Achtung: Sie haben bei der %d. Lücke die Antwort &bdquo;%s&ldquo; mehrfach "
+"eingetragen."
+msgstr ""
+"Attention: In gap #%d, you have entered the same answer &bdquo;%s&ldquo; "
+"more than once."
+
+#: exercises/cloze_exercise.php:200
+msgid "Lücke hinzufügen"
+msgstr "Add gap"
+
+#: exercises/cloze_exercise.php:200
+msgid "Mehrere Lösungen mit | trennen"
+msgstr "Alternative answers separated by |"
+
+#: exercises/cloze_exercise.php:200
+msgid "Falsche Antworten mit * markieren"
+msgstr "Mark wrong answers with *"
+
+#: exercises/yn_exercise.php:14
+msgid "Ja/Nein-Frage"
+msgstr "Yes/No Question"
+
+#: exercises/lt_exercise.php:14
+msgid "Freie Antwort"
+msgstr "Text (single line)"
+
+#: exercises/pl_exercise.php:14
+msgid "Prolog"
+msgstr "Prolog"
+
+#: exercises/pl_exercise.php:173
+msgid "Es wurde keine Datei zum Hochladen ausgewählt."
+msgstr "You have to select a file to import."
+
+#: exercises/lti_exercise.php:12
+msgid "Externe Aufgabe (LTI-Tool)"
+msgstr "External task (LTI tool)"
+
+#: exercises/lti_exercise.php:150
+msgid ""
+"Diese Aufgabe wird aus einem externen System eingebunden und kann hier nicht "
+"angezeigt werden."
+msgstr "This task is linked to an external system and cannot be displayed here."
+
+#: lib/vips_common.inc.php:580
+msgid "Sie verfügen nicht über die notwendigen Rechte für diese Aktion."
+msgstr "You do not have the required permissions for this action."
+
+#: lib/vips_common.inc.php:601
+msgid "Sie haben keinen Zugriff auf diesen Block!"
+msgstr "You don't have access to this block!"
+
+#: lib/vips_common.inc.php:622
+msgid "Sie haben keinen Zugriff auf diese Gruppe!"
+msgstr "You don't have access to this group!"
+
+#: lib/vips_common.inc.php:643 lib/vips_common.inc.php:662
+msgid "Sie haben keinen Zugriff auf dieses Aufgabenblatt!"
+msgstr "You don't have access to this task!"
+
+#: lib/vips_common.inc.php:686 lib/vips_common.inc.php:708
+msgid "Sie haben keinen Zugriff auf diese Aufgabe!"
+msgstr "You don't have access to this task!"
+
+#: lib/vips_common.inc.php:732
+msgid "Sie haben keinen Zugriff auf diese Lösung!"
+msgstr "You don't have access to this solution!"
+
+#: lib/CharacterPicker.php:60
+msgid "IPA-Zeichen"
+msgstr "IPA character"
+
+#: lib/CharacterPicker.php:64
+msgid "ungerundeter offener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:65
+msgid "ungerundeter offener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:66
+msgid "ungerundeter fast offener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:67
+msgid "fast offener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:68
+msgid "ungerundeter offener Hinterzungennasalvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:73
+msgid "stimmhafter bilabialer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:74
+msgid "stimmhafter bilabialer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:75
+msgid "stimmhafter bilabialer Implosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:76
+msgid "stimmhafter bilabialer Vibrant"
+msgstr ""
+
+#: lib/CharacterPicker.php:81
+msgid "stimmloser palataler Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:82
+msgid "stimmloser alveopalataler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:83
+msgid "stimmloser palataler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:88
+msgid "stimmhafter alveolarer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:89
+msgid "stimmhafter dentaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:90
+msgid "stimmhafte postalveolare Affrikate"
+msgstr ""
+
+#: lib/CharacterPicker.php:91
+msgid "stimmhafter retroflexer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:92
+msgid "stimmhafter dentaler Implosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:97
+msgid "ungerundeter halbgeschlossener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:98
+msgid "mittlerer Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:99
+msgid "rhotizierter mittlerer Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:100
+msgid "gerundeter halbgeschlossener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:101
+msgid "ungerundeter halbgeschlossener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:106
+msgid "ungerundeter halboffener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:107
+msgid "ungerundeter halboffener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:108
+msgid "rhotizierter ungerundeter halboffener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:109
+msgid "ungerundeter halboffener Vorderzungennasalvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:110
+msgid "gerundeter halboffener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:115
+msgid "stimmloser labiodentaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:120
+msgid "stimmhafter velarer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:121
+msgid "stimmhafter velarer Implosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:122
+msgid "stimmhafter uvularer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:123
+msgid "stimmhafter uvularer Implosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:128
+msgid "stimmloser glottaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:129
+msgid "stimmhafter labiopalataler Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:130
+msgid "stimmhafter glottaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:131
+msgid "stimmloser pharyngaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:132
+msgid "stimmloser velopalataler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:133
+msgid "stimmloser epiglottaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:138
+msgid "ungerundeter geschlossener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:139
+msgid "ungerundeter zentralisierter fast geschlossener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:140
+msgid "ungerundeter zentralisierter fast geschlossener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:141
+msgid "ungerundeter geschlossener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:146
+msgid "stimmhafter palataler Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:147
+msgid "stimmhafter palataler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:148
+msgid "stimmhafter palataler Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:149
+msgid "stimmhafter palataler Implosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:154
+msgid "stimmloser velarer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:159
+msgid "stimmhafter lateraler alveolarer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:160
+msgid "velarisierter lateraler alveolarer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:161
+msgid "stimmloser lateraler alveolarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:162
+msgid "stimmhafter lateraler velarer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:163
+msgid "stimmhafter lateraler retroflexer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:164
+msgid "stimmhafter lateraler alveolarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:169
+msgid "stimmhafter bilabialer Nasal"
+msgstr ""
+
+#: lib/CharacterPicker.php:170
+msgid "stimmhafter labiodentaler Nasal"
+msgstr ""
+
+#: lib/CharacterPicker.php:175
+msgid "stimmhafter alveolarer Nasal"
+msgstr ""
+
+#: lib/CharacterPicker.php:176
+msgid "stimmhafter velarer Nasal"
+msgstr ""
+
+#: lib/CharacterPicker.php:177
+msgid "stimmhafter palataler Nasal"
+msgstr ""
+
+#: lib/CharacterPicker.php:178
+msgid "stimmhafter uvularer Nasal"
+msgstr ""
+
+#: lib/CharacterPicker.php:179
+msgid "stimmhafter retroflexer Nasal"
+msgstr ""
+
+#: lib/CharacterPicker.php:184
+msgid "gerundeter halbgeschlossener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:185
+msgid "gerundeter halboffener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:186
+msgid "gerundeter halboffener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:187
+msgid "gerundeter halbgeschlossener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:188
+msgid "gerundeter offener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:189
+msgid "gerundeter halboffener Hinterzungennasalvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:190
+msgid "gerundeter offener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:195
+msgid "stimmloser bilabialer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:196
+msgid "stimmloser bilabialer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:201
+msgid "stimmloser uvularer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:206
+msgid "stimmhafter alveolarer Vibrant"
+msgstr ""
+
+#: lib/CharacterPicker.php:207
+msgid "stimmhafter alveolarer Tap"
+msgstr ""
+
+#: lib/CharacterPicker.php:208
+msgid "stimmhafter uvularer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:209
+msgid "stimmhafter alveolarer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:210
+msgid "stimmhafter retroflexer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:211
+msgid "stimmhafter uvularer Vibrant"
+msgstr ""
+
+#: lib/CharacterPicker.php:212
+msgid "stimmhafter retroflexer Flap"
+msgstr ""
+
+#: lib/CharacterPicker.php:213
+msgid "lateraler alveolarer Flap"
+msgstr ""
+
+#: lib/CharacterPicker.php:218
+msgid "stimmloser alveolarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:219
+msgid "stimmloser postalveolarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:220
+msgid "stimmloser retroflexer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:225
+msgid "stimmloser alveolarer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:226
+msgid "stimmloser dentaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:227
+msgid "stimmlose postalveolare Affrikate"
+msgstr ""
+
+#: lib/CharacterPicker.php:228
+msgid "stimmlose alveolare Affrikate"
+msgstr ""
+
+#: lib/CharacterPicker.php:229
+msgid "stimmloser retroflexer Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:234
+msgid "gerundeter geschlossener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:235
+msgid "gerundeter zentralisierter fast geschlossener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:236
+msgid "gerundeter fast geschlossener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:237
+msgid "gerundeter geschlossener Zentralvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:242
+msgid "stimmhafter labiodentaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:243
+msgid "ungerundeter halboffener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:244
+msgid "stimmhafter labiodentaler Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:245
+msgid "stimmhafter labiodentaler Flap"
+msgstr ""
+
+#: lib/CharacterPicker.php:250
+msgid "labialisierter stimmhafter velarer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:251
+msgid "stimmloser labiovelarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:252
+msgid "ungerundeter geschlossener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:253
+msgid "stimmhafter velarer Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:258
+msgid "stimmloser velarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:259
+msgid "stimmloser uvularer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:264
+msgid "gerundeter geschlossener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:265
+msgid "stimmhafter lateraler palataler Approximant"
+msgstr ""
+
+#: lib/CharacterPicker.php:266
+msgid "stimmhafter velarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:267
+msgid "gerundeter zentralisierter fast geschlossener Vorderzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:268
+msgid "ungerundeter halbgeschlossener Hinterzungenvokal"
+msgstr ""
+
+#: lib/CharacterPicker.php:273
+msgid "stimmhafter alveolarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:274
+msgid "stimmhafter postalveolarer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:275
+msgid "stimmhafter retroflexer Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:276
+msgid "stimmhafter alveolopalataler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:281
+msgid "stimmloser glottaler Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:282
+msgid "stimmhafter pharyngaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:283
+msgid "stimmhafter epiglottaler Frikativ"
+msgstr ""
+
+#: lib/CharacterPicker.php:284
+msgid "stimmloser epiglottaler Plosiv"
+msgstr ""
+
+#: lib/CharacterPicker.php:289
+msgid "untergeordnete Intonationsgruppe"
+msgstr ""
+
+#: lib/CharacterPicker.php:290
+msgid "übergeordnete Intonationsgruppe"
+msgstr ""
+
+#: lib/CharacterPicker.php:295
+msgid "primäre Betonung"
+msgstr ""
+
+#: lib/CharacterPicker.php:296
+msgid "sekundäre Betonung"
+msgstr ""
+
+#: lib/CharacterPicker.php:301
+msgid "Längezeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:302
+msgid "halblang"
+msgstr ""
+
+#: lib/CharacterPicker.php:303
+msgid "extra kurz"
+msgstr ""
+
+#: lib/CharacterPicker.php:308
+msgid "Silbengrenze"
+msgstr ""
+
+#: lib/CharacterPicker.php:309 lib/CharacterPicker.php:310
+msgid "Liaisonbogen"
+msgstr ""
+
+#: lib/CharacterPicker.php:311
+msgid "Bindung"
+msgstr ""
+
+#: lib/CharacterPicker.php:312
+msgid "zentralisiert"
+msgstr ""
+
+#: lib/CharacterPicker.php:313
+msgid "nasaliert"
+msgstr ""
+
+#: lib/CharacterPicker.php:314 lib/CharacterPicker.php:315
+msgid "stimmlos"
+msgstr ""
+
+#: lib/CharacterPicker.php:316
+msgid "stimmhaft"
+msgstr ""
+
+#: lib/CharacterPicker.php:317
+msgid "silbisch"
+msgstr ""
+
+#: lib/CharacterPicker.php:318
+msgid "silbisch oder Schwa"
+msgstr ""
+
+#: lib/CharacterPicker.php:319
+msgid "optionales R"
+msgstr ""
+
+#: lib/CharacterPicker.php:320
+msgid "rhotiziert"
+msgstr ""
+
+#: lib/CharacterPicker.php:321
+msgid "aspiriert"
+msgstr ""
+
+#: lib/CharacterPicker.php:322
+msgid "labialisiert"
+msgstr ""
+
+#: lib/CharacterPicker.php:323
+msgid "palatalisiert"
+msgstr ""
+
+#: lib/CharacterPicker.php:324
+msgid "velarisiert oder pharyngalisiert"
+msgstr ""
+
+#: lib/CharacterPicker.php:325
+msgid "angehoben"
+msgstr ""
+
+#: lib/CharacterPicker.php:326
+msgid "gesenkt"
+msgstr ""
+
+#: lib/CharacterPicker.php:327
+msgid "weiter vorne"
+msgstr ""
+
+#: lib/CharacterPicker.php:328
+msgid "weiter hinten"
+msgstr ""
+
+#: lib/CharacterPicker.php:335 lib/CharacterPicker.php:374
+msgid "extra hoch"
+msgstr ""
+
+#: lib/CharacterPicker.php:336 lib/CharacterPicker.php:375
+msgid "hoch"
+msgstr ""
+
+#: lib/CharacterPicker.php:337 lib/CharacterPicker.php:376
+msgid "mittelhoch"
+msgstr ""
+
+#: lib/CharacterPicker.php:338 lib/CharacterPicker.php:377
+msgid "niedrig"
+msgstr ""
+
+#: lib/CharacterPicker.php:339 lib/CharacterPicker.php:378
+msgid "extra niedrig"
+msgstr ""
+
+#: lib/CharacterPicker.php:340 lib/CharacterPicker.php:379
+msgid "steigend"
+msgstr ""
+
+#: lib/CharacterPicker.php:341 lib/CharacterPicker.php:380
+msgid "fallend"
+msgstr ""
+
+#: lib/CharacterPicker.php:342 lib/CharacterPicker.php:381
+msgid "hoch steigend"
+msgstr ""
+
+#: lib/CharacterPicker.php:343 lib/CharacterPicker.php:382
+msgid "niedrig steigend"
+msgstr ""
+
+#: lib/CharacterPicker.php:344 lib/CharacterPicker.php:383
+msgid "steigend-fallend"
+msgstr ""
+
+#: lib/CharacterPicker.php:349
+msgid "kommt von"
+msgstr ""
+
+#: lib/CharacterPicker.php:350
+msgid "wird zu"
+msgstr ""
+
+#: lib/CharacterPicker.php:351
+msgid "ausstoßend"
+msgstr ""
+
+#: lib/CharacterPicker.php:352
+msgid "dental"
+msgstr ""
+
+#: lib/CharacterPicker.php:353
+msgid "apikal"
+msgstr ""
+
+#: lib/CharacterPicker.php:354
+msgid "mehr gerundet"
+msgstr ""
+
+#: lib/CharacterPicker.php:355
+msgid "weniger gerundet"
+msgstr ""
+
+#: lib/CharacterPicker.php:356
+msgid "zur Mitte zentralisiert"
+msgstr ""
+
+#: lib/CharacterPicker.php:357
+msgid "unsiblisch"
+msgstr ""
+
+#: lib/CharacterPicker.php:358
+msgid "behaucht"
+msgstr ""
+
+#: lib/CharacterPicker.php:359
+msgid "knarzig"
+msgstr ""
+
+#: lib/CharacterPicker.php:360
+msgid "linguolabial"
+msgstr ""
+
+#: lib/CharacterPicker.php:361
+msgid "velarisiert"
+msgstr ""
+
+#: lib/CharacterPicker.php:362
+msgid "pharyngalisiert"
+msgstr ""
+
+#: lib/CharacterPicker.php:363
+msgid "Velum wird gesenkt, Luft entweicht durch die Nase"
+msgstr ""
+
+#: lib/CharacterPicker.php:364
+msgid "Zungenverschluss wird seitlich gelöst"
+msgstr ""
+
+#: lib/CharacterPicker.php:365
+msgid "angehaucht aspiriert"
+msgstr ""
+
+#: lib/CharacterPicker.php:366
+msgid "vorgelagerte Zungenwurzel"
+msgstr ""
+
+#: lib/CharacterPicker.php:367
+msgid "zurückverlagerte Zungenwurzel"
+msgstr ""
+
+#: lib/CharacterPicker.php:368
+msgid "laminal"
+msgstr ""
+
+#: lib/CharacterPicker.php:369
+msgid "keine Verschlusslösung hörbar"
+msgstr ""
+
+#: lib/CharacterPicker.php:384
+msgid "Downstep"
+msgstr ""
+
+#: lib/CharacterPicker.php:385
+msgid "Upstep"
+msgstr ""
+
+#: lib/CharacterPicker.php:386
+msgid "globaler Anstieg"
+msgstr ""
+
+#: lib/CharacterPicker.php:387
+msgid "globaler Abfall"
+msgstr ""
+
+#: lib/CharacterPicker.php:392
+msgid "bilabialer Klick"
+msgstr ""
+
+#: lib/CharacterPicker.php:393
+msgid "dentaler Klick"
+msgstr ""
+
+#: lib/CharacterPicker.php:394
+msgid "retroflexer Klick"
+msgstr ""
+
+#: lib/CharacterPicker.php:395
+msgid "palatoalveolarer Klick"
+msgstr ""
+
+#: lib/CharacterPicker.php:396
+msgid "lateraler alveolarer Klick"
+msgstr ""
+
+#: lib/CharacterPicker.php:401
+msgid "Silbengelenk"
+msgstr ""
+
+#: lib/CharacterPicker.php:409
+msgid "Deutsche Sonderzeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:414
+msgid "großes A mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:415
+msgid "kleines a mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:421
+msgid "großes O mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:422
+msgid "kleines o mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:428
+msgid "kleines Eszett"
+msgstr ""
+
+#: lib/CharacterPicker.php:434 lib/CharacterPicker.php:509
+#: lib/CharacterPicker.php:660
+msgid "großes U mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:435 lib/CharacterPicker.php:512
+#: lib/CharacterPicker.php:583 lib/CharacterPicker.php:662
+msgid "kleines u mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:440 lib/CharacterPicker.php:667
+#: lib/CharacterPicker.php:710
+msgid "öffnende Anführungszeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:441 lib/CharacterPicker.php:668
+#: lib/CharacterPicker.php:711
+msgid "schließende Anführungszeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:442
+msgid "öffnende einfache Anführungszeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:443
+msgid "schließende einfache Anführungszeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:451
+msgid "Französische Sonderzeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:456 lib/CharacterPicker.php:612
+msgid "großes A mit Gravis"
+msgstr ""
+
+#: lib/CharacterPicker.php:457 lib/CharacterPicker.php:540
+#: lib/CharacterPicker.php:613
+msgid "großes A mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:458 lib/CharacterPicker.php:614
+#: lib/CharacterPicker.php:681
+msgid "großes A mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:459
+msgid "Ligatur aus großem A und großem E"
+msgstr ""
+
+#: lib/CharacterPicker.php:460 lib/CharacterPicker.php:616
+msgid "kleines a mit Gravis"
+msgstr ""
+
+#: lib/CharacterPicker.php:461 lib/CharacterPicker.php:541
+#: lib/CharacterPicker.php:617
+msgid "kleines a mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:462 lib/CharacterPicker.php:618
+#: lib/CharacterPicker.php:683
+msgid "kleines a mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:463
+msgid "Ligatur aus kleinem a und kleinem e"
+msgstr ""
+
+#: lib/CharacterPicker.php:469 lib/CharacterPicker.php:625
+msgid "großes C mit Cedille"
+msgstr ""
+
+#: lib/CharacterPicker.php:470 lib/CharacterPicker.php:547
+#: lib/CharacterPicker.php:626
+msgid "kleines c mit Cedille"
+msgstr ""
+
+#: lib/CharacterPicker.php:476
+msgid "großes E mit Gravis"
+msgstr ""
+
+#: lib/CharacterPicker.php:477 lib/CharacterPicker.php:553
+#: lib/CharacterPicker.php:632
+msgid "großes E mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:478 lib/CharacterPicker.php:633
+msgid "großes E mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:479
+msgid "großes E mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:480
+msgid "kleines e mit Gravis"
+msgstr ""
+
+#: lib/CharacterPicker.php:481 lib/CharacterPicker.php:554
+#: lib/CharacterPicker.php:634
+msgid "kleines e mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:482 lib/CharacterPicker.php:635
+msgid "kleines e mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:483
+msgid "kleines e mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:489 lib/CharacterPicker.php:690
+msgid "großes I mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:490
+msgid "großes I mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:491 lib/CharacterPicker.php:691
+msgid "kleines i mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:492
+msgid "kleines i mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:498 lib/CharacterPicker.php:649
+msgid "großes O mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:499
+msgid "Ligatur aus großem O und großem E"
+msgstr ""
+
+#: lib/CharacterPicker.php:500 lib/CharacterPicker.php:652
+msgid "kleines o mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:501
+msgid "Ligatur aus kleinem o und kleinem e"
+msgstr ""
+
+#: lib/CharacterPicker.php:507
+msgid "großes U mit Gravis"
+msgstr ""
+
+#: lib/CharacterPicker.php:508
+msgid "großes U mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:510
+msgid "kleines u mit Gravis"
+msgstr ""
+
+#: lib/CharacterPicker.php:511
+msgid "kleines u mit Zirkumflex"
+msgstr ""
+
+#: lib/CharacterPicker.php:518
+msgid "großes Y mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:519
+msgid "kleines y mit Trema"
+msgstr ""
+
+#: lib/CharacterPicker.php:524 lib/CharacterPicker.php:596
+#: lib/CharacterPicker.php:712
+msgid "öffnende Guillemets"
+msgstr ""
+
+#: lib/CharacterPicker.php:525 lib/CharacterPicker.php:597
+#: lib/CharacterPicker.php:713
+msgid "schließende Guillemets"
+msgstr ""
+
+#: lib/CharacterPicker.php:526 lib/CharacterPicker.php:598
+msgid "öffnende einfache Guillemets"
+msgstr ""
+
+#: lib/CharacterPicker.php:527 lib/CharacterPicker.php:599
+msgid "schließende einfache Guillemets"
+msgstr ""
+
+#: lib/CharacterPicker.php:535
+msgid "Spanische Sonderzeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:560 lib/CharacterPicker.php:641
+msgid "großes I mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:561 lib/CharacterPicker.php:642
+msgid "kleines i mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:567
+msgid "großes N mit Tilde"
+msgstr ""
+
+#: lib/CharacterPicker.php:568
+msgid "kleines n mit Tilde"
+msgstr ""
+
+#: lib/CharacterPicker.php:574 lib/CharacterPicker.php:648
+msgid "großes O mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:575 lib/CharacterPicker.php:651
+msgid "kleines o mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:581 lib/CharacterPicker.php:659
+msgid "großes U mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:582 lib/CharacterPicker.php:661
+msgid "kleines u mit Akut"
+msgstr ""
+
+#: lib/CharacterPicker.php:588
+msgid "weibliche Ordnungszahl"
+msgstr ""
+
+#: lib/CharacterPicker.php:589
+msgid "männliche Ordnungszahl"
+msgstr ""
+
+#: lib/CharacterPicker.php:590
+msgid "umgekehrtes Ausrufezeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:591
+msgid "umgekehrtes Fragezeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:607
+msgid "Portugiesische Sonderzeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:615
+msgid "großes A mit Tilde"
+msgstr ""
+
+#: lib/CharacterPicker.php:619
+msgid "kleines a mit Tilde"
+msgstr ""
+
+#: lib/CharacterPicker.php:650
+msgid "großes O mit Tilde"
+msgstr ""
+
+#: lib/CharacterPicker.php:653
+msgid "kleines o mit Tilde"
+msgstr ""
+
+#: lib/CharacterPicker.php:676
+msgid "Rumänische Sonderzeichen"
+msgstr ""
+
+#: lib/CharacterPicker.php:682
+msgid "großes A mit Breve"
+msgstr ""
+
+#: lib/CharacterPicker.php:684
+msgid "kleines A mit Breve"
+msgstr ""
+
+#: lib/CharacterPicker.php:697
+msgid "großes S mit untergesetztem Komma"
+msgstr ""
+
+#: lib/CharacterPicker.php:698
+msgid "kleines s mit untergesetztem Komma"
+msgstr ""
+
+#: lib/CharacterPicker.php:704
+msgid "großes T mit untergesetztem Komma"
+msgstr ""
+
+#: lib/CharacterPicker.php:705
+msgid "kleines t mit untergesetztem Komma"
+msgstr ""
+
+#: lib/VipsAssignment.php:126
+msgid "Während des Imports sind folgende Fehler aufgetreten:"
+msgstr "The following errors were reported during import:"
+
+#: lib/VipsAssignment.php:159
+msgid "Übung"
+msgstr "Worksheet"
+
+#: lib/VipsAssignment.php:160
+msgid "Selbsttest"
+msgstr "Self test"
+
+#: lib/VipsAssignment.php:161
+msgid "Klausur"
+msgstr "Exam"
+
+#: views/admin/index.php:4
+msgid "Einstellungen für die Notenberechnung"
+msgstr "Settings for grade assignment"
+
+#: views/admin/index.php:15 views/solutions/participants_overview.php:64
+msgid "Blöcke"
+msgstr "Blocks"
+
+#: views/admin/index.php:19 views/admin/index.php:43 views/admin/index.php:67
+#: views/exercises/correct_tb_exercise.php:57
+#: views/exercises/solve_tb_exercise.php:31
+#: views/export/print_assignment.php:23 views/export/print_assignment.php:25
+#: views/exam_mode/index.php:10
+msgid "Name"
+msgstr "Name"
+
+#: views/admin/index.php:20 views/admin/index.php:44 views/admin/index.php:68
+#: views/solutions/student_grade.php:22
+msgid "Gewichtung"
+msgstr "Weight"
+
+#: views/admin/index.php:39 views/solutions/participants_overview.php:58
+msgid "Übungsblätter"
+msgstr "Worksheets"
+
+#: views/admin/index.php:63 views/solutions/participants_overview.php:70
+msgid "Klausuren"
+msgstr "Exams"
+
+#: views/admin/index.php:69
+msgid "Bestehen"
+msgstr "Pass"
+
+#: views/admin/index.php:85 views/admin/index.php:135
+#: views/export/print_student_overview.php:49
+#: views/solutions/assignment_solutions.php:85
+msgid "Übernehmen"
+msgstr "Apply"
+
+#: views/admin/index.php:92
+msgid "Notenverteilung"
+msgstr "Grade distribution"
+
+#: views/admin/index.php:97 views/solutions/student_grade.php:6
+#: views/solutions/participants_overview.php:108
+#: views/solutions/participants_overview_csv.php:12
+msgid "Note"
+msgstr "Grade"
+
+#: views/admin/index.php:100
+msgid "Schwellwert"
+msgstr "Threshold"
+
+#: views/admin/index.php:103
+msgid "Kommentar"
+msgstr "Commentar"
+
+#: views/admin/index.php:128
+msgid ""
+"Wenn Sie eine bestimmte Notenstufe nicht verwenden wollen, lassen Sie das "
+"Feld für den Schwellwert leer."
+msgstr ""
+"If you don't want to use a grade level, please leave the threshold field empty."
+
+#: views/pool/tests.php:8
+msgid ""
+"Es sind leider keine Aufgabenblätter mit Zugriffsberechtigung vorhanden."
+msgstr "No worksheets have been created."
+
+#: views/pool/tests.php:9
+msgid ""
+"Auf dieser Seite finden Sie eine Übersicht über alle Aufgabenblätter in "
+"Vips, auf die Sie Zugriff haben."
+msgstr "This page lists all the worksheets that you can access."
+
+#: views/pool/tests.php:24
+msgid "Beliebiger Modus"
+msgstr "Any mode"
+
+#: views/pool/tests.php:35 views/pool/index.php:35
+#: views/sheets/copy_exercise_dialog.php:19
+msgid "Suchen"
+msgstr "Search"
+
+#: views/pool/tests.php:35 views/pool/index.php:35
+msgid "Suche starten"
+msgstr "Search"
+
+#: views/pool/tests.php:36 views/pool/index.php:36
+#: views/exercises/correct_tb_exercise.php:36
+#: views/exercises/wiki_exercise.php:33
+#: views/exercises/correct_pl_exercise.php:34
+msgid "Zurücksetzen"
+msgstr "Reset"
+
+#: views/pool/tests.php:36 views/pool/index.php:36
+msgid "Suche zurücksetzen"
+msgstr "Reset"
+
+#: views/pool/tests.php:43
+msgid ""
+"Mit den aktuellen Sucheinstellungen sind keine Aufgabenblätter mit "
+"Zugriffsberechtigung vorhanden. Sie können die Suchfilter anpassen, um "
+"wieder Ergebnisse zu erhalten."
+msgstr "No worksheets have been found."
+
+#: views/pool/tests.php:50
+msgid ""
+"Auf dieser Seite finden Sie eine Übersicht über alle Aufgabenblätter in "
+"Vips, die Sie bearbeiten dürfen."
+msgstr "This page lists all the worksheets that you can access."
+
+#: views/pool/tests.php:51
+msgid ""
+"Da es zur Zeit nur Aufgabenblätter im Kontext einer Veranstaltung gibt, "
+"werden Sie bei einigen Aktionen in die jeweilige Veranstaltung "
+"weitergeleitet."
+msgstr "Note: Some actions may link into the corresponding courses."
+
+#: views/pool/tests.php:52
+msgid ""
+"Im späteren Verlauf werden die Aufgabenblätter von den Veranstaltungen "
+"getrennt und die Sammlung wird noch weitere Funktionen anbieten."
+msgstr ""
+
+#: views/pool/index.php:8
+msgid "Es sind leider keine Aufgaben mit Zugriffsberechtigung vorhanden."
+msgstr "No tasks have been created."
+
+#: views/pool/index.php:9
+msgid ""
+"Auf dieser Seite finden Sie eine Übersicht über alle Aufgaben in Vips, auf "
+"die Sie Zugriff haben."
+msgstr "This page lists all the tasks that you can access."
+
+#: views/pool/index.php:24
+msgid "Alle Aufgabentypen"
+msgstr "Any type of task"
+
+#: views/pool/index.php:43
+msgid ""
+"Mit den aktuellen Sucheinstellungen sind keine Aufgaben mit "
+"Zugriffsberechtigung vorhanden. Sie können die Suchfilter anpassen, um "
+"wieder Ergebnisse zu erhalten."
+msgstr "No tasks have been found."
+
+#: views/pool/index.php:50
+msgid ""
+"Auf dieser Seite finden Sie eine Übersicht über alle Aufgaben in Vips, die "
+"Sie bearbeiten dürfen."
+msgstr "This page lists all the tasks that you can access."
+
+#: views/pool/index.php:51
+msgid ""
+"Da es zur Zeit nur Aufgaben im Kontext einer Veranstaltung gibt, werden Sie "
+"bei einigen Aktionen in die jeweilige Veranstaltung bzw. in das "
+"Aufgabenblatt weitergeleitet."
+msgstr "Note: Some actions may link into the corresponding courses."
+
+#: views/pool/index.php:52
+msgid ""
+"Im späteren Verlauf werden die Aufgaben von den Veranstaltungen getrennt und "
+"die Sammlung wird noch weitere Funktionen anbieten."
+msgstr ""
+
+#: views/pool/list_tests.php:12
+#, php-format
+msgid "%d Aufgabenblatt"
+msgid_plural "%d Aufgabenblätter"
+msgstr[0] "%d worksheet"
+msgstr[1] "%d worksheets"
+
+#: views/pool/list_tests.php:24 views/pool/list_exercises.php:24
+#: views/exercises/edit_exercise.php:83 views/solutions/student_grade.php:12
+#: views/solutions/statistics_csv.php:3 views/solutions/assignments_list.php:13
+#: views/solutions/assignments_list_student.php:13
+#: views/sheets/list_assignments_list.php:10
+#: views/sheets/edit_assignment.php:13
+msgid "Titel"
+msgstr "Title"
+
+#: views/pool/list_tests.php:33 views/pool/list_exercises.php:42
+#: views/exercises/correct_tb_exercise.php:63
+#: views/exercises/solve_tb_exercise.php:37
+msgid "Autor"
+msgstr "Author"
+
+#: views/pool/list_tests.php:42 views/pool/list_exercises.php:51
+#: views/exercises/correct_tb_exercise.php:66
+#: views/exercises/solve_tb_exercise.php:40
+msgid "Datum"
+msgstr "Date"
+
+#: views/pool/list_tests.php:51
+msgid "Zugeordnete Veranstaltung"
+msgstr "Course"
+
+#: views/pool/list_tests.php:60 views/export/print_assignment.php:15
+#: views/sheets/pick_exercise.php:15
+msgid "Semester"
+msgstr "Semester"
+
+#: views/pool/list_tests.php:68 views/pool/list_exercises.php:68
+#: views/exercises/solve_tb_exercise.php:43
+#: views/export/print_student_overview.php:62
+#: views/sheets/list_assignments_list.php:41
+#: views/sheets/edit_assignment.php:150
+msgid "Aktionen"
+msgstr "Actions"
+
+#: views/pool/list_tests.php:109 views/pool/list_exercises.php:108
+#: views/sheets/list_assignments_list.php:89 views/sheets/list_exercises.php:51
+msgid "Studentensicht anzeigen"
+msgstr "Show student's view"
+
+#: views/pool/list_tests.php:113 views/export/print_student_overview.php:104
+#: views/export/print_student_overview.php:136
+#: views/solutions/assignments_list_student.php:94
+#: views/solutions/assignments_list_student.php:97
+#: views/sheets/list_assignments_list.php:95
+#: views/sheets/list_assignments_stud.php:44
+msgid "Drucken"
+msgstr "Print"
+
+#: views/pool/list_tests.php:117 views/sheets/list_assignments_list.php:98
+#: views/sheets/copy_exercise_dialog.php:26
+#: views/sheets/copy_assignment_dialog.php:25
+msgid "Kopieren"
+msgstr "Copy"
+
+#: views/pool/list_tests.php:121 views/exercises/edit_rh_exercise.php:45
+#: views/sheets/list_assignments_list.php:101
+msgid "Löschen"
+msgstr "Delete"
+
+#: views/pool/list_tests.php:131 views/pool/list_exercises.php:126
+msgid "Ausgewählte löschen"
+msgstr "Delete selected"
+
+#: views/pool/list_tests.php:132
+msgid "Wollen Sie wirklich die ausgewählten Aufgabenblätter löschen?"
+msgstr "Do you really want to delete the selected worksheets?"
+
+#: views/pool/list_exercises.php:12
+#, php-format
+msgid "%d Aufgabe"
+msgid_plural "%d Aufgaben"
+msgstr[0] "%s task"
+msgstr[1] "%s tasks"
+
+#: views/pool/list_exercises.php:33 views/sheets/list_exercises.php:11
+msgid "Aufgabentyp"
+msgstr "Type of task"
+
+#: views/pool/list_exercises.php:112 views/sheets/list_exercises.php:56
+msgid "Aufgabe kopieren"
+msgstr "Copy task"
+
+#: views/pool/list_exercises.php:116 views/sheets/list_exercises.php:63
+msgid "Aufgabe löschen"
+msgstr "Delete task"
+
+#: views/pool/list_exercises.php:127
+msgid "Wollen Sie wirklich die ausgewählten Aufgaben löschen?"
+msgstr "Do you really want to delete the selected tasks?"
+
+#: views/exercises/edit_sc_exercise.php:2
+#: views/exercises/edit_mco_exercise.php:12
+#: views/exercises/edit_sco_exercise.php:2
+#: views/exercises/edit_mc_exercise.php:2
+#: views/exercises/edit_lt_exercise.php:2
+msgid "Antwortalternativen"
+msgstr "Answer options"
+
+#: views/exercises/edit_sc_exercise.php:19
+#: views/exercises/edit_rh_exercise.php:41
+#: views/exercises/edit_rh_exercise.php:83
+#: views/exercises/edit_mco_exercise.php:28
+#: views/exercises/edit_sco_exercise.php:19
+#: views/exercises/edit_mc_exercise.php:18
+msgid "Eingabefeld vergrößern"
+msgstr "Make input field larger"
+
+#: views/exercises/edit_sc_exercise.php:21
+#: views/exercises/edit_rh_exercise.php:43
+#: views/exercises/edit_rh_exercise.php:85
+#: views/exercises/edit_mco_exercise.php:30
+#: views/exercises/edit_sco_exercise.php:21
+#: views/exercises/edit_mc_exercise.php:20
+msgid "Eingabefeld verkleinern"
+msgstr "Make input field smaller"
+
+#: views/exercises/edit_sc_exercise.php:26
+#: views/exercises/wiki_lt_exercise_corrected.php:7
+#: views/exercises/correct_sco_exercise.php:23
+#: views/exercises/print_me_exercise_corrected.php:8
+#: views/exercises/correct_me_exercise.php:11
+#: views/exercises/edit_mco_exercise.php:35
+#: views/exercises/print_sco_exercise_corrected.php:19
+#: views/exercises/print_lt_exercise_corrected.php:8
+#: views/exercises/print_sc_exercise_corrected.php:19
+#: views/exercises/wiki_sc_exercise_corrected.php:30
+#: views/exercises/edit_sco_exercise.php:26
+#: views/exercises/edit_mc_exercise.php:25
+#: views/exercises/correct_mc_exercise.php:19
+#: views/exercises/correct_yn_exercise.php:20
+#: views/exercises/print_mc_exercise_corrected.php:15
+#: views/exercises/print_rh_exercise_corrected.php:81
+#: views/exercises/print_rh_exercise_corrected.php:100
+#: views/exercises/wiki_sco_exercise_corrected.php:32
+#: views/exercises/wiki_rh_exercise_corrected.php:31
+#: views/exercises/wiki_rh_exercise_corrected.php:49
+#: views/exercises/wiki_mco_exercise_corrected.php:24
+#: views/exercises/correct_lt_exercise.php:11
+#: views/exercises/correct_sc_exercise.php:23
+#: views/exercises/wiki_mc_exercise_corrected.php:16
+#: views/exercises/correct_cloze_exercise.php:9
+#: views/exercises/correct_rh_exercise.php:45
+#: views/exercises/correct_rh_exercise.php:72
+#: views/exercises/correct_mco_exercise.php:17
+#: views/exercises/print_cloze_exercise_corrected.php:10
+#: views/exercises/print_yn_exercise_corrected.php:16
+#: views/exercises/print_mco_exercise_corrected.php:13
+#: views/exercises/wiki_cloze_exercise_corrected.php:8
+#: views/exercises/wiki_yn_exercise_corrected.php:15
+#: views/exercises/edit_lt_exercise.php:12
+msgid "richtig"
+msgstr "correct"
+
+#: views/exercises/edit_sc_exercise.php:33
+#: views/exercises/edit_mco_exercise.php:41
+#: views/exercises/edit_sco_exercise.php:33
+#: views/exercises/edit_mc_exercise.php:31
+#: views/exercises/edit_lt_exercise.php:26
+msgid "Feld hinzufügen"
+msgstr "Add item"
+
+#: views/exercises/edit_sc_exercise.php:35
+#: views/exercises/edit_mco_exercise.php:43
+#: views/exercises/edit_sco_exercise.php:35
+#: views/exercises/edit_mc_exercise.php:33
+#: views/exercises/edit_lt_exercise.php:28
+msgid "Weitere Antworten können nach dem Speichern hinzugefügt werden."
+msgstr "More answers can be added after saving."
+
+#: views/exercises/edit_sc_exercise.php:42
+#: views/exercises/edit_sco_exercise.php:42
+msgid "Antwortblock hinzufügen"
+msgstr "Add answer group"
+
+#: views/exercises/edit_sc_exercise.php:45
+#: views/exercises/edit_mco_exercise.php:50
+#: views/exercises/edit_sco_exercise.php:45
+#: views/exercises/edit_mc_exercise.php:40
+msgid "Leere Antwortalternativen werden automatisch gelöscht."
+msgstr "Empy answer alternatives are deleted automatically."
+
+#: views/exercises/correct_exercise.php:25
+msgid "Bemerkungen zur Lösung"
+msgstr "Remarks on the solution"
+
+#: views/exercises/show_exercise.php:7
+msgid "Abgabezeitpunkt:"
+msgstr "Time of submission:"
+
+#: views/exercises/show_exercise.php:19 views/solutions/edit_solution.php:47
+#: views/solutions/edit_solution.php:155
+msgid "vorige Aufgabe"
+msgstr "previous task"
+
+#: views/exercises/show_exercise.php:21
+msgid "ohne Speichern zur vorigen Aufgabe"
+msgstr "back to previous task without saving"
+
+#: views/exercises/show_exercise.php:30
+msgid "zurück zur Aufgabenübersicht"
+msgstr "back to task overview"
+
+#: views/exercises/show_exercise.php:39 views/solutions/edit_solution.php:62
+#: views/solutions/edit_solution.php:169
+msgid "nächste Aufgabe"
+msgstr "next task"
+
+#: views/exercises/show_exercise.php:41
+msgid "ohne Speichern zur nächsten Aufgabe"
+msgstr "to next task without saving"
+
+#: views/exercises/show_exercise.php:55 views/solutions/edit_solution.php:180
+#, php-format
+msgid "Bewertung der Aufgabe &bdquo;%s&ldquo;"
+msgstr "Your grade for task &bdquo;%s&ldquo;"
+
+#: views/exercises/show_exercise.php:60
+msgid "Anmerkungen zur Lösung:"
+msgstr "Remarks on the solution:"
+
+#: views/exercises/show_exercise.php:68 views/solutions/edit_solution.php:197
+#, php-format
+msgid "Erreichte Punkte: %s von %s"
+msgstr "Achieved points: %s of %s"
+
+#: views/exercises/show_exercise.php:85 views/exercises/print_exercise.php:5
+#: views/solutions/edit_solution.php:89
+#, php-format
+msgid "(%s Punkt)"
+msgid_plural "(%s Punkte)"
+msgstr[0] "(%s point)"
+msgstr[1] "(%s points)"
+
+#: views/exercises/show_exercise.php:99
+msgid "Bemerkungen zur Lösung (optional)"
+msgstr "Remarks on the solution (optional)"
+
+#: views/exercises/show_exercise.php:106
+msgid "Abschicken"
+msgstr "Submit"
+
+#: views/exercises/show_exercise.php:114
+msgid ""
+"Dies ist die Studentenansicht (Vorschau) der Aufgabe. Sie können hier auch "
+"Lösungen von Studenten ansehen oder für sie abgeben."
+msgstr ""
+
+#: views/exercises/show_exercise.php:117 views/solutions/edit_solution.php:123
+msgid "Diese Aufgabe bearbeiten"
+msgstr "Work on this task"
+
+#: views/exercises/show_exercise.php:120 views/exercises/show_exercise.php:139
+#: views/exercises/edit_exercise.php:9 views/solutions/edit_solution.php:126
+#: views/sheets/edit_assignment.php:247
+msgid "Zeichenwähler öffnen"
+msgstr "Show character picker"
+
+#: views/exercises/show_exercise.php:125
+#: views/sheets/list_assignments_stud.php:144
+msgid "Anzeigen für"
+msgstr "Show for"
+
+#: views/exercises/show_exercise.php:136
+msgid ""
+"Bitte denken Sie daran, vor dem Verlassen der Seite Ihre Lösung zu "
+"speichern. Für die Eingabe von Sonderzeichen steht der Zeichenwähler zur "
+"Verfügung."
+msgstr ""
+
+#: views/exercises/print_me_exercise.php:13
+#: views/exercises/wiki_tb_exercise_corrected.php:10
+#: views/exercises/print_me_exercise_corrected.php:19
+#: views/exercises/edit_pl_exercise.php:2
+#: views/exercises/print_tb_exercise.php:31
+#: views/exercises/correct_tb_exercise.php:107
+#: views/exercises/edit_me_exercise.php:2
+#: views/exercises/print_tb_exercise_corrected.php:34
+#: views/exercises/print_pl_exercise_corrected.php:25
+#: views/exercises/print_pl_exercise.php:18
+#: views/exercises/edit_tb_exercise.php:8
+#: views/exercises/correct_pl_exercise.php:86
+#: views/export/print_student_overview.php:45
+#: views/export/print_student_overview.php:99
+#: views/export/print_student_overview.php:131
+msgid "Musterlösung"
+msgstr "Sample solution"
+
+#: views/exercises/wiki_lt_exercise_corrected.php:10
+#: views/exercises/print_lt_exercise_corrected.php:11
+#: views/exercises/correct_lt_exercise.php:14
+#: views/exercises/correct_cloze_exercise.php:13
+msgid "fast richtig"
+msgstr "nearly correct"
+
+#: views/exercises/wiki_lt_exercise_corrected.php:12
+#: views/exercises/correct_sco_exercise.php:25
+#: views/exercises/print_me_exercise_corrected.php:10
+#: views/exercises/correct_me_exercise.php:13
+#: views/exercises/print_sco_exercise_corrected.php:21
+#: views/exercises/print_lt_exercise_corrected.php:13
+#: views/exercises/print_sc_exercise_corrected.php:21
+#: views/exercises/wiki_sc_exercise_corrected.php:32
+#: views/exercises/correct_mc_exercise.php:21
+#: views/exercises/correct_yn_exercise.php:22
+#: views/exercises/print_mc_exercise_corrected.php:17
+#: views/exercises/print_rh_exercise_corrected.php:83
+#: views/exercises/print_rh_exercise_corrected.php:102
+#: views/exercises/wiki_sco_exercise_corrected.php:34
+#: views/exercises/wiki_rh_exercise_corrected.php:33
+#: views/exercises/wiki_rh_exercise_corrected.php:51
+#: views/exercises/wiki_mco_exercise_corrected.php:26
+#: views/exercises/correct_lt_exercise.php:16
+#: views/exercises/correct_sc_exercise.php:25
+#: views/exercises/wiki_mc_exercise_corrected.php:18
+#: views/exercises/correct_cloze_exercise.php:16
+#: views/exercises/correct_rh_exercise.php:47
+#: views/exercises/correct_rh_exercise.php:74
+#: views/exercises/correct_mco_exercise.php:19
+#: views/exercises/print_cloze_exercise_corrected.php:12
+#: views/exercises/print_yn_exercise_corrected.php:18
+#: views/exercises/print_mco_exercise_corrected.php:15
+#: views/exercises/wiki_cloze_exercise_corrected.php:10
+#: views/exercises/wiki_yn_exercise_corrected.php:17
+#: views/exercises/edit_lt_exercise.php:20
+msgid "falsch"
+msgstr "wrong"
+
+#: views/exercises/wiki_lt_exercise_corrected.php:18
+msgid "richtige Antworten"
+msgstr "correct answers"
+
+#: views/exercises/solve_pl_exercise.php:5
+#: views/exercises/solve_tb_exercise.php:6
+msgid "Vorbelegung"
+msgstr "Default"
+
+#: views/exercises/solve_pl_exercise.php:7
+#: views/exercises/solve_tb_exercise.php:8
+msgid "Vorbelegung ausblenden"
+msgstr "Hide default"
+
+#: views/exercises/solve_pl_exercise.php:12
+#: views/exercises/correct_tb_exercise.php:22
+#: views/exercises/correct_pl_exercise.php:20
+msgid "Lösung"
+msgstr "Solution"
+
+#: views/exercises/solve_pl_exercise.php:15
+#: views/exercises/solve_tb_exercise.php:16
+msgid "Vorbelegung anzeigen"
+msgstr "Show default"
+
+#: views/exercises/solve_pl_exercise.php:18
+#: views/exercises/correct_pl_exercise.php:36
+msgid "Herunterladen"
+msgstr "Download source code"
+
+#: views/exercises/solve_pl_exercise.php:18
+#: views/exercises/correct_pl_exercise.php:36
+msgid "Programmcode herunterladen"
+msgstr "Download source code"
+
+#: views/exercises/solve_pl_exercise.php:19
+msgid "Lokale Datei ins Fenster laden"
+msgstr "Load local file into window"
+
+#: views/exercises/solve_pl_exercise.php:20
+msgid "Datei hochladen"
+msgstr "Upload File"
+
+#: views/exercises/solve_pl_exercise.php:26
+#: views/exercises/correct_pl_exercise.php:43
+msgid "Testanfrage"
+msgstr "Test query"
+
+#: views/exercises/solve_pl_exercise.php:29
+#: views/exercises/correct_pl_exercise.php:46
+msgid "Query"
+msgstr ""
+
+#: views/exercises/solve_pl_exercise.php:30
+#: views/exercises/correct_pl_exercise.php:47
+msgid "Query Next"
+msgstr ""
+
+#: views/exercises/solve_pl_exercise.php:36
+#: views/exercises/correct_pl_exercise.php:54
+msgid "Prolog-Ausgabe"
+msgstr "Prolog output"
+
+#: views/exercises/correct_sco_exercise.php:4
+#: views/exercises/solve_mc_exercise.php:4
+#: views/exercises/correct_mc_exercise.php:4
+#: views/exercises/solve_sc_exercise.php:4
+#: views/exercises/correct_sc_exercise.php:4
+#: views/exercises/solve_sco_exercise.php:4
+#: views/exercises/solve_mco_exercise.php:4
+#: views/exercises/correct_mco_exercise.php:4
+msgid "Antworten:"
+msgstr "Answers:"
+
+#: views/exercises/correct_sco_exercise.php:9
+#: views/exercises/edit_mco_exercise.php:7
+#: views/exercises/print_sco_exercise_corrected.php:5
+#: views/exercises/xml_sco_exercise.php:24
+#: views/exercises/qti_sco_exercise.php:38
+#: views/exercises/print_mco_exercise.php:12
+#: views/exercises/xml_mco_exercise.php:23
+#: views/exercises/wiki_sco_exercise_corrected.php:46
+#: views/exercises/wiki_sco_exercise.php:33
+#: views/exercises/qti_mco_exercise.php:42
+#: views/exercises/wiki_mco_exercise_corrected.php:11
+#: views/exercises/solve_sco_exercise.php:8
+#: views/exercises/solve_mco_exercise.php:15
+#: views/exercises/wiki_mco_exercise.php:11
+#: views/exercises/correct_mco_exercise.php:22
+#: views/exercises/print_sco_exercise.php:5
+#: views/exercises/print_mco_exercise_corrected.php:18
+msgid "keine Antwort"
+msgstr "don't answer"
+
+#: views/exercises/correct_me_exercise.php:4
+#: views/exercises/solve_yn_exercise.php:4
+#: views/exercises/solve_me_exercise.php:4
+#: views/exercises/correct_yn_exercise.php:4
+#: views/exercises/correct_lt_exercise.php:4
+#: views/exercises/solve_tb_exercise.php:13
+#: views/exercises/solve_lt_exercise.php:4
+msgid "Antwort:"
+msgstr "Answer:"
+
+#: views/exercises/correct_me_exercise.php:19
+msgid "Musterlösung:"
+msgstr "Sample solution:"
+
+#: views/exercises/edit_rh_exercise.php:6
+#: views/exercises/print_rh_exercise_corrected.php:23
+#: views/exercises/print_rh_exercise.php:28
+#: views/exercises/correct_rh_exercise.php:8
+msgid "vorgegebener Text"
+msgstr "default text"
+
+#: views/exercises/edit_rh_exercise.php:9
+msgid "zuzuordnender Text"
+msgstr "text to match"
+
+#: views/exercises/edit_rh_exercise.php:55
+msgid "neue Paare"
+msgstr "new pairs"
+
+#: views/exercises/edit_rh_exercise.php:56
+msgid "Hinzufügen"
+msgstr "Add item"
+
+#: views/exercises/edit_rh_exercise.php:64
+msgid "Distraktoren (optional)"
+msgstr "Distractors (optional)"
+
+#: views/exercises/edit_rh_exercise.php:90
+msgid "Distraktor hinzufügen"
+msgstr "Add distractor"
+
+#: views/exercises/edit_mco_exercise.php:2
+#: views/exercises/edit_yn_exercise.php:2
+#: views/exercises/print_rh_exercise.php:85
+msgid "Antwortmöglichkeiten"
+msgstr "Choices"
+
+#: views/exercises/qti_mc_exercise.php:38
+#: views/exercises/qti_sc_exercise.php:27
+#: views/exercises/qti_tb_exercise.php:17
+#: views/exercises/qti_sco_exercise.php:27
+#: views/exercises/qti_rh_exercise.php:23
+#: views/exercises/qti_mco_exercise.php:29
+#: views/exercises/qti_cloze_exercise.php:22
+#: views/exercises/qti_yn_exercise.php:21
+msgid "Hinweise zur Aufgabe:"
+msgstr "Additional instructions:"
+
+#: views/exercises/print_exercise.php:26
+msgid "Bemerkungen zur Lösung:"
+msgstr "Remarks on the solution:"
+
+#: views/exercises/print_exercise.php:37 views/solutions/edit_solution.php:188
+msgid "Anmerkung des Korrektors:"
+msgstr "Remark from corrector:"
+
+#: views/exercises/print_exercise.php:46
+msgid "Erreichte Punkte:"
+msgstr "Achieved points:"
+
+#: views/exercises/print_exercise.php:51
+#, php-format
+msgid "(von %s)"
+msgstr "(of %s)"
+
+#: views/exercises/solve_me_exercise.php:9
+#: views/exercises/edit_me_exercise.php:7
+msgid "Folgende Rechenarten, Konstanten und Funktionen werden unterstützt:"
+msgstr "The following operators, constants and functions are recognized:"
+
+#: views/exercises/exam_timer.php:4 views/exercises/exam_timer.php:26
+msgid "Restzeit"
+msgstr "Remaining Time"
+
+#: views/exercises/edit_pl_exercise.php:8
+msgid "Vorgegebene Lösung"
+msgstr "Default solution"
+
+#: views/exercises/edit_pl_exercise.php:14
+msgid "Vorgegebene Anfrage"
+msgstr "Default query"
+
+#: views/exercises/edit_pl_exercise.php:20
+msgid "Aufgabe exportieren (ProFormA)"
+msgstr "Export task (ProFormA)"
+
+#: views/exercises/edit_exercise.php:3
+msgid ""
+"Sie können hier den Aufgabentext und die Antwortoptionen dieser Aufgabe "
+"bearbeiten."
+msgstr ""
+
+#: views/exercises/edit_exercise.php:6 views/sheets/edit_assignment.php:162
+#: views/sheets/edit_assignment.php:164 views/sheets/edit_assignment.php:241
+msgid "Neue Aufgabe erstellen"
+msgstr "Create new task"
+
+#: views/exercises/edit_exercise.php:15 views/sheets/edit_assignment.php:258
+msgid "Ansicht"
+msgstr "View"
+
+#: views/exercises/edit_exercise.php:16
+msgid "Aufgabe aus Studentensicht anzeigen"
+msgstr "Show this task in student's view"
+
+#: views/exercises/edit_exercise.php:23
+msgid "Aufgabe exportieren (IMS-QTI)"
+msgstr "Export task (IMS-QTI)"
+
+#: views/exercises/edit_exercise.php:34
+msgid "ohne Speichern zurück zum Aufgabenblatt"
+msgstr "back to the worksheet without saving"
+
+#: views/exercises/edit_exercise.php:41
+msgid "vorige Aufgabe bearbeiten"
+msgstr "work on previous task"
+
+#: views/exercises/edit_exercise.php:49
+msgid "Zurück zum Aufgabenblatt"
+msgstr "Back to the worksheet"
+
+#: views/exercises/edit_exercise.php:57
+msgid "nächste Aufgabe bearbeiten"
+msgstr "work on the next task"
+
+#: views/exercises/edit_exercise.php:72 views/exercises/edit_exercise.php:123
+#: views/exercises/correct_tb_exercise.php:34
+#: views/exercises/correct_pl_exercise.php:32
+#: views/groups/edit_group_dialog.php:16 views/solutions/edit_solution.php:114
+#: views/sheets/edit_assignment.php:4 views/sheets/edit_assignment.php:160
+msgid "Speichern"
+msgstr "Save"
+
+#: views/exercises/edit_exercise.php:89
+msgid "Frage / Aussage"
+msgstr "Question / statement"
+
+#: views/exercises/edit_exercise.php:101 views/sheets/edit_assignment.php:59
+msgid "Weitere Einstellungen"
+msgstr "Additional settings"
+
+#: views/exercises/edit_exercise.php:105
+msgid "Hinweise zur Bearbeitung der Aufgabe"
+msgstr "Additional instructions for this task"
+
+#: views/exercises/edit_exercise.php:111
+msgid "Automatisches Feedback bei falscher Antwort"
+msgstr "Automatic feedback on wrong answers"
+
+#: views/exercises/edit_exercise.php:117
+msgid "Eingabe eines Kommentars durch Studierende erlauben"
+msgstr "Allow students to enter comments"
+
+#: views/exercises/print_tb_exercise.php:6
+#: views/exercises/print_tb_exercise_corrected.php:11
+msgid "Lösung des Studenten"
+msgstr "The student's solution"
+
+#: views/exercises/print_tb_exercise.php:17
+#: views/exercises/correct_tb_exercise.php:51
+#: views/exercises/print_tb_exercise_corrected.php:20
+#: views/exercises/solve_tb_exercise.php:23
+msgid "Hochgeladene Dateien"
+msgstr "Uploaded files"
+
+#: views/exercises/edit_lti_exercise.php:2
+msgid "URL zum Starten der LTI-Aufgabe"
+msgstr "URL for launching the LTI tool"
+
+#: views/exercises/edit_lti_exercise.php:3
+msgid ""
+"Hier können Sie ein externes Tool einbinden, sofern es den LTI-Standard "
+"(Version 1.1) unterstützt. Die Betreiber dieses Tools müssen Ihnen eine URL "
+"und Zugangsdaten (Consumer-Key und Consumer-Secret) mitteilen."
+msgstr ""
+"You can add tasks from external tools that support LTI version 1.1."
+"The tool provider will supply a launch URL and a pair of credentials "
+"(consumer key and consumer secret) to you."
+
+#: views/exercises/edit_lti_exercise.php:8
+msgid "Consumer-Key der LTI-Aufgabe"
+msgstr "Consumer key of the LTI task"
+
+#: views/exercises/edit_lti_exercise.php:13
+msgid "Consumer-Secret der LTI-Aufgabe"
+msgstr "Consumer secret of the LTI task"
+
+#: views/exercises/edit_lti_exercise.php:19
+msgid "Nutzerdaten an LTI-Tool senden"
+msgstr "Send user data to the LTI tool"
+
+#: views/exercises/edit_lti_exercise.php:20
+msgid ""
+"Nutzerdaten dürfen nur das externe Tool gesendet werden, wenn es keine "
+"Datenschutzbedenken gibt. Mit Setzen des Hakens bestätigen Sie, dass die "
+"Übermittlung der Daten zulässig ist."
+msgstr ""
+
+#: views/exercises/edit_lti_exercise.php:24
+msgid "Zusätzliche LTI-Parameter"
+msgstr "LTI custom parameters"
+
+#: views/exercises/edit_lti_exercise.php:25
+msgid "Ein Wert pro Zeile, Beispiel: Review:Chapter=1.2.56"
+msgstr "One parameter per line, example: Review:Chapter=1.2.56"
+
+#: views/exercises/edit_lti_exercise.php:32
+#: views/solutions/edit_solution.php:131 views/sheets/list_assignments.php:32
+msgid "Links"
+msgstr "Links"
+
+#: views/exercises/edit_lti_exercise.php:33
+msgid "Aufgabe im LTI-Tool bearbeiten"
+msgstr "Edit task in the LTI tool"
+
+#: views/exercises/print_lt_exercise.php:15
+msgid "Richtige Antworten"
+msgstr "correct answers"
+
+#: views/exercises/edit_cloze_exercise.php:10
+#: views/exercises/edit_tb_exercise.php:15
+#: views/exercises/edit_lt_exercise.php:35
+msgid "Zeichenwähler"
+msgstr "Character picker"
+
+#: views/exercises/edit_cloze_exercise.php:14
+#: views/exercises/edit_tb_exercise.php:19
+#: views/exercises/edit_lt_exercise.php:39
+msgid "keiner"
+msgstr "none"
+
+#: views/exercises/edit_cloze_exercise.php:27
+msgid "Groß-/Kleinschreibung bei Auswertung ignorieren"
+msgstr "Ignore case"
+
+#: views/exercises/edit_cloze_exercise.php:32
+msgid "Antwortmodus: Antwort aus Liste auswählen"
+msgstr "Mode: Choose answer from list"
+
+#: views/exercises/correct_tb_exercise.php:6
+#: views/exercises/correct_pl_exercise.php:4
+msgid "Ursprüngliche Lösung anzeigen (ohne Anmerkungen)"
+msgstr "Original solution (without annotations)"
+
+#: views/exercises/correct_tb_exercise.php:10
+#: views/exercises/correct_pl_exercise.php:8
+msgid "Ursprüngliche Lösung"
+msgstr "Original solution"
+
+#: views/exercises/correct_tb_exercise.php:22
+#: views/exercises/correct_pl_exercise.php:20
+msgid "Kommentierte Lösung"
+msgstr "Commented solution"
+
+#: views/exercises/correct_tb_exercise.php:34
+#: views/exercises/correct_pl_exercise.php:32
+msgid "Kommentierte Lösung speichern"
+msgstr "Save commented solution"
+
+#: views/exercises/correct_tb_exercise.php:36
+#: views/exercises/correct_pl_exercise.php:34
+msgid "Kommentierte Lösung löschen"
+msgstr "Delete commented solution"
+
+#: views/exercises/correct_tb_exercise.php:39
+#: views/solutions/edit_solution.php:99
+msgid "Textvorschau"
+msgstr "Preview"
+
+#: views/exercises/correct_tb_exercise.php:60
+#: views/exercises/solve_tb_exercise.php:34
+msgid "Größe"
+msgstr "Size"
+
+#: views/exercises/correct_tb_exercise.php:76
+#: views/exercises/solve_tb_exercise.php:54
+msgid "Datei herunterladen"
+msgstr "Download file"
+
+#: views/exercises/correct_tb_exercise.php:97
+msgid "Alle Dateien herunterladen"
+msgstr "Download all files"
+
+#: views/exercises/print_rh_exercise_corrected.php:27
+#: views/exercises/print_rh_exercise.php:32
+#: views/exercises/correct_rh_exercise.php:12
+msgid "zugeordnete Antwort"
+msgstr "text to match"
+
+#: views/exercises/print_rh_exercise_corrected.php:32
+#: views/exercises/print_rh_exercise.php:37
+#: views/exercises/correct_rh_exercise.php:16
+msgid "richtige Antwort"
+msgstr "correct answer"
+
+#: views/exercises/print_rh_exercise_corrected.php:37
+msgid "korrekt"
+msgstr "correct"
+
+#: views/exercises/print_rh_exercise_corrected.php:92
+#: views/exercises/wiki_rh_exercise_corrected.php:41
+#: views/exercises/correct_rh_exercise.php:62
+msgid "Nicht zugeordnete Antworten"
+msgstr "unassigned answers"
+
+#: views/exercises/edit_me_exercise.php:25
+msgid "Eigene Variablen deklarieren (optional)"
+msgstr "Declare variables to test (optional)"
+
+#: views/exercises/edit_me_exercise.php:30
+msgid "Variable"
+msgstr "Variable"
+
+#: views/exercises/edit_me_exercise.php:35
+msgid "Minimum"
+msgstr "Minimum"
+
+#: views/exercises/edit_me_exercise.php:40
+msgid "Maximum"
+msgstr "Maximum"
+
+#: views/exercises/edit_me_exercise.php:47
+msgid "Variable hinzufügen"
+msgstr "Add variable"
+
+#: views/exercises/print_tb_exercise_corrected.php:6
+msgid "Kommentierte Studentenlösung:"
+msgstr "Commented student solution:"
+
+#: views/exercises/correct_lt_exercise.php:18
+#: views/exercises/correct_cloze_exercise.php:19
+msgid "unbekannte Antwort"
+msgstr "unknown answer"
+
+#: views/exercises/iframe_lti_exercise.php:14
+msgid "Aufgabe anzeigen"
+msgstr "Show task"
+
+#: views/exercises/solve_tb_exercise.php:24
+#, php-format
+msgid "max. %s MB"
+msgstr ""
+
+#: views/exercises/solve_tb_exercise.php:69
+msgid "Datei löschen"
+msgstr "Delete file"
+
+#: views/exercises/solve_tb_exercise.php:80
+msgid "Datei als Lösung hochladen"
+msgstr "Upload File as solution"
+
+#: views/exercises/show_exercise_hint.php:4
+msgid "Hinweis:"
+msgstr "Hints:"
+
+#: views/exercises/show_exercise_link.php:6
+msgid "%g Punkte"
+msgstr "%g points"
+
+#: views/exercises/show_exercise_link.php:10
+msgid "Aufgabe bearbeitet"
+msgstr "Task submitted"
+
+#: views/exercises/print_pl_exercise_corrected.php:5
+msgid "Kommentiertes Programm:"
+msgstr "Commented source code:"
+
+#: views/exercises/print_pl_exercise_corrected.php:12
+#: views/exercises/print_pl_exercise.php:5
+msgid "Programm"
+msgstr "Program"
+
+#: views/exercises/evaluation_mode_info.php:4
+msgid "Vorsicht: Falsche Antworten geben Punktabzug!"
+msgstr "Attention: Wrong answers are penalized by deduction of points."
+
+#: views/exercises/evaluation_mode_info.php:6
+msgid ""
+"Vorsicht: Falsche Antworten geben Punktabzug! Die Gesamtpunktzahl kann dabei "
+"auch negativ werden."
+msgstr ""
+"Attention: Wrong answers are penalized by deduction of points. The amount of "
+"points for a task can fall below zero."
+
+#: views/exercises/evaluation_mode_info.php:8
+msgid ""
+"Vorsicht: Falsche Antworten führen zur Bewertung der Aufgabe mit 0 Punkten."
+msgstr "Attention: Wrong answers are penalized by grading with 0 points."
+
+#: views/exercises/evaluation_mode_info.php:15
+#, php-format
+msgid "Richtige Antworten %shervorgehoben%s."
+msgstr "correct answers %shighlighted%s."
+
+#: views/exercises/solve_rh_exercise.php:15
+msgid "Elemente hier ablegen"
+msgstr "Drag elements here"
+
+#: views/exercises/edit_tb_exercise.php:2
+msgid "Vorgegebener Text (optional)"
+msgstr "Default text (optional)"
+
+#: views/exercises/edit_tb_exercise.php:32
+msgid "Ähnlichkeitsberechnung über Levenshtein-Distanz"
+msgstr "Calculation of similarity"
+
+#: views/exercises/edit_tb_exercise.php:37
+msgid "Hochladen von Dateien als Lösung erlauben"
+msgstr "Allow file uploads"
+
+#: views/exercises/edit_tb_exercise.php:38
+msgid "Hochgeladene Dateien können nicht automatisch bewertet werden."
+msgstr "Uploades files cannot be graded automatically."
+
+#: views/exercises/wiki_exercise.php:10
+msgid "Aufgabe abgegeben"
+msgstr "Task submitted"
+
+#: views/exercises/wiki_exercise.php:31
+msgid "Absenden"
+msgstr "Submit"
+
+#: views/exercises/edit_lt_exercise.php:16
+msgid "teils richtig"
+msgstr "partly correct"
+
+#: views/exercises/edit_lt_exercise.php:51
+msgid "Ähnlichkeitsberechnung"
+msgstr "Calculation of similarity"
+
+#: views/exercises/edit_lt_exercise.php:59
+msgid "keine"
+msgstr "none"
+
+#: views/exercises/edit_lt_exercise.php:62
+msgid "Levenshtein-Distanz"
+msgstr "Levenshtein distance"
+
+#: views/exercises/edit_lt_exercise.php:65
+msgid "Soundex-Aussprache"
+msgstr "Soundex pronounciation"
+
+#: views/exercises/correct_pl_exercise.php:48
+msgid "Eval"
+msgstr ""
+
+#: views/exercises/correct_pl_exercise.php:65
+msgid "Prolog-Score"
+msgstr "Prolog score"
+
+#: views/exercises/correct_pl_exercise.php:75
+msgid "Validity"
+msgstr "Validity"
+
+#: views/groups/index.php:10
+msgid "Angelegte Gruppen"
+msgstr "Existing Groups"
+
+#: views/groups/index.php:18
+msgid "Kursteilnehmer"
+msgstr "Participants"
+
+#: views/groups/index.php:34
+msgid "Es wurden noch keine Gruppen angelegt."
+msgstr "No groups have been created yet."
+
+#: views/groups/index.php:48
+msgid "Teilnehmer dieser Gruppe zuordnen"
+msgstr "Assign participants to this group"
+
+#: views/groups/index.php:53
+msgid "Größe:"
+msgstr "Size:"
+
+#: views/groups/index.php:58
+msgid "Gruppenname oder -größe ändern"
+msgstr "Edit group name or size"
+
+#: views/groups/index.php:61
+msgid "Gruppe löschen"
+msgstr "Delete group"
+
+#: views/groups/index.php:84
+msgid "Teilnehmer aus der Gruppe austragen"
+msgstr "Unassign participant from this group"
+
+#: views/groups/index.php:107
+msgid ""
+"Hier können Sie Studierende in Gruppen einteilen, die gemeinsam Übungen "
+"bearbeiten können."
+msgstr ""
+
+#: views/groups/index.php:110
+msgid "Studierende dürfen sich selbst in Gruppen eintragen"
+msgstr "Students are allowed to assign themselves to groups."
+
+#: views/groups/index.php:116
+msgid "Übungsgruppe erstellen"
+msgstr "Create group"
+
+#: views/groups/edit_group_dialog.php:7
+msgid "Gruppenname"
+msgstr "Group name"
+
+#: views/groups/edit_group_dialog.php:12
+msgid "Gruppengröße (mind. 1)"
+msgstr "Group size (min. 1)"
+
+#: views/export/print_student_overview.php:7
+msgid ""
+"Drucken Sie hier das Aufgabenblatt aus. Entscheiden Sie sich für den "
+"Blankodruck mit oder ohne Musterlösung oder wählen Sie einen Studenten aus, "
+"dessen Lösung Sie drucken wollen."
+msgstr ""
+"Print out the worksheet here. Decide either to print a blank form with or "
+"without sample solution or choose a student to print his solution."
+
+#: views/export/print_student_overview.php:11
+msgid "ohne eine Studentenlösung drucken"
+msgstr "print without student's solution"
+
+#: views/export/print_student_overview.php:16
+msgid "ohne Musterlösung"
+msgstr "without sample solution"
+
+#: views/export/print_student_overview.php:18
+#: views/sheets/edit_assignment.php:76
+msgid "oder"
+msgstr "or"
+
+#: views/export/print_student_overview.php:20
+msgid "mit Musterlösung"
+msgstr "with sample solution"
+
+#: views/export/print_student_overview.php:25
+msgid "mit Studentenlösung drucken"
+msgstr "print with student's solution"
+
+#: views/export/print_student_overview.php:36
+msgid "Standardeinstellungen für alle Teilnehmer"
+msgstr "Default settings for all participants"
+
+#: views/export/print_student_overview.php:40
+#: views/export/print_student_overview.php:93
+#: views/export/print_student_overview.php:125
+msgid "Korrektur"
+msgstr "Correction"
+
+#: views/export/print_student_overview.php:56
+#: views/solutions/assignment_solutions.php:160
+#: views/solutions/participants_overview.php:80
+#: views/solutions/assignment_solutions_csv.php:3
+#: views/sheets/list_assignments_stud.php:61
+msgid "Teilnehmer"
+msgstr "Participants"
+
+#: views/export/print_student_overview.php:59
+msgid "Zu druckende Elemente"
+msgstr "Elements to be printed"
+
+#: views/export/print_student_overview.php:120
+msgid "Lösungen aller Teilnehmer drucken"
+msgstr "Print solutions of all participants"
+
+#: views/export/print_student_overview.php:143
+msgid "Keine Studentenlösungen vorhanden."
+msgstr "No student solutions."
+
+#: views/export/print_assignment.php:6
+msgid "Beginn"
+msgstr "Start"
+
+#: views/export/print_assignment.php:8 views/solutions/assignments_list.php:29
+#: views/solutions/assignments_list_student.php:29
+#: views/sheets/list_assignments_list.php:26
+msgid "Ende"
+msgstr "End"
+
+#: views/export/print_assignment.php:13
+msgid "Kurs"
+msgstr "Course"
+
+#: views/export/print_assignment.php:14
+msgid "Nummer"
+msgstr "Course ID"
+
+#: views/export/print_assignment.php:16
+msgid "Dozenten"
+msgstr "Lecturers"
+
+#: views/export/print_assignment.php:30 views/export/print_assignment.php:32
+msgid "Matrikelnummer"
+msgstr "Student registration number"
+
+#: views/export/print_assignment.php:49
+msgid "Gesamtpunktzahl"
+msgstr "Total points"
+
+#: views/export/print_assignment.php:54
+msgid "Erreichte Punkte"
+msgstr "Achieved points"
+
+#: views/export/print_assignment.php:63
+msgid "Maximal erreichbare Punkte"
+msgstr "Maximum achievable points"
+
+#: views/exam_mode/index.php:3
+msgid "Bitte wählen Sie den Kurs, in dem Sie die Klausur schreiben möchten:"
+msgstr "Choose the course for your exam:"
+
+#: views/exam_mode/index.php:11
+msgid "Inhalt"
+msgstr "Contents"
+
+#: views/exam_mode/index.php:38
+msgid "Zur Zeit laufen keine Klausuren."
+msgstr "There are no currently active exams."
+
+#: views/exam_mode/index.php:42
+msgid ""
+"Der normale Betrieb von Stud.IP ist für Sie zur Zeit gesperrt, da Klausuren "
+"geschrieben werden."
+msgstr ""
+
+#: views/solutions/student_grade.php:15
+#: views/solutions/assignment_solutions.php:76
+#: views/solutions/assignment_solutions.php:166
+#: views/solutions/assignments_list.php:42
+#: views/solutions/assignments_list.php:77
+#: views/solutions/assignments_list_student.php:36
+#: views/sheets/list_exercises.php:20
+msgid "Punkte"
+msgstr "Points"
+
+#: views/solutions/student_grade.php:18
+#: views/solutions/assignment_solutions.php:169
+#: views/solutions/assignments_list_student.php:39
+msgid "Prozent"
+msgstr "Percent"
+
+#: views/solutions/student_grade.php:25
+msgid "gewichtete Prozent"
+msgstr "weighted percent"
+
+#: views/solutions/student_grade.php:96
+msgid "Prozent, gesamt"
+msgstr "percent, total"
+
+#: views/solutions/student_grade.php:105
+msgid "Note:"
+msgstr "Grade:"
+
+#: views/solutions/student_grade.php:121
+msgid ""
+"In diesem Kurs sind noch nicht alle Aufgabenblätter beendet und freigegeben. "
+"Daher kann die Note nicht berechnet werden."
+msgstr ""
+"Not all worksheets have been finished and published in this course. Thus, "
+"the total grade cannot be calculated."
+
+#: views/solutions/assignment_solutions.php:38
+#, php-format
+msgid "Aufgabenblatt &bdquo;%s&ldquo;"
+msgstr "Worksheet &bdquo;%s&ldquo;"
+
+#: views/solutions/assignment_solutions.php:45
+msgid "Korrigieren Sie hier die nächste unkorrigierte Lösung"
+msgstr "Correct the next uncorrected solution"
+
+#: views/solutions/assignment_solutions.php:46
+#, php-format
+msgid "Es muss noch %d Lösung korrigiert werden."
+msgid_plural "Es müssen noch %d Lösungen korrigiert werden."
+msgstr[0] "%d solution is left for grading."
+msgstr[1] "%d solutions are left for grading."
+
+#: views/solutions/assignment_solutions.php:49
+msgid "Es sind alle Lösungen korrigiert."
+msgstr "All solutions are graded."
+
+#: views/solutions/assignment_solutions.php:54
+msgid ""
+"Klicken Sie auf die Schaltfläche &bdquo;Autokorrektur&ldquo;, um alle "
+"Aufgaben automatisch korrigieren zu lassen. Die bereits manuell "
+"durchgeführten Korrekturen werden durch diese Aktion nicht überschrieben."
+msgstr ""
+"Click on the \"Autocorrect\" button to grade all solutions automatically. "
+"This action will not overwrite existing manual gradings."
+
+#: views/solutions/assignment_solutions.php:56
+msgid "Autokorrektur"
+msgstr "Correction"
+
+#: views/solutions/assignment_solutions.php:56
+msgid "automatisch korrigieren"
+msgstr "grade automatically"
+
+#: views/solutions/assignment_solutions.php:65
+msgid "Für Studenten freigeben:"
+msgstr "Release for students:"
+
+#: views/solutions/assignment_solutions.php:71
+msgid "nichts"
+msgstr "nothing"
+
+#: views/solutions/assignment_solutions.php:81
+msgid "Punkte und Korrekturen"
+msgstr "Points and Corrections"
+
+#: views/solutions/assignment_solutions.php:93
+msgid "Lösungen der Studenten"
+msgstr "The student's solution"
+
+#: views/solutions/assignment_solutions.php:100
+#, php-format
+msgid ""
+"%sBlau dargestellte Aufgaben%s wurden automatisch und sicher korrigiert."
+msgstr "%sTasks shown in blue%s have been graded automatically and reliably."
+
+#: views/solutions/assignment_solutions.php:101
+#, php-format
+msgid "%sGrün dargestellte Aufgaben%s wurden von Hand korrigiert."
+msgstr "%sTasks shown in green%s have been graded manually."
+
+#: views/solutions/assignment_solutions.php:102
+#, php-format
+msgid "%sRot dargestellte Aufgaben%s wurden noch nicht fertig korrigiert."
+msgstr "%sTasks shown in red%s have not been graded yet."
+
+#: views/solutions/assignment_solutions.php:103
+#, php-format
+msgid "%sAusgegraute Aufgaben%s wurden vom Studenten nicht bearbeitet."
+msgstr "%sTasks shown in grey%s have not been submitted by the student."
+
+#: views/solutions/assignment_solutions.php:110
+msgid "Anzeigefilter:"
+msgstr "View filter:"
+
+#: views/solutions/assignment_solutions.php:115
+msgid "Studenten, die Lösungen abgegeben haben"
+msgstr "Students that submitted solutions"
+
+#: views/solutions/assignment_solutions.php:118
+msgid "alle Studenten"
+msgstr "all students"
+
+#: views/solutions/assignment_solutions.php:124
+msgid "Studenten, die die Klausur beendet haben"
+msgstr "Students who finished the exam"
+
+#: views/solutions/assignment_solutions.php:127
+msgid "Studenten, die die Klausur gerade bearbeiten"
+msgstr "Students who are currently working on the exam"
+
+#: views/solutions/assignment_solutions.php:130
+msgid "Studenten, die die Klausur noch nicht begonnen haben"
+msgstr "Students who have not yet begun the exam"
+
+#: views/solutions/assignment_solutions.php:137
+msgid "Anzeigen"
+msgstr "Display"
+
+#: views/solutions/assignment_solutions.php:151
+#: views/solutions/assignment_solutions.php:156
+msgid "Aufgaben aller Teilnehmer anzeigen"
+msgstr "Show tasks for all participants"
+
+#: views/solutions/assignment_solutions.php:152
+#: views/solutions/assignment_solutions.php:157
+msgid "Aufgaben aller Teilnehmer verstecken"
+msgstr "Hide tasks for all participants"
+
+#: views/solutions/assignment_solutions.php:163
+msgid "Nachricht"
+msgstr "Message"
+
+#: views/solutions/assignment_solutions.php:172
+msgid "unkorrigierte Lösungen"
+msgstr "ungraded solutions"
+
+#: views/solutions/assignment_solutions.php:175
+msgid "unbearbeitete Aufgaben"
+msgstr "unsubmitted tasks"
+
+#: views/solutions/assignment_solutions.php:209
+#: views/solutions/assignment_solutions.php:215
+#: views/solutions/assignment_solutions.php:251
+#: views/solutions/assignment_solutions.php:257
+msgid "Aufgaben anzeigen"
+msgstr "Show tasks"
+
+#: views/solutions/assignment_solutions.php:210
+#: views/solutions/assignment_solutions.php:216
+#: views/solutions/assignment_solutions.php:252
+#: views/solutions/assignment_solutions.php:258
+msgid "Aufgaben verstecken"
+msgstr "Hide tasks"
+
+#: views/solutions/assignment_solutions.php:228
+#: views/sheets/list_assignments_stud.php:37
+msgid "IP-Adresse"
+msgstr "IP address"
+
+#: views/solutions/assignment_solutions.php:229
+#: views/solutions/assignments_list.php:21
+#: views/solutions/assignments_list_student.php:21
+#: views/sheets/list_assignments_list.php:18
+#: views/sheets/list_assignments_stud.php:18
+msgid "Start"
+msgstr "Start"
+
+#: views/solutions/assignment_solutions.php:229
+#, php-format
+msgid "%s Uhr"
+msgstr "%s o'clock"
+
+#: views/solutions/assignment_solutions.php:229
+#, php-format
+msgid "noch %d Minute"
+msgid_plural "noch %d Minuten"
+msgstr[0] "%d minute left"
+msgstr[1] "%d minutes left"
+
+#: views/solutions/assignment_solutions.php:238
+#: views/solutions/assignment_solutions.php:279
+#: views/solutions/edit_solution.php:186
+#, php-format
+msgid "eine Nachricht an %s schreiben"
+msgstr "write a message to %s"
+
+#: views/solutions/assignment_solutions.php:266
+#, php-format
+msgid "eine Nachricht an alle Mitglieder der Gruppe %s schreiben"
+msgstr "write a message to all members of the group %s "
+
+#: views/solutions/assignment_solutions.php:357
+#, php-format
+msgid "%s von %s Punkt"
+msgid_plural "%s von %s Punkten"
+msgstr[0] "%s of %s point"
+msgstr[1] "%s of %s points"
+
+#: views/solutions/assignment_solutions.php:388
+msgid ""
+"In dieser Übersicht können Sie sich anzeigen lassen, welche Teilnehmer "
+"Lösungen abgegeben haben, und diese Lösungen korrigieren und freigeben."
+msgstr ""
+
+#: views/solutions/assignment_solutions.php:391
+#: views/sheets/list_assignments_stud.php:136
+msgid "Aufgabenblatt bearbeiten"
+msgstr "Edit this worksheet"
+
+#: views/solutions/assignment_solutions.php:394
+#: views/solutions/student_assignment_solutions.php:99
+#: views/sheets/list_assignments_stud.php:139
+#: views/sheets/edit_assignment.php:252
+msgid "Aufgabenblatt drucken"
+msgstr "Print this worksheet"
+
+#: views/solutions/assignment_solutions.php:397
+msgid "Autokorrektur starten"
+msgstr "Start correction"
+
+#: views/solutions/assignment_solutions.php:400
+msgid "Ergebnisse exportieren"
+msgstr "Export results"
+
+#: views/solutions/participants_overview.php:21
+#: views/solutions/participants_overview.php:227
+#: views/solutions/assignments.php:25 views/solutions/statistics.php:99
+msgid "Punkteübersicht"
+msgstr "Point overview"
+
+#: views/solutions/participants_overview.php:21
+#: views/solutions/participants_overview.php:228
+#: views/solutions/assignments.php:26 views/solutions/statistics.php:100
+msgid "Notenübersicht"
+msgstr "Grade overview"
+
+#: views/solutions/participants_overview.php:99
+#: views/solutions/participants_overview_csv.php:11
+msgid "Summe"
+msgstr "Total"
+
+#: views/solutions/participants_overview.php:106
+msgid "deutsche Note (ECTS-Note)"
+msgstr "German Grade (ECTS grade)"
+
+#: views/solutions/participants_overview.php:119
+#: views/solutions/participants_overview_csv.php:16
+msgid "Maximalpunktzahl:"
+msgstr "Maximum number of points:"
+
+#: views/solutions/participants_overview.php:121
+#: views/solutions/participants_overview_csv.php:18
+msgid "Gewichtung:"
+msgstr "Weight:"
+
+#: views/solutions/participants_overview.php:164
+#, php-format
+msgid "%s Punkte"
+msgstr "%s points"
+
+#: views/solutions/participants_overview.php:165
+#, php-format
+msgid "%s Prozent"
+msgstr "%s percent"
+
+#: views/solutions/participants_overview.php:181
+#, php-format
+msgid "%.1f"
+msgstr "%.1f"
+
+#: views/solutions/participants_overview.php:187
+#, php-format
+msgid "absolut: %s %%"
+msgstr "absolute: %s %%"
+
+#: views/solutions/participants_overview.php:223
+msgid ""
+"Diese Seite gibt einen Überblick über die von allen Teilnehmern erreichten "
+"Punkte und ggf. Noten."
+msgstr ""
+
+#: views/solutions/participants_overview.php:229
+#: views/solutions/assignments.php:27 views/solutions/statistics.php:4
+#: views/solutions/statistics.php:101
+msgid "Statistik"
+msgstr "Statistics"
+
+#: views/solutions/participants_overview.php:233
+#: views/solutions/statistics.php:105
+msgid "Liste im CSV-Format exportieren"
+msgstr "Export this list in CSV format"
+
+#: views/solutions/edit_solution.php:16
+msgid "voriger Teilnehmer"
+msgstr "previous participant"
+
+#: views/solutions/edit_solution.php:21
+msgid "keiner der vorhergehenden Teilnehmer hat diese Aufgabe bearbeitet"
+msgstr "none of the previous participants has worked on this task"
+
+#: views/solutions/edit_solution.php:33
+msgid "nächster Teilnehmer"
+msgstr "next participant"
+
+#: views/solutions/edit_solution.php:38
+msgid "keiner der nachfolgenden Teilnehmer hat diese Aufgabe bearbeitet"
+msgstr "none of the subsequent participants has worked on this task"
+
+#: views/solutions/edit_solution.php:52
+msgid "der Teilnehmer hat keine der vorhergehenden Aufgaben bearbeitet"
+msgstr "the participant has not worked on any of the previous tasks"
+
+#: views/solutions/edit_solution.php:67
+msgid "der Teilnehmer hat keine der nachfolgenden Aufgaben bearbeitet"
+msgstr "the participant has not worked on any of the subsequent tasks"
+
+#: views/solutions/edit_solution.php:87
+#, php-format
+msgid "Bewertung zur Aufgabe &bdquo;%s&ldquo;"
+msgstr "Your grade for task &bdquo;%s&ldquo;"
+
+#: views/solutions/edit_solution.php:88
+#, php-format
+msgid "von %s"
+msgstr "of %s"
+
+#: views/solutions/edit_solution.php:88
+#, php-format
+msgid "von Gruppe &bdquo;%s&ldquo;"
+msgstr "of group &bdquo;%s&ldquo;"
+
+#: views/solutions/edit_solution.php:93
+msgid "Anmerkung zur Lösung"
+msgstr "Remark on the solution"
+
+#: views/solutions/edit_solution.php:107
+#, php-format
+msgid "Vergebene Punkte (von %s)"
+msgstr "Points given (of %s)"
+
+#: views/solutions/edit_solution.php:108
+msgid "Bitte geben Sie eine Zahl ein"
+msgstr "Please enter a number"
+
+#: views/solutions/edit_solution.php:120
+msgid ""
+"Sie können hier die Ergebnisse der Autokorrektur ansehen und Aufgaben "
+"manuell korrigieren."
+msgstr ""
+
+#: views/solutions/edit_solution.php:133
+msgid "vorige unkorrigierte Aufgabe"
+msgstr "previous uncorrected task"
+
+#: views/solutions/edit_solution.php:139
+msgid "nächste unkorrigierte Aufgabe"
+msgstr "next uncorrected task"
+
+#: views/solutions/edit_solution.php:162
+msgid "Übersicht der Korrekturen"
+msgstr "Overview of corrections"
+
+#: views/solutions/edit_solution.php:186
+#, php-format
+msgid "Anmerkung des Korrektors (%s):"
+msgstr "Remark from corrector (%s):"
+
+#: views/solutions/assignments.php:15
+msgid "Es ist kein beendetes Aufgabenblatt vorhanden"
+msgstr "No finished task collection exists"
+
+#: views/solutions/assignments.php:21
+msgid ""
+"Hier finden Sie eine Übersicht über den Korrekturstatus Ihrer "
+"Aufgabenblätter und können Aufgaben korrigieren."
+msgstr ""
+
+#: views/solutions/student_assignment_solutions.php:5
+msgid ""
+"Es wurde keine Aufgabe korrigiert oder die Korrekturen wurden nicht "
+"freigegeben"
+msgstr "No task was graded or the grades have not been published"
+
+#: views/solutions/student_assignment_solutions.php:11
+#, php-format
+msgid "Ergebnisse des Aufgabenblatts &bdquo;%s&ldquo;"
+msgstr "Grades of worksheet &bdquo;%s&ldquo;"
+
+#: views/solutions/student_assignment_solutions.php:24
+msgid "erreichte Punkte"
+msgstr "achieved points"
+
+#: views/solutions/student_assignment_solutions.php:28
+#: views/sheets/list_assignments_stud.php:67
+msgid "max. Punkte"
+msgstr "max. points"
+
+#: views/solutions/student_assignment_solutions.php:48
+msgid "(nicht freigegeben)"
+msgstr "(not published)"
+
+#: views/solutions/student_assignment_solutions.php:57
+msgid "(nicht abgegeben)"
+msgstr "(not submitted)"
+
+#: views/solutions/student_assignment_solutions.php:79
+msgid "Gesamtpunktzahl:"
+msgstr "Total points:"
+
+#: views/solutions/student_assignment_solutions.php:96
+msgid ""
+"Sie können hier die Ergebnisse bzw. die Korrekturen ihrer Aufgaben ansehen."
+msgstr ""
+
+#: views/solutions/statistics_csv.php:4 views/sheets/pick_exercise.php:6
+msgid "Aufgabe"
+msgstr "Task"
+
+#: views/solutions/statistics_csv.php:5
+msgid "Item"
+msgstr "Item"
+
+#: views/solutions/statistics_csv.php:6 views/solutions/statistics.php:19
+msgid "erreichbare Punkte"
+msgstr "achievable points"
+
+#: views/solutions/statistics_csv.php:7 views/solutions/statistics.php:22
+msgid "durchschn. Punkte"
+msgstr "average points"
+
+#: views/solutions/statistics_csv.php:8 views/solutions/statistics.php:25
+msgid "korrekte Lösungen"
+msgstr "correct solutions"
+
+#: views/solutions/statistics_csv.php:31 views/solutions/statistics.php:72
+#, php-format
+msgid "Item %d"
+msgstr "Item %d"
+
+#: views/solutions/assignments_list.php:36
+msgid "korrigiert"
+msgstr "graded"
+
+#: views/solutions/assignments_list.php:39
+msgid "freigegeben"
+msgstr "published"
+
+#: views/solutions/assignments_list.php:69
+#: views/sheets/list_assignments_stud.php:95
+msgid "ja"
+msgstr "yes"
+
+#: views/solutions/assignments_list.php:71
+#: views/sheets/list_assignments_stud.php:97
+msgid "nein"
+msgstr "no"
+
+#: views/solutions/assignments_list.php:79
+msgid "Korrekturen"
+msgstr "Grades"
+
+#: views/solutions/participants_overview_csv.php:3
+msgid "Vorname"
+msgstr "First name"
+
+#: views/solutions/participants_overview_csv.php:4
+msgid "Nachname"
+msgstr "Family name"
+
+#: views/solutions/participants_overview_csv.php:5
+msgid "Matrikelnr."
+msgstr "Student registration number"
+
+#: views/solutions/participants_overview_csv.php:13
+msgid "ECTS"
+msgstr "ECTS"
+
+#: views/solutions/assignments_list_student.php:42
+msgid "Aktion"
+msgstr "Actions"
+
+#: views/solutions/statistics.php:16
+msgid "Titel / Aufgabe"
+msgstr "Worksheet / Title"
+
+#: views/solutions/statistics.php:95
+msgid ""
+"Diese Seite gibt einen Überblick über die im Durchschnitt von allen "
+"Teilnehmern erreichten Punkte sowie den Prozentsatz der vollständig "
+"korrekten Lösungen."
+msgstr ""
+
+#: views/sheets/list_assignments_list.php:34
+msgid "Modus"
+msgstr "Mode"
+
+#: views/sheets/list_assignments_list.php:57
+msgid "unterbrochen"
+msgstr "interrupted"
+
+#: views/sheets/list_assignments_list.php:74
+msgid "Starten"
+msgstr "Start"
+
+#: views/sheets/list_assignments_list.php:79
+msgid "Fortsetzen"
+msgstr "Continue"
+
+#: views/sheets/list_assignments_list.php:83
+msgid "Anhalten"
+msgstr "Stop"
+
+#: views/sheets/list_assignments_list.php:92
+msgid "Aufgaben korrigieren"
+msgstr "Correct exercises"
+
+#: views/sheets/list_assignments.php:6 views/sheets/list_assignments_stud.php:4
+msgid "Es wurden noch keine Aufgabenblätter eingerichtet."
+msgstr "No worksheets have been created."
+
+#: views/sheets/list_assignments.php:15
+msgid ""
+"In Vips können Übungen, Tests und Klausuren online vorbereitet und "
+"durchgeführt werden. Sie erhalten dabei auch eine Übersicht über die "
+"Lösungen bzw. Antworten der Studierenden."
+msgstr ""
+
+#: views/sheets/list_assignments.php:16
+msgid ""
+"Auf dieser Seite können Sie Aufgabenblätter in Ihrem Kurs anlegen und "
+"verwalten."
+msgstr ""
+
+#: views/sheets/list_assignments.php:19
+#, fuzzy
+msgid "Aufgabenblatt erstellen"
+msgstr "Create a new worksheet"
+
+#: views/sheets/list_assignments.php:22
+msgid "Aufgabenblatt kopieren"
+msgstr "Copy an existing worksheet"
+
+#: views/sheets/list_assignments.php:25
+#, fuzzy
+msgid "Aufgabenblatt importieren"
+msgstr "Import a new worksheet"
+
+#: views/sheets/list_assignments_stud.php:21
+msgid "Zeitraum"
+msgstr "Period"
+
+#: views/sheets/list_assignments_stud.php:27
+#, php-format
+msgid "%s Minuten Zeit"
+msgstr "%s minutes left"
+
+#: views/sheets/list_assignments_stud.php:29
+#, php-format
+msgid "Sie haben noch %s Minuten Zeit!"
+msgstr "You have %s minutes left!"
+
+#: views/sheets/list_assignments_stud.php:58
+msgid "Abgabedatum"
+msgstr "Submission date"
+
+#: views/sheets/list_assignments_stud.php:64
+msgid "bearbeitet"
+msgstr "completed"
+
+#: views/sheets/list_assignments_stud.php:112
+msgid "Lösungen dieses Blatts löschen"
+msgstr "Delete all solutions to this worksheet"
+
+#: views/sheets/list_assignments_stud.php:122
+msgid "keine Aufgaben gefunden"
+msgstr "no tasks found"
+
+#: views/sheets/list_assignments_stud.php:126
+#, php-format
+msgid "Sie haben mit Ihrer IP-Adresse &bdquo;%s&ldquo; keinen Zugriff!"
+msgstr "Your IP address &bdquo;%s&ldquo; is not allowed to access!"
+
+#: views/sheets/list_assignments_stud.php:133
+msgid "Dies ist die Studentenansicht (Vorschau) des Aufgabenblatts."
+msgstr ""
+
+#: views/sheets/list_exercises.php:26
+msgid "Nicht bewerten"
+msgstr "Don't grade"
+
+#: views/sheets/list_exercises.php:34
+msgid "nach oben verschieben"
+msgstr "move up"
+
+#: views/sheets/list_exercises.php:42
+msgid "nach unten verschieben"
+msgstr "move down"
+
+#: views/sheets/character_picker.php:42
+msgid "mehr"
+msgstr "more"
+
+#: views/sheets/character_picker.php:62
+msgid "weniger"
+msgstr "less"
+
+#: views/sheets/pick_test.php:25 views/sheets/pick_exercise.php:29
+msgid "Vorschau anzeigen"
+msgstr "Show preview"
+
+#: views/sheets/pick_exercise.php:12
+msgid "Vorlesung"
+msgstr "Lecture"
+
+#: views/sheets/pick_exercise.php:50
+msgid "Keine Aufgaben gefunden."
+msgstr "No tasks found."
+
+#: views/sheets/import_assignment_dialog.php:3
+msgid "Aufgabenblatt aus Textdatei importieren"
+msgstr "Import worksheet from text file"
+
+#: views/sheets/import_assignment_dialog.php:7
+msgid "Datei:"
+msgstr "File:"
+
+#: views/sheets/import_assignment_dialog.php:11
+msgid "Importieren"
+msgstr "Import"
+
+#: views/sheets/edit_assignment.php:9
+msgid "Grunddaten"
+msgstr "Basic data"
+
+#: views/sheets/edit_assignment.php:18
+msgid "Beschreibung"
+msgstr "Description"
+
+#: views/sheets/edit_assignment.php:32
+msgid "Startzeitpunkt"
+msgstr "Starting time"
+
+#: views/sheets/edit_assignment.php:38
+msgid "Endzeitpunkt"
+msgstr "Ending time"
+
+#: views/sheets/edit_assignment.php:50
+msgid "Dauer in Minuten"
+msgstr "Duration in minutes"
+
+#: views/sheets/edit_assignment.php:64
+msgid "Übungsblock"
+msgstr "Worksheet block"
+
+#: views/sheets/edit_assignment.php:68
+msgid "Keinem Block zuweisen"
+msgstr "No block assignment"
+
+#: views/sheets/edit_assignment.php:77
+msgid "Neuen Block anlegen"
+msgstr "Create new block"
+
+#: views/sheets/edit_assignment.php:83
+msgid "Falsche Antworten in Multiple- und Single-Choice-Aufgaben"
+msgstr "Wrong answers in multiple choice tasks"
+
+#: views/sheets/edit_assignment.php:87
+msgid "&hellip; geben keinen Punktabzug"
+msgstr "&hellip; are not penalized"
+
+#: views/sheets/edit_assignment.php:90
+msgid "&hellip; geben Punktabzug (Gesamtpunktzahl Aufgabe mind. 0)"
+msgstr ""
+"&hellip; are penalized by point deduction (minimum of 0 points for a task)"
+
+#: views/sheets/edit_assignment.php:93
+msgid "&hellip; geben Punktabzug (negative Punkte für eine Aufgabe möglich)"
+msgstr ""
+"&hellip; are penalized by point deduction (negative amount of points for a "
+"task are possible)"
+
+#: views/sheets/edit_assignment.php:96
+msgid "&hellip; führen zur Bewertung der Aufgabe mit 0 Punkten"
+msgstr "&hellip; result in a score of 0 points for the task"
+
+#: views/sheets/edit_assignment.php:102
+msgid "Notizen (für Teilnehmer unsichtbar)"
+msgstr "Notes (not visible to students)"
+
+#: views/sheets/edit_assignment.php:110
+msgid "Reihenfolge der Antworten mischen"
+msgstr "Mix task order"
+
+#: views/sheets/edit_assignment.php:115
+msgid "IP-Zugriffsbereich (optional)"
+msgstr "IP access area (optional)"
+
+#: views/sheets/edit_assignment.php:120
+msgid "Beispiele:"
+msgstr "Examples:"
+
+#: views/sheets/edit_assignment.php:124
+msgid "gibt nur diese IP frei."
+msgstr "only allow this IP address."
+
+#: views/sheets/edit_assignment.php:128
+msgid "gibt alle IPs frei, die so beginnen."
+msgstr "allow all IP adresses that start with this prefix."
+
+#: views/sheets/edit_assignment.php:132
+#, php-format
+msgid ""
+"gibt alle IPs frei, die mit %s123.456.7%s, %s123.456.8%s oder %s123.456.9%s "
+"beginnen."
+msgstr ""
+"allow all IP addresses that start with %s123.456.7%s, %s123.456.8%s or "
+"%s123.456.9%s."
+
+#: views/sheets/edit_assignment.php:136
+msgid ""
+"Außerdem können Mischformen aller genannten Fälle eingetragen werden (durch "
+"Komma oder Leerzeichen getrennt)."
+msgstr ""
+"All forms of allowed IP address schemes can be mixed (delimited by comma or "
+"space)."
+
+#: views/sheets/edit_assignment.php:164
+msgid ""
+"Aufgaben können erst nach dem Speichern der Grunddaten hinzugefügt werden."
+msgstr "Tasks can be added after saving these settings."
+
+#: views/sheets/edit_assignment.php:212
+#, php-format
+msgid "Wollen Sie wirklich die Aufgabe \"%s\" löschen?"
+msgstr "Do you really want to delete task \"%s\"?"
+
+#: views/sheets/edit_assignment.php:231
+msgid ""
+"Die Bearbeitungszeit ist beendet. Die Aufgaben können nicht mehr bearbeitet "
+"werden."
+msgstr "The exam is finished. You cannot work on the tasks anymore."
+
+#: views/sheets/edit_assignment.php:236
+msgid ""
+"Sie können hier die Grunddaten des Aufgabenblatts verwalten und Aufgaben "
+"hinzufügen, bearbeiten oder löschen."
+msgstr ""
+
+#: views/sheets/edit_assignment.php:237
+msgid "Alle Daten können später geändert oder ergänzt werden."
+msgstr "(All data can be changed or supplemented later.)"
+
+#: views/sheets/edit_assignment.php:244
+msgid "Vorhandene Aufgabe kopieren"
+msgstr "Copy an existing task"
+
+#: views/sheets/edit_assignment.php:249
+msgid "Aufgabenblatt korrigieren"
+msgstr "Correct this worksheet"
+
+#: views/sheets/edit_assignment.php:259
+msgid "Aufgabenblatt aus Studentensicht anzeigen"
+msgstr "Show this task from student's view"
+
+#: views/sheets/edit_assignment.php:265
+msgid "Aufgabenblatt exportieren (XML)"
+msgstr "Export this worksheet (XML)"
+
+#: views/sheets/edit_assignment.php:268
+msgid "Aufgabenblatt exportieren (Text)"
+msgstr "Export this worksheet (text)"
+
+#: views/sheets/copy_exercise_dialog.php:5
+msgid "Aufgaben aus einem anderen Aufgabenblatt kopieren"
+msgstr "Insert task from another worksheet"
+
+#: views/sheets/copy_exercise_dialog.php:18
+msgid "Aufgaben suchen"
+msgstr "Search tasks"
+
+#: views/sheets/copy_exercise_dialog.php:20
+msgid "Neue Suche"
+msgstr "New Search"
+
+#: views/sheets/add_exercise_dialog.php:5
+msgid "Aufgabentyp auswählen"
+msgstr "Select type of task"
+
+#: views/sheets/add_exercise_dialog.php:16
+msgid "Erstellen"
+msgstr "Create"
+
+#: views/sheets/copy_assignment_dialog.php:3
+msgid "Vorhandenes Aufgabenblatt kopieren"
+msgstr "Copy existing worksheet"
+
+#~ msgid "Hinweise:"
+#~ msgstr "Hints:"
+
+#~ msgid "Die Gruppe wurde gelöscht."
+#~ msgstr "The group was deleted."
+
+#~ msgid "Bitte tragen Sie nur sich selbst in eine Gruppe ein."
+#~ msgstr "Please only assign yourself to a group."
+
+#~ msgid "Die Klausuren wurden gruppiert."
+#~ msgstr "The exams have been grouped."
+
+#~ msgid "Gruppierte Klausuren"
+#~ msgstr "Grouped exams"
+
+#~ msgid "nach Namen sortieren"
+#~ msgstr "sort by name"
+
+#~ msgid "nach Punkten sortieren"
+#~ msgstr "sort by points"
+
+#~ msgid "nach erreichten Prozent sortieren"
+#~ msgstr "sort by achieved points"
+
+#~ msgid "nach Note sortieren"
+#~ msgstr "sort by grade"
+
+#~ msgid "Aktionen:"
+#~ msgstr "Actions:"
+
+#~ msgid ""
+#~ "Tutoren können nur ihre eigenen Gruppen einsehen (nur Übungsblätter)."
+#~ msgstr "Tutors can only see their own groups (only for worksheets)."
+
+#~ msgid "Gruppe &bdquo;%s&ldquo; bearbeiten"
+#~ msgstr "Edit group &bdquo;%s&ldquo;"
+
+#~ msgid "Gruppe anlegen"
+#~ msgstr "Create group"
+
+#~ msgid "Abbrechen"
+#~ msgstr "Cancel"
+
+#~ msgid "Anlegen"
+#~ msgstr "Create Group"
+
+#~ msgid "Aufgabenblatt anlegen"
+#~ msgstr "Create worksheet"
+
+#~ msgid "neues Aufgabenblatt anlegen"
+#~ msgstr "create new worksheet"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Gruppieren"
+#~ msgstr "Create group"
+
+#~ msgid "Aufgabe entfernen"
+#~ msgstr "Remove from worksheet"
+
+#~ msgid "Aufgabe entfernen und komplett löschen"
+#~ msgstr "Remove from worksheet and completely delete task"
+
+#~ msgid "Vorschau"
+#~ msgstr "Preview"
+
+#~ msgid "Aufgaben hinzufügen"
+#~ msgstr "Add tasks"
+
+#~ msgid "Eine neue Aufgabe des folgenden Typs erstellen"
+#~ msgstr "Create a new task of the following type"
+
+#~ msgid "Markierte Aufgaben dem Aufgabenblatt hinzufügen."
+#~ msgstr "Add selected tasks to this worksheet"
+
+#~ msgid "Aufgabenblatt als Textdatei exportieren"
+#~ msgstr "Import worksheet from text file"
+
+#~ msgid "zu"
+#~ msgstr "assign to"
+
+#~ msgid "Studentenansicht für Dozenten"
+#~ msgstr "Student's view for teachers"
+
+#~ msgid "(zu %d.)"
+#~ msgstr "assign to #%d"
+
+#~ msgid "zuzuordnende Texte mischen"
+#~ msgstr "mix texts to match"
+
+#~ msgid "Falsche Antworten geben keinen Punktabzug."
+#~ msgstr "Wrong answers are not penalized."
+
+#~ msgid "Aufgabe im IMS-QTI-Format exportieren"
+#~ msgstr "Export this task in IMS QTI format"
+
+#~ msgid "Aufgabe im ProFormA-Format exportieren"
+#~ msgstr "Export this task in ProFormA format"
+
+#~ msgid "zu %s"
+#~ msgstr "assign to %s"
+
+#~ msgid ""
+#~ "Hinweis: Sie können die Reihenfolge der Kästchen durch Ziehen mit der "
+#~ "Maus ändern."
+#~ msgstr "Hint: You can rearrange the boxes by dragging with the mouse."
+
+#~ msgid "Übungsblatt"
+#~ msgstr "Worksheet"
+
+#~ msgid "Gruppe bearbeiten"
+#~ msgstr "Edit group"
+
+#~ msgid "Uhrzeit:"
+#~ msgstr "Time:"
+
+#~ msgid "Druckansicht für Studenten sichtbar"
+#~ msgstr "Print view accessible for students"
+
+#~ msgid "Aufgabenblatt im XML-Format exportieren"
+#~ msgstr "Export this task in XML format"
+
+#~ msgid "wichtige Schlagwörter"
+#~ msgstr "important keywords"
+
+#~ msgid ""
+#~ "korrekte in %sblau%s, teils richtige in %smagenta%s, falsche in %srot%s"
+#~ msgstr ""
+#~ "correct in %sblue%s, partially correct in %smagenta%s, wrong in %sred%s"
+
+#~ msgid "teils falsch"
+#~ msgstr "partly wrong"
+
+#~ msgid "Die Antwort %s ist falsch."
+#~ msgstr "The answer %s is wrong."
+
+#~ msgid "Die Antwort %s ist teils richtig."
+#~ msgstr "The answer %s is partly correct."
+
+#~ msgid "Die Antwort %s ist richtig."
+#~ msgstr "The answer %s is correct."
+
+#~ msgid "andere richtige Antworten"
+#~ msgstr "other correct answers"
+
+#~ msgid "Gruppenverwaltung"
+#~ msgstr "Group administration"
+
+#~ msgid "Druckansicht"
+#~ msgstr "Print preview"
+
+#~ msgid ""
+#~ "Sie haben keine Veranstaltung gewählt oder keine Rechte, diesen Bereich "
+#~ "zu betreten."
+#~ msgstr ""
+#~ "You have no course chosen or do not have sufficient rights to enter this "
+#~ "area."
+
+#~ msgid "Sie besitzen keine Berechtigung, um dieses Plugin zu konfigurieren."
+#~ msgstr "You do not have sufficient rights to congifure this plugin. "
+
+#~ msgid "neue Klausur"
+#~ msgid_plural "neue Klausuren"
+#~ msgstr[0] "new exam"
+#~ msgstr[1] "new exams"
+
+#~ msgid "Sie haben keine Rechte, diesen Bereich zu betreten."
+#~ msgstr "You do not have sufficient rights to enter this area."
+
+#~ msgid "Vorsicht! Einer einzelnen Vorgabe wurden mehrere Texte zugeordnet."
+#~ msgstr ""
+#~ "Attention! More than one text has been assigned to a single default."
+
+#~ msgid "Laufende %s"
+#~ msgstr "Running %s"
+
+#~ msgid "Die Klausur %s mit %d Aufgabe wurde hinzugefügt."
+#~ msgid_plural "Die Klausur %s mit %d Aufgaben wurde hinzugefügt."
+#~ msgstr[0] "Exam %s was added with %d task."
+#~ msgstr[1] "Exam %s was added with %d tasks."
+
+#~ msgid "Zugriff erst nach Freischaltung durch den Dozenten möglich."
+#~ msgstr "Access permitted only after release by teacher."
+
+#~ msgid "Fehler beim Hochladen!"
+#~ msgstr "Upload error!"
+
+#~ msgid "Wollen Sie den Block wirklich löschen?"
+#~ msgstr "Do you really want do delete the block?"
+
+#~ msgid ""
+#~ "Hier muß die ID des generischen Datenfelds angegeben werden, in dem die "
+#~ "Matrikelnummer eines Studenten abgelegt ist."
+#~ msgstr ""
+#~ "Enter the ID of the generic datafield that contains students' "
+#~ "registration numbers."
+
+#~ msgid "zurück zur Übersicht über die %s"
+#~ msgstr "back to %s overview"
+
+#~ msgid ""
+#~ "Falsch gesetzte Häkchen, sowie nicht gesetzte Häkchen bei richtigen "
+#~ "Antworten:"
+#~ msgstr "Incorrect checkmarks and missing checkmarks on correct answers:"
+
+#~ msgid "optional"
+#~ msgstr "optional"
+
+#~ msgid "Gültige Einträge"
+#~ msgstr "Valid entries"
+
+#~ msgid "Eine Aufgabe aus einer anderen Klausur einfügen"
+#~ msgstr "Insert task from other exam"
+
+#~ msgid "Markierte Aufgaben der Klausur"
+#~ msgstr "Marked tasks in the exam"
+
+#~ msgid "%s als Textdatei exportieren:"
+#~ msgstr "Export %s a text file:"
+
+#~ msgid "Export"
+#~ msgstr "Export"
+
+#~ msgid "Klausuren/Übungsblätter drucken"
+#~ msgstr "Print exams/worksheets"
+
+#~ msgid "Druckoptionen"
+#~ msgstr "Printing Options"
+
+#~ msgid "meine Lösung"
+#~ msgstr "my solution"
+
+#~ msgid "zurück zur Übersicht"
+#~ msgstr "back to overview"
+
+#~ msgid "Wollen Sie die Gruppe wirklich löschen?"
+#~ msgstr "Are you sure you want to delete the group?"
+
+#~ msgid "neue Klausur anlegen"
+#~ msgstr "create new exam"
+
+#~ msgid "vorhandene Klausur kopieren"
+#~ msgstr "copy existing exam"
+
+#~ msgid "Klausur aus Textdatei importieren:"
+#~ msgstr "Import exam from text file:"
+
+#~ msgid "Bearbeitungszeitraum"
+#~ msgstr "Completion period"
+
+#~ msgid "Funktionen"
+#~ msgstr "Functions"
+
+#~ msgid "Zuweisung zu Blöcken"
+#~ msgstr "Assignment to blocks"
+
+#~ msgid "Bearbeiten"
+#~ msgstr "Edit"
+
+#~ msgid "Teilnehmer der laufenden Klausur"
+#~ msgstr "Participants of running exam"
+
+#~ msgid "Student"
+#~ msgstr "Student"
+
+#~ msgid "Rechner"
+#~ msgstr "Calculator"
+
+#~ msgid "Startzeit"
+#~ msgstr "Starting time"
+
+#~ msgid "%s Minute"
+#~ msgid_plural "%s Minuten"
+#~ msgstr[0] "%s minute"
+#~ msgstr[1] "%s minutes"
+
+#~ msgid "Bisher hat kein Student mit der Klausur begonnen."
+#~ msgstr "No student has started the exam so far."
+
+#~ msgid "Diese Klausur bearbeiten"
+#~ msgstr "Edit this exam"
+
+#~ msgid "Dieses Übungsblatt bearbeiten"
+#~ msgstr "Edit this worksheet"
+
+#~ msgid "Lösung von %s"
+#~ msgstr "Solution of %s"
+
+#~ msgid "Gruppe"
+#~ msgstr "Group"
+
+#~ msgid "%s Punkt"
+#~ msgid_plural "%s Punkte"
+#~ msgstr[0] "%s point"
+#~ msgstr[1] "%s points"
+
+#~ msgid "Formatierte Ansicht:"
+#~ msgstr "Formatted view:"
+
+#~ msgid "Korrektur der Aufgabe &bdquo;%s&ldquo;"
+#~ msgstr "Correction of task &bdquo;%s&ldquo;"
+
+#~ msgid "von"
+#~ msgstr "of"
+
+#~ msgid "Anmerkung des Korrektors"
+#~ msgstr "Remark from corrector"
+
+#~ msgid "zurück zur Übersicht der beendeten Klausuren und Übungsblätter"
+#~ msgstr "back to overview of finished exams and worksheets"
+
+#~ msgid "%.1f %%"
+#~ msgstr "%.1f %%"
+
+#~ msgid "Block"
+#~ msgstr "block"
+
+#~ msgid "zurück zur Übersicht aller korrigierten Klausuren und Übungsblätter"
+#~ msgstr "back to the overview of all graded exams and worksheets"
+
+#~ msgid "Korrekturen der Klausur &bdquo;%s&ldquo;"
+#~ msgstr "Grades of exam &bdquo;%s&ldquo;"
+
+#~ msgid "maximale Punktzahl"
+#~ msgstr "maximum number of points"
+
+#~ msgid "Für Kommentare des Dozenten betrachten Sie bitte die Korrektur."
+#~ msgstr "Please look at the grades for teacher's comments."
+
+#~ msgid "Diese Übersicht als CSV-Datei exportieren:"
+#~ msgstr "Export this overview as CSV file:"
+
+#~ msgid "Anzeige:"
+#~ msgstr "Display:"
+
+#~ msgid "Antworten"
+#~ msgstr "Answers"
+
+#~ msgid "richtige Lösungen %shervorgehoben%s"
+#~ msgstr "correct solution %shighlighted%s"
+
+#~ msgid "Octave-Ausgabe"
+#~ msgstr "Octave output"
+
+#~ msgid "editierbare Lösung"
+#~ msgstr "Editable solution"
+
+#~ msgid "Studentensicht (Vorschau)"
+#~ msgstr "Student's view (preview)"
+
+#~ msgid "Antwortmodus"
+#~ msgstr "Answer mode"
+
+#~ msgid "Kommentar bei Selbsttest"
+#~ msgstr "Comment on self test"
+
+#~ msgid "Tipp"
+#~ msgstr "Hint"
+
+#~ msgid "erlauben"
+#~ msgstr "allow"
+
+#~ msgid "nicht erlauben"
+#~ msgstr "don't allow"
+
+#~ msgid "zurück zur Zufallsaufgabe &bdquo;%s&ldquo;"
+#~ msgstr "back to the random task &bdquo;%s&ldquo;"
+
+#~ msgid "Frage / Aussage %d"
+#~ msgstr "Question / statement %d"
+
+#~ msgid "Weitere Antworten können später angelegt werden."
+#~ msgstr "More answers can be added later."
+
+#~ msgid "Auswertungsmodalität"
+#~ msgstr "Evaluation mode"
+
+#~ msgid "editierbar bei den Grunddaten des Aufgabenblatts"
+#~ msgstr "editable on worksheet's basic data"
+
+#~ msgid "Für falsche Antworten werden keine Punkte abgezogen."
+#~ msgstr "Wrong answers are not penalized."
+
+#~ msgid ""
+#~ "Für falsche Antworten werden Punkte abgezogen. Die Gesamtpunktzahl "
+#~ "beträgt mindestens null."
+#~ msgstr ""
+#~ "Wrong answers are penalized by deduction of points. The amount of points "
+#~ "for a task cannot fall below zero."
+
+#~ msgid ""
+#~ "Für falsche Antworten werden Punkte abgezogen. Die Gesamtpunktzahl kann "
+#~ "dabei negativ sein."
+#~ msgstr ""
+#~ "Wrong answers are penalized by deduction of points. The amount of points "
+#~ "for a task can fall below zero."
+
+#~ msgid "bestehende Aufgabe..."
+#~ msgstr "existing task..."
+
+#~ msgid "neue Aufgabe..."
+#~ msgstr "new task..."
+
+#~ msgid "Antwortalternative %d"
+#~ msgstr "Answer alternat %d"
+
+#~ msgid "eine oder mehrere Antworten sind möglich"
+#~ msgstr "one or more answers are possible"
+
+#~ msgid "Diese Zufallsaufgabe enthält keine Aufgaben."
+#~ msgstr "This random task contains no single tasks."
+
+#~ msgid "Bitte bearbeiten Sie %seine%s der folgenden Aufgaben:"
+#~ msgstr "Please work on %sone%s of the following tasks:"
+
+#~ msgid "nur eine Antwort pro Block möglich"
+#~ msgstr "only one answer per block"
+
+#~ msgid "derzeit angezeigt für %s"
+#~ msgstr "currently shown for %s"
+
+#~ msgid "Eine oder mehrere Antworten sind möglich"
+#~ msgstr "One or more answers are possible"
+
+#~ msgid "Inhalt des Fensters herunterladen"
+#~ msgstr "Download content of the window"
+
+#~ msgid "bisherige Lösung"
+#~ msgstr "previous solution"
+
+#~ msgid "Auswahl-Komponente"
+#~ msgstr "Choice component"
+
+#~ msgid "Komponente f&uuml;r Single und Multiple Choice-Aufgaben"
+#~ msgstr "Component for single choice and multiple choice tasks"
+
+#~ msgid "Komponente"
+#~ msgstr "Component"
+
+#~ msgid "Module hinzufügen"
+#~ msgstr "Add modules"
+
+#~ msgid "Eingabefeld für einzeiligen Text"
+#~ msgstr "Input field for one line of text"
+
+#~ msgid "Texteingabefeld, klein"
+#~ msgstr "Text input field, small"
+
+#~ msgid "Texteingabefeld, groß"
+#~ msgstr "Text input field, large"
+
+#~ msgid "Texteingabefeld, sehr groß"
+#~ msgstr "Text input field, extra large"
+
+#~ msgid "Multiple-Choice-Tabelle"
+#~ msgstr "Multiple choice table"
+
+#~ msgid "Single-Choice-Tabelle"
+#~ msgstr "Single choice table"
+
+#~ msgid "Eingabefeld für Prolog-Code"
+#~ msgstr "Input area for Prolog code"
+
+#~ msgid "Kommentarfeld"
+#~ msgstr "Comment box"
+
+#~ msgid "Nur vom Dozenten veränderbare Module"
+#~ msgstr "Modules that can only be changed by lecturers"
+
+#~ msgid "Eingabemöglichkeiten für Studenten"
+#~ msgstr "Entryfield for students"
+
+#~ msgid "Bearbeiten abbrechen"
+#~ msgstr "Abort editing"
+
+#~ msgid "Komponente bearbeiten"
+#~ msgstr "Edit component"
+
+#~ msgid "Multiple Choice-Modul"
+#~ msgstr "Multiple choice module"
+
+#~ msgid "Multiple Choice-Aufgabe"
+#~ msgstr "Multiple choice task"
+
+#~ msgid "Anzahl der Aufgaben"
+#~ msgstr "Number of tasks"
+
+#~ msgid "%s auf- oder zuklappen"
+#~ msgstr "open or close %s"
+
+#~ msgid "zurück zum Aufgabenblatt"
+#~ msgstr "back to worksheet"
+
+#~ msgid ""
+#~ "Vorsicht: Falsche Antworten geben Punktabzug. Die Gesamtpunktzahl kann "
+#~ "dabei auch negativ werden."
+#~ msgstr ""
+#~ "Attention: Wrong answers are penalized by deduction of points. The amount "
+#~ "of points for a task can fall below zero."
+
+#~ msgid "Es müssen noch %d Lösungen korrigiert werden."
+#~ msgstr "%d solutions are left for grading."
+
+#~ msgid "noch %d Minuten"
+#~ msgstr "%d minutes left"
+
+#~ msgid "%s von %s Punkten"
+#~ msgstr "%s of %s points"
+
+#~ msgid "Die Klausur %s mit %d Aufgaben wurde hinzugefügt."
+#~ msgstr "Exam %s was added with %d tasks."
+
+#~ msgid "Das Übungsblatt %s mit %d Aufgaben wurde hinzugefügt."
+#~ msgstr "Worksheet %s was added with %d tasks."

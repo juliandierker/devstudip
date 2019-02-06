@@ -1,0 +1,14 @@
+pluginclassname=VipsPlugin
+pluginname=Vips
+origin=virtUOS
+version=1.5-svn
+studipMinVersion=3.4
+studipMaxVersion=4.3.99
+icon=images/vips_black.svg
+category=Inhalte und Aufgabenstellungen
+summary=Virtuelles Prüfungssystem: Online-Erstellung und Durchführung von Übungen, Tests und Klausuren
+description=In Vips können Übungen, Tests und Klausuren online vorbereitet und durchgeführt werden. Die Lehrenden erhalten eine Übersicht darüber, welche/r Studierende eine Übung oder einen Test mit welchem Ergebnis abgeschlossen hat. Im Gegensatz zu herkömmlichen Übungszetteln oder Klausurbögen sind mit Vips alle Texte gut lesbar und sortiert abgelegt. Lehrende erhalten sofort einen Überblick darüber, was noch zu korrigieren ist. Neben allgemein üblichen Fragetypen wie Multiple Choice und Freiantwort verfügt Vips auch über ungewöhnlichere, aber didaktisch durchaus sinnvolle Fragetypen wie Lückentext und Zuordnung.
+keywords=Einsatz bei Präsenzprüfungen; Reduzierter Arbeitsaufwand bei der Auswertung; Sortierte Übersicht der eingereichten Ergebnisse; Single-, Multiple-Choice- und Text-Aufgaben, Lückentexte und Zuordnungen; Notwendige Korrekturen und erzielte Punktzahlen auf einen Blick
+screenshot=images/vips_preview_1.png
+screenshot=images/vips_preview_2.png
+screenshot=images/vips_preview_3.png

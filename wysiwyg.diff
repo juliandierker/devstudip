@@ -1,0 +1,76 @@
+Index: css/vips_style.css
+===================================================================
+--- css/vips_style.css	(revision 3403)
++++ css/vips_style.css	(working copy)
+@@ -21,7 +21,7 @@
+     margin-top: 10px;
+ }
+ 
+-.cktoolbar {
++form.default label:not(.undecorated) .cktoolbar {
+     margin-top: 1ex;
+ }
+ 
+@@ -292,6 +292,12 @@
+     vertical-align: top;
+ }
+ 
++.size_toggle .input_container {
++    display: inline-block;
++    max-width: 48em;
++    width: 90%;
++}
++
+ /********************/
+ /* CHARACTER PICKER */
+ /********************/
+Index: views/exercises/edit_rh_exercise.php
+===================================================================
+--- views/exercises/edit_rh_exercise.php	(revision 3403)
++++ views/exercises/edit_rh_exercise.php	(working copy)
+@@ -17,13 +17,21 @@
+                     <? $size = substr_count($group, "\n") + substr_count($answer['text'], "\n") == 0 ? 'small' : 'large' ?>
+ 
+                     <tr class="dynamic_row size_toggle size_<?= $size ?>">
+-                        <td class="dynamic_counter" style="white-space: nowrap;">
+-                            <input type="text" class="character_input small_input" style="width: 90%;" <?= $size == 'small' ? 'name="default['.$i.']"' : '' ?> value="<?= htmlReady($group) ?>">
+-                            <textarea class="character_input large_input" style="width: 90%;" <?= $size == 'large' ? 'name="default['.$i.']"' : '' ?>><?= htmlReady($group) ?></textarea>
++                        <td class="dynamic_counter" style="padding-right: 1ex; white-space: nowrap;">
++                            <div class="input_container">
++                            <input type="text" class="character_input small_input size-l" <?= $size == 'small' ? 'name="default['.$i.']"' : '' ?> value="<?= htmlReady($group) ?>">
++                            <div class="large_input">
++                            <textarea class="character_input wysiwyg size-l" <?= $size == 'large' ? 'name="default['.$i.']"' : '' ?>><?= htmlReady($group) ?></textarea>
++                            </div>
++                            </div>
+                         </td>
+                         <td style="white-space: nowrap;">
+-                            <input type="text" class="character_input small_input" style="width: 90%;" <?= $size == 'small' ? 'name="answer['.$i.']"' : '' ?> value="<?= htmlReady($answer['text']) ?>">
+-                            <textarea class="character_input large_input" style="width: 90%;" <?= $size == 'large' ? 'name="answer['.$i.']"' : '' ?>><?= htmlReady($answer['text']) ?></textarea>
++                            <div class="input_container">
++                            <input type="text" class="character_input small_input size-l" <?= $size == 'small' ? 'name="answer['.$i.']"' : '' ?> value="<?= htmlReady($answer['text']) ?>">
++                            <div class="large_input">
++                            <textarea class="character_input wysiwyg size-l" <?= $size == 'large' ? 'name="answer['.$i.']"' : '' ?>><?= htmlReady($answer['text']) ?></textarea>
++                            </div>
++                            </div>
+                             <input type="hidden" name="id[<?= $i ?>]" value="<?= $answer['id'] ?>">
+                             <?= Assets::img(vips_image_url('expand.svg'), ['title' => _vips('Eingabefeld vergrößern'), 'class' => 'textarea_toggle small_input']) ?>
+                             <?= Assets::img(vips_image_url('collapse.svg'), ['title' => _vips('Eingabefeld verkleinern'), 'class' => 'textarea_toggle large_input']) ?>
+Index: views/exercises/edit_sc_exercise.php
+===================================================================
+--- views/exercises/edit_sc_exercise.php	(revision 3403)
++++ views/exercises/edit_sc_exercise.php	(working copy)
+@@ -10,8 +10,12 @@
+ 
+                 <div class="dynamic_row mc_row">
+                     <label class="dynamic_counter size_toggle size_<?= $size ?> undecorated" style="padding: 1ex; white-space: nowrap;">
+-                        <input type="text" class="character_input small_input" <?= $size == 'small' ? 'name="answer['.$j.']['.$i.']"' : '' ?> value="<?= htmlReady($answer['text']) ?>">
+-                        <textarea class="character_input large_input" <?= $size == 'large' ? 'name="answer['.$j.']['.$i.']"' : '' ?>><?= htmlReady($answer['text']) ?></textarea>
++                        <div class="input_container">
++                        <input type="text" class="character_input small_input size-l" <?= $size == 'small' ? 'name="answer['.$j.']['.$i.']"' : '' ?> value="<?= htmlReady($answer['text']) ?>">
++                        <div class="large_input">
++                        <textarea class="character_input wysiwyg size-l" <?= $size == 'large' ? 'name="answer['.$j.']['.$i.']"' : '' ?>><?= vips_wysiwyg_ready($answer['text']) ?></textarea>
++                        </div>
++                        </div>
+                         <?= Assets::img(vips_image_url('expand.svg'), ['title' => _vips('Eingabefeld vergrößern'), 'class' => 'textarea_toggle small_input']) ?>
+                         <?= Assets::img(vips_image_url('collapse.svg'), ['title' => _vips('Eingabefeld verkleinern'), 'class' => 'textarea_toggle large_input']) ?>
+                     </label>

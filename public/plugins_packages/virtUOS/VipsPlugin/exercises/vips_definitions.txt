@@ -1,0 +1,320 @@
+======================================
+ VIPS - DEFINITIONEN und KONVENTIONEN
+======================================
+
+
+=========
+ Klassen
+=========
+
+
+---[ KLASSE: exercise ]---
+
+	Abstrakte Klasse Exercise stellt einen Aufgabentypen bereit.
+        Aufgabentypen sind unter zum Beispiel Multiple-Choice- oder Textaufgaben.
+
+	Bietet Methoden zur Evaluierung und stellt HTML-Einagbemoeglichkeiten bereit.
+        Die Eingabemoeglichkeiten beziehen sich auf das a) Erstellen, b) Ausfuellen
+        und c) Modifizieren von Aufgaben eines bestimmten Aufgabentyps. Diese
+        Aktivitaeten sind Rollenabhaengig (Dozent, Student).
+
+        Die jeweils erstellte Aufgabe (Dozent) und die Loesung (Student) werden im
+        XML-Format (DTD?) genertiert und in einer Datenbank abgelegt. Die Klasse hat
+        keine Datenbankmethoden (warum vererbt sie keine privaten DB-Methoden an
+        xx_exercise-Klassen ?).
+
+        ---[ ATTRIBUTE ]---
+
+	String $ExerciseName Name der Aufgabe (z.B. Multiple Choice)
+	String $ExerciseDescription Beschreibung der Aufgabe
+
+
+        ---[ METHODEN ]---
+
+	Die Klasse bietet folgende Methoden:
+
+	- evaluate($exercise_id,$solution_id)
+
+        	Gibt die Note der Loesung einer Aufgabe eines Aufgabentypen zurueck.
+                Reicht von 0% bis 100%. Erwartet die auf Grundlage des Aufgabentypen
+                erstellte Aufgabe und die Loesung eines Prueflings.
+
+                @param Number $exercise_id die ID der Aufgabe
+                @param Number solution_id die ID der Loesung
+                @return Number $result der Prozentwert der Loesung eines Prueflings
+
+
+	- printFormToGetAnswer($exercise_id,$Aufgabe,$action,$hidden)
+
+        	Gibt die Aufgabe an einen Pruefling im HTML-Format aus.
+		Der Loesungsversuch wird in eine Datenbank eingetragen (?-Loesung).
+
+                @see vips_tests.vips_tests
+                @see vips_tests.vips_store_exercise
+                @param Number $exercise_id die ID der Aufgabe
+                @param String $Aufgabe Aufgabe im XML-Format
+                @param String $action "action"-attribut des "form" tags (warum ?)
+                @param ? $hidden ?
+
+
+	- getSolution($exercise_id,$solution_id)
+
+		?
+
+	- genSolution($exercise_id)
+
+        	Generiert eine Loesung mit den Antworten des Prueflings im XML-
+                Format und gibt diese als String zurueck.
+
+                @param Number $exercise_id die ID der Aufgabe, auf die sich die
+                	Loesung bezieht.
+		@return String $solution die Loesungsantworten im XML-Format
+
+
+	- setSolution($exercise_id,$solution_id)
+
+        	Streichen
+
+
+	- getStatistic($exercise_id,$course_id)
+
+		Streichen
+
+
+	- printFormToGenerateExercise($exercise_id, $p_exerciseTask = array()) (nicht so in Exercise, aber IDs notwendig !?)
+
+        	Gibt ein HTML-Formular aus, aus dessen Eingaben basierend auf dem
+                Aufgabentypen der aktuellen Klasse eine Aufgabe generiert wird.
+                Das HTML-Formular kann mit Werten gefuellt werden, wenn eine
+                bestehende Aufgabe bearbeitet werden soll.
+
+
+		@param Number $exercise_id Nummer des Uebungsblattes (?)
+                @param Array $p_exerciseTask einezlne Aufgaben ID (?)
+                @see vips_tests.vips_tests
+                @see vips_tests.vips_store_exercise
+
+	- _produceExercise()
+
+		Produziert den Aufgabencode (XML) (Raus)
+
+
+	- getExternalParam($p_varName)
+
+        	Gibt einen Variablenwert zurueck. Erwartet einen Variablennamen.
+                Sieht die Variable erst im POST, dann im GET Umfeld nach. Liefert
+                einen Leerstring, wenn nichts gefunden.
+
+                @param String $p_varName Name der Variable
+                @param String $m_varValue Wert der Variable. Leerstring, wenn
+                	Variable nicht gefunden.
+
+
+
+---[ KLASSE: [xx]_exercise ]---
+
+        Aufgabentypen werden nach dem Muster [xx]_exercise benannt. Diese Klassen
+        erben von der abstrakten Klasse Exercise und bieten einzelne
+        Aufgabentypen an.
+
+
+        ---[ METHODEN ]---
+
+        - getExerciseConstruct
+
+        	Gibt eine Augabe im XML-Format zurueck. Enthaelt die Frage, einen optionalen
+                Tipp und Informationen uur richtigen Loesung.
+
+                @return String $m_xmlExercise die Aufgabe im XML-Format, nach HTML-Charakteren
+                	gewandelt (warum nach HTML ?)
+                @see produceExercise
+
+
+	- produceExercise($vips_id,$vips_quest,$lang,$vips_answer,$vips_correct,$counter)
+
+        	Unterfunktion von getExerciseConstruct. (! Vorschlag: mit der Funktion
+                getExerciseConstruct zusammenfassen !)
+
+                @return String $m_xmlExercise die Aufgabe im XML-Format (Raus)
+
+
+
+---[ KLASSE: vips_tests ]---
+
+	Klasse handelt Datenbankzugriffe fuer Klassen von Aufgabentypen ([xx]_exercise).
+        Wird gesteuert ueber einen Parameter, die entscheidet welche Methode aufgerufen wird.
+        Diese Methoden werden oft mit einem Parameter aus der GET- oder POST-Umgebung
+        aufgerufen und versorgen sich mit weiteren Parametern, wenn noetig. (warum nicht
+        gleich komplette Selbstversorger ?).
+
+
+        ---[ METHODEN ]---
+
+	- vips_tests
+
+                Verzweigt aufgrund des Parameters "subaction" in entsprechende Methode.
+                Ruft einige Methoden mit Parametern auf.
+
+
+	- vips_edit_exercise_task($vips_exercise_task_id)
+
+		Erlaubt das Bearbeiten einer erstellten Auzfgabe.
+                Instanziert entprechenden Aufgabetyp (Objekt), ruft dessen
+                Methode "genExercise" auf und uebergibt die zuvor im
+                XML-Format gespeicherte Aufgabe aus der Datenbank.
+
+                @param Number $vips_exercise_task_id die ID der zu bearbeitenden Aufgabe
+		@see [xx]_exercise.genExercise
+
+
+
+	- vips_store_exercise($vips_art)
+
+        	Speichert eine Aufgabe in der Datenbank mitsamt ihrem Aufgabentypen.
+                Speicherung der eigentlichen Aufgabe (des Aufgabeninhaltes)
+                erfolgt im XML-Format.
+
+		@param String $vips_art Aufgabentyp ([xx]_exercise) der Aufgabe
+                @see getExerciseConstruct
+
+
+	- vips_store_()
+
+        	(von VIPS benutzt ?)
+
+
+	- vips_edit_aufgabenzettel($my_id)
+
+        	Selektiert Uebungsblatt No. "$my_id" mit Aufgaben aus Datenbank.
+                Ruft die Methode "vips_gen_aufgabe" zur Darstellung einer Uebersicht
+                einzelner Aufgaben auf.
+
+		@param Number $my_id die ID des Uebungsblattes
+		@see vips_gen_aufgabe
+
+
+	- vips_delete_aufgabenzettel($my_id)
+
+        	Loescht alle Aufgaben, die mit einem gegebenem Uebungsblatt
+                in der Datenbank assoziert sind.
+
+                @param Number $my_id die ID des Uebungsblattes
+
+
+	- vips_show_exercises()
+
+        	Zeigt alle Uebungsblaetter mit Anwahl- und Loesch-Buttons.
+
+
+	- vips_gen_aufgabe($number,$collection)
+
+        	Zeigt bestimmte Aufgabe eines Uebungsblattes, identifiziert die Aufgabe anhand
+                ihrer Position (Positionszaehlung beginnt bei 1).
+
+                Erlaubt das Anlegen einer Aufgabe, das Bearbeiten und das Loeschen.
+                (kann jeder Aufgabentyp nur einmal angelegt werden, wohl kaum ?)
+
+
+	- vips_gen_aufgabenzettel()
+
+        	Erzeugt HTML-Formular zur Datenerfassung fuer einen neuen Aufgabenzettel.
+
+
+	- vips_gen_exam()
+
+        	?
+
+
+	- vips_gen_test_exam()
+
+        	?
+
+
+	- vips_gen_quest()
+
+                ?
+
+
+	- vips_print_exer()
+
+        	?
+
+
+	vips_print_test_choice()
+
+        	(prints all exercises that the user still has not
+                finished or for wich new corrections are available ?)
+
+
+	- print_exercises()
+
+        	(noch nicht erledigte Aufgaben ?)
+
+
+	- vips_solve_exercise($ID)
+
+        	Stellt Pruefling eine Aufgabe. Erzeugt versteckte Input-Felder und
+                uebergibt diese an "[xx]_exercise.getOutput". Diese versteckten
+                Felder bestimmen die "action" und "subaction". (keine gute Idee, dass
+                zu uebergeben ?)
+
+                @param Number $ID die ID der zu stellenden Aufgabe
+                @see [xx]_exercise.getOutput
+
+
+	- vips_store_solution($ID,$aufgaben_id)
+
+		Speichert eine Loesung (was fuer eine ?) in der Datenbank,
+                Tabelle: T-Solution (T = Uebungsblatt = Test ?).
+		Ruft "[xx]_exercise.genSoultion" auf um die Loesung im XML-Format zu
+                erstellen.
+
+                @param Number $ID die ID der einzelnen Aufgabe
+                @param Number $aufgaben_id (auch die Aufgaben ID ?!)
+
+
+	- vips_new_exercise($type, $vips_id)
+
+		Generiert eine neue Aufgabe eines bestimmten Aufgabentypes.
+
+                @param Number $type Aufgabentyp
+                @param Number $vips_id Nummer einer einzelnen Aufgabe (wird nicht genutzt !?)
+
+
+	- vips_gen_exerecise()
+
+		Erlaubt das Erstellen einer neuen Aufgabe eines bestimmten Aufgabentyps.
+                Generiert ein Formular/eine Linksammlung.
+
+                Unvollstaendig.
+
+
+
+====================
+ Namenskonventionen
+====================
+
+Variablen:
+		- Variablennamen muessen aussagekraeftig sein.
+
+                - Variablennamen muessen konsistent ueber Klassen und Methoden
+                  vergeben werden.
+
+                - Wichtige Variablen (keine Hilfsvariablen) sollen mit folgenden
+                  Praefixen benannt werden:
+                	m_xyb => (method) 		eine Methodenvariable
+                        p_xyb => (parameter) 		eine Parametervariable
+                        				aus dem Methodenkopf
+                        g_xyb => (global)		eine Klassenvariable
+
+			[m,p,g]_Oxyb (Objekt)		bezeichnet ein(e) Objekt/Instanz
+
+Klassen:
+		- Klassennamen muessen aussagekraeftig sein.
+
+                - Eine Klasse heisst so wie ihr Dateiname.
+
+Methoden:
+		- Methodennamen muessen aussagekraeftig sein.
+
+                - Private Methoden beginnen mit einem _:  _privateMethode().

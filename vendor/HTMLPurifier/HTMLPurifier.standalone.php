@@ -20446,9 +20446,6 @@ class HTMLPurifier_Strategy_MakeWellFormed extends HTMLPurifier_Strategy
                         continue;
                     }
                     $r = $token;
-                    if ($r->name == "img"){
-
-                    }
                     $injector->handleElement($r);
                     $token = $this->processToken($r, $i);
                     $reprocess = true;
@@ -20812,7 +20809,7 @@ class HTMLPurifier_Strategy_RemoveForeignElements extends HTMLPurifier_Strategy
                         $e->send(E_NOTICE, 'Strategy_RemoveForeignElements: Tag transform', $original_name);
                     }
                 }
-                
+
                 if (isset($definition->info[$token->name])) {
                     // mostly everything's good, but
                     // we need to make sure required attributes are in order

@@ -1198,13 +1198,20 @@
     "windowsState": {
         "openedWindows": [],
         "lastActiveWindow": {
-            "backupPath": "/home/juliandierker/stud-dev/trunk/trunk/~/.vscode-root/Backups/1545130678563",
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/home/juliandierker/stud-dev/trunk/trunk",
+                "external": "file:///home/juliandierker/stud-dev/trunk/trunk",
+                "path": "/home/juliandierker/stud-dev/trunk/trunk",
+                "scheme": "file"
+            },
+            "backupPath": "/home/juliandierker/stud-dev/trunk/trunk/~/.vscode-root/Backups/f55da4e4f881bb2d38d5f669f9400902",
             "uiState": {
-                "mode": 1,
-                "x": 448,
-                "y": 212,
-                "width": 1024,
-                "height": 768
+                "mode": 0,
+                "x": 57,
+                "y": 24,
+                "width": 1863,
+                "height": 1056
             }
         }
     },

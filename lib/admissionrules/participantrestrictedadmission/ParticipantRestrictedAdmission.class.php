@@ -50,7 +50,7 @@ class ParticipantRestrictedAdmission extends AdmissionRule
 
     public function isFCFSallowed()
     {
-        return !$this->first_come_first_served_allowed;
+        return $this->first_come_first_served_allowed;
     }
 
     /**

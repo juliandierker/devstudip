@@ -1,0 +1,72 @@
+default namespace = 'urn:vips:test:v1.0'
+
+element test {
+    attribute id { xsd:ID },
+    attribute type { 'practice' | 'selftest' | 'exam' },
+    attribute start { xsd:dateTime }?,
+    attribute end { xsd:dateTime }?,
+
+    element title { text },
+    element description { text }?,
+    element notes { text }?,
+    element exercises {
+        element exercise {
+            attribute id { xsd:ID },
+            attribute lang { xsd:language }?,
+            attribute feedback { xsd:boolean }?,
+
+            element title { text },
+            element description { text }?,
+            element hint { text }?,
+            element notes { text }?,
+            element items {
+                element item {
+                    attribute type { xsd:token },
+
+                    element description {
+                        (element text { text } | element answers {
+                            element answer {
+                                attribute score { xsd:decimal },
+                                attribute default { xsd:boolean }?,
+                                attribute correct { xsd:integer }?,
+                                text
+                            }*
+                        })*
+                    }?,
+                    element choices {
+                        element choice {
+                            attribute type { token },
+                            text
+                        }*
+                    }?,
+                    element answers {
+                        element answer {
+                            attribute score { xsd:decimal },
+                            attribute default { xsd:boolean }?,
+                            attribute correct { xsd:integer }?,
+                            text
+                        }*
+                    }?,
+                    element external-link {
+                        attribute uri { xsd:anyURI },
+                        element param {
+                            attribute name { token },
+                            text
+                        }*
+                    }?,
+                    element evaluation-hints {
+                        element similarity {
+                            attribute type { token }
+                        }?,
+                        element input-data {
+                            attribute type { token },
+                            attribute name { token }?,
+                            text
+                        }?
+                    }?,
+                    element feedback { text }?
+                }*
+            }
+        }*
+    }
+}

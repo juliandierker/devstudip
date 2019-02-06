@@ -1,5 +1,3 @@
-<!-- <? require_once 'lib/statusgruppe.inc.php'; ?> -->
-
 <a name="group-<?= $group->id ?>"></a>
 <table id="<?= $group->id ?>" class="default movable">
     <colgroup>
@@ -38,15 +36,9 @@
             <a data-dialog="size=auto" title="<?= _('Gruppe löschen') ?>" href="<?= $controller->url_for("admin/statusgroups/deleteGroup/{$group->id}") ?>">
                 <?= Icon::create('trash', 'clickable', ['title' => _('Gruppe löschen')])->asImg() ?>
             </a>
-            <? ?> 
             <a data-dialog="size=auto" title="<?= _('Gruppe alphabetisch sortieren') ?>" href="<?= $controller->url_for("admin/statusgroups/sortAlphabetic/{$group->id}") ?>">
-	            <?= Icon::create('arr_1down', 'clickable', ['title' => _('Mitarbeiter alphabetisch sortieren')])->asImg() ?>
-	        </a>
-            <? if ($group->children): ?>
-                <a data-dialog="size=auto" title="<?= _('Untergruppe alphabetisch sortieren') ?>" href="<?= $controller->url_for("admin/statusgroups/sortGroupsAlphabetical/{$group->id}") ?>">
-                    <?= Icon::create('arr_2down', 'clickable', ['title' => _('Untergruppen alphabetisch sortieren')])->asImg() ?>
-                </a>
-            <? endif; ?>
+                <?= Icon::create('arr_2down', 'clickable', ['title' => _('Gruppe alphabetisch sortieren')])->asImg() ?>
+            </a>
         <? else: ?>
             <? if ($type['needs_self_assign']): ?>
                 <? if ($group->isMember() && $group->selfassign): ?>
@@ -81,7 +73,6 @@
 <ul class='tree-seperator'>
     <li>
     <? foreach ($group->children as $child): ?>
-
         <?= $this->render_partial('admin/statusgroups/_group.php', array('group' => $child)) ?>
     <? endforeach ?>
     </li>

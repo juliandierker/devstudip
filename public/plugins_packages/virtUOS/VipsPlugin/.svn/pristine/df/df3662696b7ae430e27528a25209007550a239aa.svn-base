@@ -1,0 +1,67 @@
+body {
+    background: none;
+}
+
+#footer, #layout_footer {
+    display: none;
+}
+
+.smaller {
+    font-size: smaller;
+    line-height: 1.6em;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.label_text {
+    font-weight: bold;
+    margin: 1ex 0;
+}
+
+.vips_output {
+    background: none;
+    max-height: none;
+    padding-bottom: 1em;
+}
+
+.vips_output pre {
+    margin: 2px;
+    white-space: pre-wrap;
+}
+
+.exercise_hint {
+    border: 1px dashed blue;
+    display: inline-block;
+    padding: 1ex;
+}
+
+.exercise_hint > h4 {
+    margin-top: 0px;
+}
+
+.mc_item {
+    padding: 4px;
+}
+
+.correct_item {
+    background: #F0FFF0;
+    border: 1px solid #B0FFB0;
+    padding: 3px;
+}
+
+.wrong_item {
+    background: #FFF0F0;
+    border: 1px solid #FFB0B0;
+    padding: 3px;
+}
+
+.correction_marker {
+    float: right;
+    margin-left: 1em;
+}
+
+.group_separator {
+    border-top: 1px dotted grey;
+}

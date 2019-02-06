@@ -1,0 +1,339 @@
+table.default .actions {
+    white-space: nowrap;
+}
+
+table.default .button {
+    margin: .2em .6em .2em 0;
+}
+
+table.default img {
+    vertical-align: text-bottom;
+}
+
+table.default input[type="text"] {
+    display: inline;
+    margin: 0em;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+form.default .description {
+    margin-top: 10px;
+}
+
+form.default label:not(.undecorated) .cktoolbar {
+    margin-top: 1ex;
+}
+
+.width-1200 {
+    max-width: 1200px;
+}
+
+.breadcrumb {
+    margin-bottom: 1ex;
+}
+
+.breadcrumb img {
+    vertical-align: text-bottom;
+}
+
+.smaller {
+    font-size: smaller;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.picker {
+    background-color: #E2E2E2;
+    border-bottom: 1px dotted black;
+    padding: 3px;
+}
+
+.label_text {
+    margin: 1ex 0;
+    text-indent: 0.25ex;
+}
+
+.vips_output {
+    background-color: #F2F2F2;
+    max-height: 20em;
+    overflow: auto;
+    padding: 3px;
+}
+
+.vips_output pre {
+    margin: 2px;
+    white-space: pre-wrap;
+}
+
+.sidebar_exercise_label {
+    display: inline-block;
+    width: 120px;
+}
+
+.sidebar_exercise_points {
+    display: inline-block;
+    text-align: right;
+    width: 80px;
+}
+
+.sidebar_exercise_state {
+    display: inline-block;
+    text-align: right;
+    width: 32px;
+}
+
+.gradebook_header {
+    max-width: 8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vips_drag {
+    background-image: url('../images/drag_handle.png');
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    cursor: move;
+    padding-left: 1ex;
+}
+
+.exercise_hint {
+    background: #ffffe0;
+    border: 1px dotted grey;
+    display: inline-block;
+    margin: 1em 0;
+    padding: 1ex;
+}
+
+.exercise_hint > h4 {
+    margin-top: 0px;
+}
+
+.exam_timer {
+    background-color: white;
+    border: 3px solid red;
+    cursor: move;
+    left: calc(100% - 120px);
+    margin: 3px;
+    padding: 3px;
+    position: fixed;
+    top: 0px;
+    white-space: nowrap;
+    z-index: 10001;
+}
+
+.exam_timer.alert {
+    color: red;
+}
+
+.rh_table {
+    border-spacing: 3em 1em;
+    margin-left: -2em;
+}
+
+.rh_list {
+    border: 1px solid #aaaaaa;
+    background-color: #f8f8f8;
+    min-width: 160px;
+}
+
+.rh_list.hover {
+    border-color: black;
+}
+
+.rh_label {
+    padding-bottom: 2ex;
+    padding-top: 2ex;
+}
+
+.rh_item {
+    background-color: white;
+    background-image: url('../images/drag_handle.png');
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    border: 1px dotted grey;
+    cursor: move;
+    margin: 4px;
+    padding: 1ex 1ex 1ex 2ex;
+}
+
+.mc_row {
+    margin: 1ex 0;
+}
+
+.mc_list {
+    display: inline-block;
+    margin: 1em;
+    min-width: 32em;
+}
+
+.mc_item {
+    padding: 4px;
+}
+
+.correct_item {
+    background: #F0FFF0;
+    border: 1px solid #B0FFB0;
+    padding: 3px;
+}
+
+.wrong_item {
+    background: #FFF0F0;
+    border: 1px solid #FFB0B0;
+    padding: 3px;
+}
+
+.correction_marker {
+    float: right;
+    margin-left: 1em;
+}
+
+.group_separator {
+    border-top: 1px dotted grey;
+}
+
+.dynamic_list {
+    counter-reset: vips_item;
+}
+
+.dynamic_counter::before {
+    counter-increment: vips_item;
+    content: counter(vips_item) ".";
+}
+
+.template {
+    display: none;
+}
+
+.solution-close {
+    display: inline;
+}
+
+.solution-open {
+    display: none;
+}
+
+.solution-closed + tr {
+    display: none;
+}
+
+.solution-closed .solution-close {
+    display: none;
+}
+
+.solution-closed .solution-open {
+    display: inline;
+}
+
+.solution-none {
+    color: #999999;
+}
+
+.solution-uncorrected {
+    color: red;
+}
+
+.solution-autocorrected {
+    color: blue;
+}
+
+.solution-corrected {
+    color: green;
+    font-style: italic;
+}
+
+#options-toggle,
+#options-toggle + .caption > .toggle-open,
+#options-toggle:checked + .caption > .toggle-closed,
+#options-toggle + .caption ~ label,
+#options-toggle + .caption ~ .label_text {
+    display: none;
+}
+
+#options-toggle + .caption {
+    background-color: #e7ebf1;
+    color: #24437c;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 4px;
+}
+
+#options-toggle + .caption > img {
+    vertical-align: text-bottom;
+}
+
+#options-toggle:checked + .caption > .toggle-open {
+    display: inline;
+}
+
+#options-toggle:checked + .caption ~ label,
+#options-toggle:checked + .caption ~ .label_text {
+    display: block;
+}
+
+.size_toggle .large_input,
+.size_toggle .small_input {
+    margin-top: 0px;
+}
+
+.size_toggle.size_small .large_input {
+    display: none;
+}
+
+.size_toggle.size_large .small_input {
+    display: none;
+}
+
+.size_toggle .textarea_toggle {
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.size_toggle .input_container {
+    display: inline-block;
+    max-width: 48em;
+    width: 90%;
+}
+
+/********************/
+/* CHARACTER PICKER */
+/********************/
+
+#character_picker .block {
+    background-color: rgb(230, 230, 230);
+    border-radius: .25em;
+    display: inline-block;
+    margin: .125em .25em;
+    padding: .0625em .25em;
+    white-space: nowrap;
+}
+
+#character_picker .block .block_title {
+    background-color: rgb(207, 207, 207);
+    border-radius: .25em 0 0 .25em;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: -.125em;
+    padding: 0 .5em;
+}
+
+#character_picker .block button {
+    border: 0;
+    border-radius: .25em;
+    padding: 0 .25em;
+}
+
+#character_picker .block button:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+#character_picker_header {
+    background-color: rgb(204, 204, 204);
+    border-radius: .25em .25em 0 0;
+    font-size: smaller;
+    padding: .5em;
+    margin: -.25em -.25em .5em .5em;
+}

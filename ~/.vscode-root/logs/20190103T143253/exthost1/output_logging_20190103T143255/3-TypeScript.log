@@ -33,3 +33,4 @@ Error: Debug Failure. Invalid cast. The supplied value [object Object] did not p
     at readableAddChunk (_stream_readable.js:250:11)
     at Socket.Readable.push (_stream_readable.js:208:10)
     at Pipe.onread (net.js:594:20)
+[Info  - 11:25:26 AM] TSServer exited
